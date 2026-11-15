@@ -1,0 +1,49 @@
+{
+  "integrity_verification_status": "PASS",
+  "checked_utc": "2026-09-18T14:02:53.049334+00:00",
+  "exact_reproduction_pass": true,
+  "comparison": {
+    "shape_identical": true,
+    "original_shape": [
+      600,
+      6
+    ],
+    "replay_shape": [
+      600,
+      6
+    ],
+    "original_dtype": "float32",
+    "replay_dtype": "float32",
+    "dtype_identical": true,
+    "np_array_equal": true,
+    "max_abs_difference": 0.0,
+    "mean_abs_difference": 0.0,
+    "number_of_different_elements": 0,
+    "total_elements": 3600,
+    "allclose_atol0_rtol0": true,
+    "allclose_atol1e_minus8_rtol1e_minus7": true,
+    "exact_reproduction_pass": true,
+    "classification": "EXACT_HISTORICAL_CHAIN_REPRODUCTION"
+  },
+  "recovered_divergence_count": 0,
+  "acceptance_rate": 1.0,
+  "historical_preservation": {
+    "checked_utc": "2026-09-18T14:02:53.047578+00:00",
+    "protected_files": 493,
+    "all_sha256_unchanged": true,
+    "changed_files": [],
+    "git_tracked_unchanged": true
+  },
+  "original_367_unchanged": true,
+  "scientific_sampler_calls": 1,
+  "remaining_20_sampler_calls": 0,
+  "flow_training_calls": 0,
+  "stopped_at_pilot_review": true,
+  "outputs": {
+    "PILOT_ablation_obs1_seed701.npz": "39a785c168a41c1871ad897021a8b5cf5d1855012b52480e3126f823f5f54432",
+    "PILOT_ablation_obs1_seed701.json": "b6bbf154ded8d7be7e6a860411e29e09766dfeb7ce67cf6d523f81deb72fbd9e",
+    "PILOT_ablation_obs1_seed701.log": "faba1a3d3ed627cbe995e0064cb90013bfedc759e15cba89b80c4a92d8d763cb",
+    "PILOT_REPRODUCTION_AUDIT.md": "32d6239c068a2262e2a4f1a1db523a2fc12f671417782065cbe48584f54a53c7",
+    "PILOT_REPRODUCTION_INTEGRITY.json": "bc2755873510f55e770f7ea6387ba6a108fa5aed8c00354809370cfe2cc2dcc2"
+  }
+}

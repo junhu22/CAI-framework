@@ -1,0 +1,42 @@
+{
+  "verification_pass": true,
+  "finished_utc": "2026-09-18T23:55:47.281382+00:00",
+  "required_deliverables_present": 16,
+  "integrity_manifest_sha256": "880bec44e25aa286a858c44e4ceea9479f4b59243a29c069e3b3e27a79a971a3",
+  "report_sha256": "3977e2aeeafef300dc2a26cb1254de8e50366ee3635a6386df09f44f93efa345",
+  "preservation": {
+    "checked_utc": "2026-09-18T23:55:47.281350+00:00",
+    "checked_protected_files": 906,
+    "checked_V1_files": 36,
+    "all_protected_SHA256_unchanged": true,
+    "checked_Git_tracked_files": 305,
+    "all_tracked_SHA256_unchanged": true,
+    "Git_tracked_status_unchanged": true
+  },
+  "artifact_verification": {
+    "verification_pass": true,
+    "provenance_gate_360_null_324_damage_27_cells_exact": true,
+    "e1_e3_bitwise_reused_observations_and_samples": 216,
+    "e2_new_relative_noise_observations": 108,
+    "all_324_grid_noise_vectors_exact_source_relative_rule": true,
+    "all_standardized_epsilons_and_states_unchanged": true,
+    "matched_NN_samples_bitwise_reused": 216,
+    "matched_pairs": 216,
+    "matched_additive_vectors_differ": 216,
+    "all_216_FE_NN_noise_vectors_exact_own_source_rule": true,
+    "latent_sequences_same": true,
+    "null_ensembles_unchanged": true,
+    "threshold_rule_and_tau_unchanged": true,
+    "raw_ESS_reconstruction_exact": true,
+    "negative_proposals_retained": true,
+    "active_nonpositive_support_draw_count": 1,
+    "paired_FE_nonpositive_support_draw_count": 0,
+    "paired_NN_nonpositive_support_draw_count": 0,
+    "no_modal_discrepancy_recomputation": true,
+    "modal_and_field_files_byte_identical": true,
+    "routing_agreement_count": 215
+  },
+  "V1_retained": true,
+  "V1_classification": "SUPERSEDED_FOR_NOISE_SCALING_SEMANTICS_ONLY",
+  "stopped_for_review": true
+}

@@ -1,0 +1,43 @@
+{
+  "tau_grid": [
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    0.7
+  ],
+  "rows": [
+    {
+      "name": "Field data (Lam 2019)",
+      "category": "real/OOD",
+      "ess": 0.0019396872781630094,
+      "ess_std": 0.001020429244218015,
+      "old_ess": 0.0005,
+      "route": [
+        "exact",
+        "exact",
+        "exact",
+        "exact",
+        "exact",
+        "exact"
+      ]
+    },
+    {
+      "name": "Sailboat damage (e1=0.75)",
+      "category": "synthetic-damage",
+      "ess": 0.43615576858446137,
+      "ess_std": 0.06312617684319059,
+      "old_ess": 0.0204,
+      "route": [
+        "fast",
+        "fast",
+        "fast",
+        "fast",
+        "exact",
+        "exact"
+      ]
+    }
+  ],
+  "coupled_note": "coupled models untouched; round-1 values stand (normal 0.032, damage 0.128)"
+}

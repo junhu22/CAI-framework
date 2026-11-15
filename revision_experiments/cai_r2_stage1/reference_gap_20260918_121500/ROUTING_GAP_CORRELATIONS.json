@@ -1,0 +1,20 @@
+{
+  "N": 2000,
+  "n_targets": 7,
+  "spearman_rawESS_vs_active_meanMAE": [
+    -0.8928571428571429,
+    0.006807187408935393
+  ],
+  "spearman_PSIS_ESS_vs_active_meanMAE": [
+    -0.8928571428571429,
+    0.006807187408935393
+  ],
+  "spearman_rawESS_vs_active_normW1": [
+    -0.8928571428571429,
+    0.006807187408935393
+  ],
+  "spearman_PSIS_ESS_vs_active_normW1": [
+    -0.8928571428571429,
+    0.006807187408935393
+  ]
+}

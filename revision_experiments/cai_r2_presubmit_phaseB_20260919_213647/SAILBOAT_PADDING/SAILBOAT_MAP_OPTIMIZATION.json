@@ -1,0 +1,1233 @@
+{
+  "optimization_gate": "PASS",
+  "objective": "theta-space posterior density; z=log(theta) is numerical only; no transform Jacobian added",
+  "precision": "float64 surrogate/objective/optimizers",
+  "settings": {
+    "n_starts": 32,
+    "init_seed": 20260919,
+    "adam_iterations": 1000,
+    "adam_lr": 0.05,
+    "lbfgs_refined_candidates": 4,
+    "lbfgs_max_iter": 300,
+    "lbfgs_line_search": "strong_wolfe",
+    "kappa_sq": 0.001,
+    "prior": "independent LogNormal(log_mean=0, log_sigma=0.30), theta-space density"
+  },
+  "y6_decimal": [
+    0.91,
+    1.08,
+    1.47,
+    2.55,
+    3.16,
+    3.81
+  ],
+  "y6_float32_values_used_by_final_target": [
+    0.9100000262260437,
+    1.0800000429153442,
+    1.4700000286102295,
+    2.549999952316284,
+    3.1600000858306885,
+    3.809999942779541
+  ],
+  "init_bank_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_presubmit_phaseB_20260919_213647\\SAILBOAT_PADDING\\SAILBOAT_MAP_INIT_BANK.npy",
+  "init_bank_sha256": "07136b2bd25ba46c7d26d873aba96ad8293f12b65d6944dc2578448af89a911b",
+  "surrogate_sha256": "4821100192a768327212ed724090732e63483650f4e80421f89a8df3f984f447",
+  "cnf_sha256": "403e36617eab8f9f57b54f7e728f078c536fa3256390eb4851c271431a3af045",
+  "adam_trace": [
+    {
+      "iteration": 1,
+      "best_log_posterior": -14.320665477030964,
+      "worst_log_posterior": -302.7453029335832,
+      "all_finite": true
+    },
+    {
+      "iteration": 50,
+      "best_log_posterior": -10.405020846543279,
+      "worst_log_posterior": -15.661131876613485,
+      "all_finite": true
+    },
+    {
+      "iteration": 100,
+      "best_log_posterior": -10.397730009605016,
+      "worst_log_posterior": -11.691224379625115,
+      "all_finite": true
+    },
+    {
+      "iteration": 150,
+      "best_log_posterior": -10.397679450968495,
+      "worst_log_posterior": -10.597710250204422,
+      "all_finite": true
+    },
+    {
+      "iteration": 200,
+      "best_log_posterior": -10.39767917143837,
+      "worst_log_posterior": -10.411258541536267,
+      "all_finite": true
+    },
+    {
+      "iteration": 250,
+      "best_log_posterior": -10.397679169738982,
+      "worst_log_posterior": -10.398051935019705,
+      "all_finite": true
+    },
+    {
+      "iteration": 300,
+      "best_log_posterior": -10.397679169732154,
+      "worst_log_posterior": -10.397684753651184,
+      "all_finite": true
+    },
+    {
+      "iteration": 350,
+      "best_log_posterior": -10.397679169732083,
+      "worst_log_posterior": -10.397679189636362,
+      "all_finite": true
+    },
+    {
+      "iteration": 400,
+      "best_log_posterior": -10.397679169732076,
+      "worst_log_posterior": -10.397679169744364,
+      "all_finite": true
+    },
+    {
+      "iteration": 450,
+      "best_log_posterior": -10.397679169732076,
+      "worst_log_posterior": -10.397679169732696,
+      "all_finite": true
+    },
+    {
+      "iteration": 500,
+      "best_log_posterior": -10.397679169732077,
+      "worst_log_posterior": -10.397679169732093,
+      "all_finite": true
+    },
+    {
+      "iteration": 550,
+      "best_log_posterior": -10.397679169732076,
+      "worst_log_posterior": -10.397679169732092,
+      "all_finite": true
+    },
+    {
+      "iteration": 600,
+      "best_log_posterior": -10.397679169732077,
+      "worst_log_posterior": -10.397679169732092,
+      "all_finite": true
+    },
+    {
+      "iteration": 650,
+      "best_log_posterior": -10.397679169732076,
+      "worst_log_posterior": -10.39767916973209,
+      "all_finite": true
+    },
+    {
+      "iteration": 700,
+      "best_log_posterior": -10.397679169732076,
+      "worst_log_posterior": -10.397679169732093,
+      "all_finite": true
+    },
+    {
+      "iteration": 750,
+      "best_log_posterior": -10.397679169732076,
+      "worst_log_posterior": -10.39767916973209,
+      "all_finite": true
+    },
+    {
+      "iteration": 800,
+      "best_log_posterior": -10.397679169732076,
+      "worst_log_posterior": -10.39767916973209,
+      "all_finite": true
+    },
+    {
+      "iteration": 850,
+      "best_log_posterior": -10.397679169732076,
+      "worst_log_posterior": -10.397679169732086,
+      "all_finite": true
+    },
+    {
+      "iteration": 900,
+      "best_log_posterior": -10.397679169732076,
+      "worst_log_posterior": -10.39767916973209,
+      "all_finite": true
+    },
+    {
+      "iteration": 950,
+      "best_log_posterior": -10.397679169732076,
+      "worst_log_posterior": -10.397679169732088,
+      "all_finite": true
+    },
+    {
+      "iteration": 1000,
+      "best_log_posterior": -10.397679169732076,
+      "worst_log_posterior": -10.397679169732086,
+      "all_finite": true
+    }
+  ],
+  "all_starts": [
+    {
+      "start_index": 0,
+      "theta_initial": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "initial_log_likelihood": -167.7339805870899,
+      "initial_log_prior_theta_density": 0.0,
+      "initial_log_posterior": -167.7339805870899,
+      "adam_theta": [
+        2.1885176778340947,
+        1.0493874131730085,
+        1.6379561795974897,
+        0.9130798523784839,
+        0.9115034123323463,
+        0.910038441054016
+      ],
+      "adam_log_likelihood": -4.4340059594479975,
+      "adam_log_prior_theta_density": -5.963673210284088,
+      "adam_log_posterior": -10.397679169732086,
+      "adam_gradient_inf_norm": 3.375077994860476e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 1,
+      "theta_initial": [
+        1.4797428943908155,
+        1.0778069814942024,
+        1.6405389393553869,
+        1.593731365975377,
+        0.8717961930508177,
+        0.9258395715742344
+      ],
+      "initial_log_likelihood": -24.4065826462175,
+      "initial_log_prior_theta_density": -4.803726074400643,
+      "initial_log_posterior": -29.210308720618144,
+      "adam_theta": [
+        2.188517677834095,
+        1.0493874131730085,
+        1.6379561795974897,
+        0.9130798523784838,
+        0.911503412332346,
+        0.9100384410540162
+      ],
+      "adam_log_likelihood": -4.4340059594479975,
+      "adam_log_prior_theta_density": -5.963673210284089,
+      "adam_log_posterior": -10.397679169732086,
+      "adam_gradient_inf_norm": 3.730349362740526e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 2,
+      "theta_initial": [
+        0.5853888633242804,
+        1.1606140606599136,
+        1.2900710539488873,
+        0.8733134410352219,
+        0.8359958967578293,
+        1.155478076522168
+      ],
+      "initial_log_likelihood": -224.1147343586642,
+      "initial_log_prior_theta_density": -2.1709580721044826,
+      "initial_log_posterior": -226.28569243076868,
+      "adam_theta": [
+        2.188517677834095,
+        1.0493874131730088,
+        1.63795617959749,
+        0.9130798523784839,
+        0.911503412332346,
+        0.910038441054016
+      ],
+      "adam_log_likelihood": -4.434005959447991,
+      "adam_log_prior_theta_density": -5.96367321028409,
+      "adam_log_posterior": -10.397679169732081,
+      "adam_gradient_inf_norm": 5.5067062021407764e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 3,
+      "theta_initial": [
+        0.8333483310914651,
+        0.6788923849196549,
+        0.9828542497723617,
+        1.4440622238304965,
+        0.8601686065277068,
+        1.1660206515736677
+      ],
+      "initial_log_likelihood": -261.57890965263164,
+      "initial_log_prior_theta_density": -1.8104097519722737,
+      "initial_log_posterior": -263.3893194046039,
+      "adam_theta": [
+        2.188517677834095,
+        1.0493874131730085,
+        1.6379561795974897,
+        0.9130798523784837,
+        0.9115034123323459,
+        0.910038441054016
+      ],
+      "adam_log_likelihood": -4.434005959447988,
+      "adam_log_prior_theta_density": -5.963673210284088,
+      "adam_log_posterior": -10.397679169732076,
+      "adam_gradient_inf_norm": 1.4210854715202004e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 4,
+      "theta_initial": [
+        1.0961311992496718,
+        1.071562525368535,
+        0.9424567611178605,
+        1.1593198414910086,
+        0.6240504335293734,
+        0.637339792762906
+      ],
+      "initial_log_likelihood": -152.61324075415283,
+      "initial_log_prior_theta_density": -1.9042271668088766,
+      "initial_log_posterior": -154.5174679209617,
+      "adam_theta": [
+        2.1885176778340942,
+        1.0493874131730088,
+        1.6379561795974902,
+        0.9130798523784837,
+        0.911503412332346,
+        0.910038441054016
+      ],
+      "adam_log_likelihood": -4.4340059594479975,
+      "adam_log_prior_theta_density": -5.963673210284088,
+      "adam_log_posterior": -10.397679169732086,
+      "adam_gradient_inf_norm": 1.2434497875801753e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 5,
+      "theta_initial": [
+        0.9140944655324448,
+        0.712467147500463,
+        0.9351583958247522,
+        1.3338367896454368,
+        1.6347496934700567,
+        0.9313169223450779
+      ],
+      "initial_log_likelihood": -242.99049841452876,
+      "initial_log_prior_theta_density": -2.7519630876941883,
+      "initial_log_posterior": -245.74246150222294,
+      "adam_theta": [
+        2.1885176778340947,
+        1.0493874131730088,
+        1.63795617959749,
+        0.9130798523784837,
+        0.911503412332346,
+        0.9100384410540159
+      ],
+      "adam_log_likelihood": -4.434005959447987,
+      "adam_log_prior_theta_density": -5.963673210284089,
+      "adam_log_posterior": -10.397679169732076,
+      "adam_gradient_inf_norm": 2.842170943040401e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 6,
+      "theta_initial": [
+        0.7330383048091145,
+        1.0618153463973303,
+        1.4629101582502517,
+        1.4855920757979204,
+        0.41510315977379614,
+        1.0088406375645291
+      ],
+      "initial_log_likelihood": -154.33349205918967,
+      "initial_log_prior_theta_density": -6.180552189412821,
+      "initial_log_posterior": -160.5140442486025,
+      "adam_theta": [
+        2.1885176778340942,
+        1.0493874131730088,
+        1.6379561795974897,
+        0.9130798523784837,
+        0.911503412332346,
+        0.910038441054016
+      ],
+      "adam_log_likelihood": -4.4340059594479975,
+      "adam_log_prior_theta_density": -5.963673210284086,
+      "adam_log_posterior": -10.397679169732083,
+      "adam_gradient_inf_norm": 8.348877145181177e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 7,
+      "theta_initial": [
+        0.8122569549068299,
+        1.2433387453816431,
+        0.6530293532941726,
+        0.8323809967452171,
+        0.947626832964574,
+        1.3856847478002061
+      ],
+      "initial_log_likelihood": -300.7658563008374,
+      "initial_log_prior_theta_density": -1.9794466327457818,
+      "initial_log_posterior": -302.7453029335832,
+      "adam_theta": [
+        2.188517677834095,
+        1.0493874131730088,
+        1.6379561795974897,
+        0.9130798523784838,
+        0.911503412332346,
+        0.9100384410540159
+      ],
+      "adam_log_likelihood": -4.434005959447991,
+      "adam_log_prior_theta_density": -5.96367321028409,
+      "adam_log_posterior": -10.397679169732081,
+      "adam_gradient_inf_norm": 5.1514348342607263e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 8,
+      "theta_initial": [
+        1.5917967357251592,
+        0.8074859477505322,
+        0.7366039032836998,
+        1.689216384013987,
+        0.9883179427857421,
+        0.587769911331109
+      ],
+      "initial_log_likelihood": -149.09980364910965,
+      "initial_log_prior_theta_density": -4.996840437952626,
+      "initial_log_posterior": -154.09664408706226,
+      "adam_theta": [
+        2.188517677834095,
+        1.0493874131730083,
+        1.6379561795974897,
+        0.9130798523784837,
+        0.911503412332346,
+        0.9100384410540159
+      ],
+      "adam_log_likelihood": -4.434005959447996,
+      "adam_log_prior_theta_density": -5.963673210284088,
+      "adam_log_posterior": -10.397679169732083,
+      "adam_gradient_inf_norm": 7.815970093361102e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 9,
+      "theta_initial": [
+        1.3141153636828797,
+        1.1781860075568806,
+        0.7976880531023322,
+        0.7102393342527442,
+        0.8043982346654689,
+        0.9057400558012977
+      ],
+      "initial_log_likelihood": -139.70714299268698,
+      "initial_log_prior_theta_density": -1.3680974177435488,
+      "initial_log_posterior": -141.07524041043052,
+      "adam_theta": [
+        2.1885176778340947,
+        1.0493874131730088,
+        1.63795617959749,
+        0.9130798523784837,
+        0.9115034123323461,
+        0.9100384410540161
+      ],
+      "adam_log_likelihood": -4.4340059594479975,
+      "adam_log_prior_theta_density": -5.963673210284089,
+      "adam_log_posterior": -10.397679169732086,
+      "adam_gradient_inf_norm": 2.842170943040401e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 10,
+      "theta_initial": [
+        0.7983227753778108,
+        1.1571565857429602,
+        1.2318560705903794,
+        1.2899364532251263,
+        1.0244510714295778,
+        0.9742869687723239
+      ],
+      "initial_log_likelihood": -160.05551373631056,
+      "initial_log_prior_theta_density": -1.3908417620706084,
+      "initial_log_posterior": -161.44635549838117,
+      "adam_theta": [
+        2.1885176778340947,
+        1.0493874131730085,
+        1.63795617959749,
+        0.9130798523784837,
+        0.911503412332346,
+        0.910038441054016
+      ],
+      "adam_log_likelihood": -4.4340059594479975,
+      "adam_log_prior_theta_density": -5.963673210284089,
+      "adam_log_posterior": -10.397679169732086,
+      "adam_gradient_inf_norm": 3.552713678800501e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 11,
+      "theta_initial": [
+        1.0614274289750218,
+        0.8874189673090941,
+        1.19119860072551,
+        0.6086714714286661,
+        0.8942201512892461,
+        0.9844739532377151
+      ],
+      "initial_log_likelihood": -133.31939400534273,
+      "initial_log_prior_theta_density": -1.2004545451788267,
+      "initial_log_posterior": -134.51984855052154,
+      "adam_theta": [
+        2.1885176778340947,
+        1.0493874131730085,
+        1.6379561795974897,
+        0.9130798523784838,
+        0.9115034123323471,
+        0.910038441054016
+      ],
+      "adam_log_likelihood": -4.434005959447997,
+      "adam_log_prior_theta_density": -5.963673210284088,
+      "adam_log_posterior": -10.397679169732085,
+      "adam_gradient_inf_norm": 7.638334409421077e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 12,
+      "theta_initial": [
+        1.5385973774311539,
+        1.8373392578198906,
+        1.1610496364023684,
+        0.8930905052327198,
+        1.3551907605302833,
+        1.1049359198415596
+      ],
+      "initial_log_likelihood": -28.11894435509895,
+      "initial_log_prior_theta_density": -5.329852837886847,
+      "initial_log_posterior": -33.44879719298579,
+      "adam_theta": [
+        2.188517677834095,
+        1.0493874131730085,
+        1.6379561795974897,
+        0.9130798523784841,
+        0.911503412332346,
+        0.9100384410540159
+      ],
+      "adam_log_likelihood": -4.4340059594479975,
+      "adam_log_prior_theta_density": -5.96367321028409,
+      "adam_log_posterior": -10.397679169732086,
+      "adam_gradient_inf_norm": 3.375077994860476e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 13,
+      "theta_initial": [
+        0.986670021587359,
+        1.0876839655911739,
+        0.8198507375368852,
+        1.1478344242535474,
+        1.0672610631002986,
+        0.9947814718781036
+      ],
+      "initial_log_likelihood": -206.26999430923897,
+      "initial_log_prior_theta_density": -0.4584860347165689,
+      "initial_log_posterior": -206.72848034395554,
+      "adam_theta": [
+        2.1885176778340947,
+        1.0493874131730085,
+        1.6379561795974897,
+        0.9130798523784837,
+        0.911503412332346,
+        0.9100384410540158
+      ],
+      "adam_log_likelihood": -4.4340059594479975,
+      "adam_log_prior_theta_density": -5.963673210284088,
+      "adam_log_posterior": -10.397679169732086,
+      "adam_gradient_inf_norm": 3.375077994860476e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 14,
+      "theta_initial": [
+        0.9899451670204494,
+        0.6282534536977116,
+        0.9502794410301707,
+        0.7326607665525715,
+        0.745946164306633,
+        1.374356703896104
+      ],
+      "initial_log_likelihood": -236.0141039349291,
+      "initial_log_prior_theta_density": -1.9797982815460013,
+      "initial_log_posterior": -237.9939022164751,
+      "adam_theta": [
+        2.1885176778340947,
+        1.0493874131730085,
+        1.6379561795974897,
+        0.9130798523784835,
+        0.9115034123323459,
+        0.9100384410540158
+      ],
+      "adam_log_likelihood": -4.4340059594479975,
+      "adam_log_prior_theta_density": -5.963673210284088,
+      "adam_log_posterior": -10.397679169732086,
+      "adam_gradient_inf_norm": 3.375077994860476e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 15,
+      "theta_initial": [
+        1.3838515374142248,
+        1.705866067218015,
+        0.7345216326090721,
+        1.3710693014986104,
+        0.940795832907213,
+        1.152460726293775
+      ],
+      "initial_log_likelihood": -118.44739990469678,
+      "initial_log_prior_theta_density": -4.33257338846522,
+      "initial_log_posterior": -122.779973293162,
+      "adam_theta": [
+        2.188517677834095,
+        1.0493874131730085,
+        1.6379561795974897,
+        0.9130798523784837,
+        0.911503412332346,
+        0.9100384410540158
+      ],
+      "adam_log_likelihood": -4.434005959447987,
+      "adam_log_prior_theta_density": -5.963673210284089,
+      "adam_log_posterior": -10.397679169732076,
+      "adam_gradient_inf_norm": 5.5067062021407764e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 16,
+      "theta_initial": [
+        0.629790506478542,
+        1.260918036679832,
+        1.3174390882747231,
+        0.8064766407795031,
+        0.8115676572547074,
+        1.0530113333137194
+      ],
+      "initial_log_likelihood": -192.34240846416185,
+      "initial_log_prior_theta_density": -2.0954967287868045,
+      "initial_log_posterior": -194.43790519294865,
+      "adam_theta": [
+        2.188517677834095,
+        1.0493874131730085,
+        1.6379561795974897,
+        0.9130798523784837,
+        0.9115034123323458,
+        0.910038441054016
+      ],
+      "adam_log_likelihood": -4.4340059594479975,
+      "adam_log_prior_theta_density": -5.963673210284089,
+      "adam_log_posterior": -10.397679169732086,
+      "adam_gradient_inf_norm": 3.019806626980426e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 17,
+      "theta_initial": [
+        1.3027794556305745,
+        1.1092321701399774,
+        1.0235702616058457,
+        1.4993940171332607,
+        1.097951688790848,
+        1.2207012264291073
+      ],
+      "initial_log_likelihood": -99.64773491450319,
+      "initial_log_prior_theta_density": -2.7217712733475494,
+      "initial_log_posterior": -102.36950618785073,
+      "adam_theta": [
+        2.1885176778340942,
+        1.0493874131730088,
+        1.63795617959749,
+        0.9130798523784837,
+        0.911503412332346,
+        0.9100384410540159
+      ],
+      "adam_log_likelihood": -4.4340059594479975,
+      "adam_log_prior_theta_density": -5.963673210284087,
+      "adam_log_posterior": -10.397679169732085,
+      "adam_gradient_inf_norm": 8.348877145181177e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 18,
+      "theta_initial": [
+        0.885208913817887,
+        0.5485776562156046,
+        1.0310572079201148,
+        1.2937576951609688,
+        1.5707626537228485,
+        1.3846269778472633
+      ],
+      "initial_log_likelihood": -265.8156300389424,
+      "initial_log_prior_theta_density": -4.52310231146358,
+      "initial_log_posterior": -270.33873235040596,
+      "adam_theta": [
+        2.1885176778340947,
+        1.0493874131730088,
+        1.63795617959749,
+        0.9130798523784838,
+        0.911503412332346,
+        0.9100384410540159
+      ],
+      "adam_log_likelihood": -4.434005959447998,
+      "adam_log_prior_theta_density": -5.963673210284089,
+      "adam_log_posterior": -10.397679169732086,
+      "adam_gradient_inf_norm": 5.1514348342607263e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 19,
+      "theta_initial": [
+        0.6102385469210894,
+        1.4327556279592264,
+        0.9098500163697462,
+        0.9447466606351014,
+        0.6404794441706876,
+        1.1909458776636141
+      ],
+      "initial_log_likelihood": -274.7447150195411,
+      "initial_log_prior_theta_density": -2.8572106233523695,
+      "initial_log_posterior": -277.6019256428935,
+      "adam_theta": [
+        2.1885176778340947,
+        1.0493874131730088,
+        1.63795617959749,
+        0.9130798523784838,
+        0.911503412332346,
+        0.910038441054016
+      ],
+      "adam_log_likelihood": -4.434005959447998,
+      "adam_log_prior_theta_density": -5.963673210284089,
+      "adam_log_posterior": -10.397679169732086,
+      "adam_gradient_inf_norm": 5.1514348342607263e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 20,
+      "theta_initial": [
+        1.6792165847700933,
+        0.6215324526961038,
+        1.1111659933832225,
+        1.320278879932962,
+        1.5860872541804616,
+        1.4475234419658163
+      ],
+      "initial_log_likelihood": -93.82627253075928,
+      "initial_log_prior_theta_density": -6.438790495528251,
+      "initial_log_posterior": -100.26506302628754,
+      "adam_theta": [
+        2.1885176778340947,
+        1.0493874131730088,
+        1.63795617959749,
+        0.9130798523784837,
+        0.911503412332346,
+        0.910038441054016
+      ],
+      "adam_log_likelihood": -4.434005959447987,
+      "adam_log_prior_theta_density": -5.963673210284089,
+      "adam_log_posterior": -10.397679169732076,
+      "adam_gradient_inf_norm": 2.842170943040401e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 21,
+      "theta_initial": [
+        1.2527550771633797,
+        0.738714672921245,
+        1.4034786388433578,
+        0.9915662167474234,
+        0.9879977442642319,
+        0.9598306501170746
+      ],
+      "initial_log_likelihood": -93.37312522722577,
+      "initial_log_prior_theta_density": -1.6403727682519638,
+      "initial_log_posterior": -95.01349799547774,
+      "adam_theta": [
+        2.1885176778340947,
+        1.0493874131730088,
+        1.63795617959749,
+        0.913079852378484,
+        0.9115034123323462,
+        0.9100384410540161
+      ],
+      "adam_log_likelihood": -4.4340059594479975,
+      "adam_log_prior_theta_density": -5.963673210284089,
+      "adam_log_posterior": -10.397679169732086,
+      "adam_gradient_inf_norm": 1.9539925233402755e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 22,
+      "theta_initial": [
+        1.163766561814451,
+        0.783131734387913,
+        0.8406890760158111,
+        0.9344077653252094,
+        1.71834546008475,
+        1.0930101436898623
+      ],
+      "initial_log_likelihood": -196.62015895943637,
+      "initial_log_prior_theta_density": -2.6208949649872713,
+      "initial_log_posterior": -199.24105392442362,
+      "adam_theta": [
+        2.188517677834095,
+        1.0493874131730085,
+        1.6379561795974895,
+        0.9130798523784835,
+        0.911503412332346,
+        0.9100384410540159
+      ],
+      "adam_log_likelihood": -4.434005959447995,
+      "adam_log_prior_theta_density": -5.963673210284088,
+      "adam_log_posterior": -10.397679169732083,
+      "adam_gradient_inf_norm": 7.638334409421077e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 23,
+      "theta_initial": [
+        0.9898364779441875,
+        1.1322303280385733,
+        0.7889666267000184,
+        0.7611812337839177,
+        1.5656352978159696,
+        1.0350769431568803
+      ],
+      "initial_log_likelihood": -210.37814511165013,
+      "initial_log_prior_theta_density": -2.021997222145256,
+      "initial_log_posterior": -212.40014233379537,
+      "adam_theta": [
+        2.1885176778340947,
+        1.0493874131730085,
+        1.6379561795974897,
+        0.9130798523784839,
+        0.911503412332346,
+        0.910038441054016
+      ],
+      "adam_log_likelihood": -4.4340059594479975,
+      "adam_log_prior_theta_density": -5.963673210284088,
+      "adam_log_posterior": -10.397679169732086,
+      "adam_gradient_inf_norm": 7.815970093361102e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 24,
+      "theta_initial": [
+        0.9294102157105074,
+        0.9155092617124423,
+        1.0460079981968957,
+        1.2054614571652165,
+        1.24815472092614,
+        0.7644141887569095
+      ],
+      "initial_log_likelihood": -184.2496468910208,
+      "initial_log_prior_theta_density": -0.9755988517132572,
+      "initial_log_posterior": -185.22524574273405,
+      "adam_theta": [
+        2.1885176778340947,
+        1.0493874131730088,
+        1.6379561795974902,
+        0.9130798523784838,
+        0.911503412332346,
+        0.9100384410540159
+      ],
+      "adam_log_likelihood": -4.434005959447991,
+      "adam_log_prior_theta_density": -5.96367321028409,
+      "adam_log_posterior": -10.397679169732081,
+      "adam_gradient_inf_norm": 9.059419880941277e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 25,
+      "theta_initial": [
+        2.3038620396066958,
+        1.1251929069161482,
+        0.9680029437648235,
+        1.2102773824216624,
+        0.6679266425420419,
+        1.2402080861128468
+      ],
+      "initial_log_likelihood": -24.402068207300168,
+      "initial_log_prior_theta_density": -6.240067889538617,
+      "initial_log_posterior": -30.642136096838783,
+      "adam_theta": [
+        2.1885176778340947,
+        1.0493874131730088,
+        1.63795617959749,
+        0.9130798523784837,
+        0.911503412332346,
+        0.9100384410540159
+      ],
+      "adam_log_likelihood": -4.434005959447987,
+      "adam_log_prior_theta_density": -5.963673210284089,
+      "adam_log_posterior": -10.397679169732076,
+      "adam_gradient_inf_norm": 2.842170943040401e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 26,
+      "theta_initial": [
+        1.057287715524755,
+        0.9611462620527619,
+        0.7809303370198486,
+        0.7527629339550945,
+        0.9127610038757343,
+        1.2496137588084268
+      ],
+      "initial_log_likelihood": -213.7516397283573,
+      "initial_log_prior_theta_density": -0.752257715968449,
+      "initial_log_posterior": -214.50389744432576,
+      "adam_theta": [
+        2.188517677834095,
+        1.0493874131730083,
+        1.6379561795974897,
+        0.9130798523784837,
+        0.9115034123323461,
+        0.9100384410540158
+      ],
+      "adam_log_likelihood": -4.434005959447995,
+      "adam_log_prior_theta_density": -5.963673210284088,
+      "adam_log_posterior": -10.397679169732083,
+      "adam_gradient_inf_norm": 3.730349362740526e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 27,
+      "theta_initial": [
+        1.0180058832732637,
+        1.6421866766912276,
+        1.1871366410527762,
+        0.6375292987722811,
+        0.7535760839960622,
+        0.8326180791614972
+      ],
+      "initial_log_likelihood": -88.58900343054985,
+      "initial_log_prior_theta_density": -3.058222688774306,
+      "initial_log_posterior": -91.64722611932416,
+      "adam_theta": [
+        2.1885176778340947,
+        1.0493874131730088,
+        1.6379561795974897,
+        0.9130798523784838,
+        0.9115034123323462,
+        0.910038441054016
+      ],
+      "adam_log_likelihood": -4.434005959447997,
+      "adam_log_prior_theta_density": -5.963673210284088,
+      "adam_log_posterior": -10.397679169732085,
+      "adam_gradient_inf_norm": 5.773159728050814e-15,
+      "adam_finite": true
+    },
+    {
+      "start_index": 28,
+      "theta_initial": [
+        1.4575914655901776,
+        2.40836241905275,
+        0.7774928554256438,
+        1.591851708764558,
+        0.7218828266958661,
+        0.6084436320659636
+      ],
+      "initial_log_likelihood": -80.21777764370366,
+      "initial_log_prior_theta_density": -9.240957373955696,
+      "initial_log_posterior": -89.45873501765935,
+      "adam_theta": [
+        2.1885176778340942,
+        1.0493874131730088,
+        1.63795617959749,
+        0.9130798523784837,
+        0.911503412332346,
+        0.9100384410540159
+      ],
+      "adam_log_likelihood": -4.4340059594479975,
+      "adam_log_prior_theta_density": -5.963673210284087,
+      "adam_log_posterior": -10.397679169732085,
+      "adam_gradient_inf_norm": 8.348877145181177e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 29,
+      "theta_initial": [
+        1.0226711662775785,
+        1.1747405383172755,
+        1.8898136981331402,
+        0.854571129588308,
+        1.3879613221100549,
+        0.8204063944482134
+      ],
+      "initial_log_likelihood": -47.593382862148474,
+      "initial_log_prior_theta_density": -4.142135399256835,
+      "initial_log_posterior": -51.73551826140531,
+      "adam_theta": [
+        2.1885176778340947,
+        1.0493874131730085,
+        1.63795617959749,
+        0.9130798523784837,
+        0.911503412332346,
+        0.910038441054016
+      ],
+      "adam_log_likelihood": -4.4340059594479975,
+      "adam_log_prior_theta_density": -5.963673210284089,
+      "adam_log_posterior": -10.397679169732086,
+      "adam_gradient_inf_norm": 3.552713678800501e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 30,
+      "theta_initial": [
+        0.7026193063450438,
+        1.274814446238278,
+        1.0089742792234095,
+        0.9524297194685606,
+        0.6013168033261269,
+        0.8649131077000324
+      ],
+      "initial_log_likelihood": -223.7185333088767,
+      "initial_log_prior_theta_density": -1.783761035224909,
+      "initial_log_posterior": -225.50229434410159,
+      "adam_theta": [
+        2.188517677834095,
+        1.0493874131730085,
+        1.63795617959749,
+        0.9130798523784838,
+        0.9115034123323461,
+        0.910038441054016
+      ],
+      "adam_log_likelihood": -4.434005959447987,
+      "adam_log_prior_theta_density": -5.963673210284091,
+      "adam_log_posterior": -10.397679169732077,
+      "adam_gradient_inf_norm": 5.3290705182007514e-14,
+      "adam_finite": true
+    },
+    {
+      "start_index": 31,
+      "theta_initial": [
+        1.8385146214193526,
+        1.090641123010646,
+        1.763925482311684,
+        1.5064710357605051,
+        1.4024232388413544,
+        1.146095001635729
+      ],
+      "initial_log_likelihood": -6.610026083088713,
+      "initial_log_prior_theta_density": -7.71063939394225,
+      "initial_log_posterior": -14.320665477030964,
+      "adam_theta": [
+        2.1885176778340947,
+        1.0493874131730083,
+        1.6379561795974893,
+        0.9130798523784838,
+        0.911503412332346,
+        0.9100384410540158
+      ],
+      "adam_log_likelihood": -4.434005959447995,
+      "adam_log_prior_theta_density": -5.963673210284086,
+      "adam_log_posterior": -10.397679169732081,
+      "adam_gradient_inf_norm": 9.947598300641403e-14,
+      "adam_finite": true
+    }
+  ],
+  "lbfgs_refinements": [
+    {
+      "rank_from_adam": 2,
+      "start_index": 15,
+      "theta": [
+        2.188517677834095,
+        1.0493874131730085,
+        1.6379561795974897,
+        0.9130798523784837,
+        0.911503412332346,
+        0.9100384410540158
+      ],
+      "z": [
+        0.7832244552191571,
+        0.048206577890374025,
+        0.4934492326905414,
+        -0.09093194067995981,
+        -0.09265994122550515,
+        -0.09426843744694731
+      ],
+      "log_likelihood": -4.434005959447987,
+      "log_prior_theta_density": -5.963673210284089,
+      "log_posterior": -10.397679169732076,
+      "gradient_inf_norm": 5.5067062021407764e-14,
+      "lbfgs_closure_calls": 1,
+      "finite": true
+    },
+    {
+      "rank_from_adam": 0,
+      "start_index": 3,
+      "theta": [
+        2.188517677834095,
+        1.0493874131730085,
+        1.6379561795974897,
+        0.9130798523784837,
+        0.9115034123323459,
+        0.910038441054016
+      ],
+      "z": [
+        0.7832244552191571,
+        0.04820657789037408,
+        0.49344923269054136,
+        -0.09093194067995979,
+        -0.09265994122550528,
+        -0.09426843744694716
+      ],
+      "log_likelihood": -4.434005959447997,
+      "log_prior_theta_density": -5.963673210284088,
+      "log_posterior": -10.397679169732085,
+      "gradient_inf_norm": 1.4210854715202004e-14,
+      "lbfgs_closure_calls": 1,
+      "finite": true
+    },
+    {
+      "rank_from_adam": 1,
+      "start_index": 5,
+      "theta": [
+        2.1885176778340947,
+        1.0493874131730088,
+        1.63795617959749,
+        0.9130798523784837,
+        0.911503412332346,
+        0.9100384410540159
+      ],
+      "z": [
+        0.783224455219157,
+        0.0482065778903743,
+        0.4934492326905416,
+        -0.0909319406799598,
+        -0.09265994122550518,
+        -0.09426843744694721
+      ],
+      "log_likelihood": -4.4340059594479975,
+      "log_prior_theta_density": -5.963673210284089,
+      "log_posterior": -10.397679169732086,
+      "gradient_inf_norm": 2.842170943040401e-14,
+      "lbfgs_closure_calls": 1,
+      "finite": true
+    },
+    {
+      "rank_from_adam": 3,
+      "start_index": 20,
+      "theta": [
+        2.1885176778340947,
+        1.0493874131730088,
+        1.63795617959749,
+        0.9130798523784837,
+        0.911503412332346,
+        0.910038441054016
+      ],
+      "z": [
+        0.783224455219157,
+        0.04820657789037424,
+        0.49344923269054153,
+        -0.09093194067995987,
+        -0.09265994122550517,
+        -0.09426843744694717
+      ],
+      "log_likelihood": -4.4340059594479975,
+      "log_prior_theta_density": -5.963673210284089,
+      "log_posterior": -10.397679169732086,
+      "gradient_inf_norm": 2.842170943040401e-14,
+      "lbfgs_closure_calls": 1,
+      "finite": true
+    }
+  ],
+  "replication_comparisons": [
+    {
+      "start_index": 3,
+      "log_posterior_abs_difference": 8.881784197001252e-15,
+      "max_relative_theta_difference": 2.4399475330718667e-16
+    },
+    {
+      "start_index": 5,
+      "log_posterior_abs_difference": 1.0658141036401503e-14,
+      "max_relative_theta_difference": 2.115944999317651e-16
+    },
+    {
+      "start_index": 20,
+      "log_posterior_abs_difference": 1.0658141036401503e-14,
+      "max_relative_theta_difference": 2.4399475330718667e-16
+    }
+  ],
+  "replicated_candidates_excluding_best": 3,
+  "theta_MAP": [
+    2.188517677834095,
+    1.0493874131730085,
+    1.6379561795974897,
+    0.9130798523784837,
+    0.911503412332346,
+    0.9100384410540158
+  ],
+  "theta_MAP_distance_from_one": {
+    "l2": 1.3584849334350575,
+    "max_abs": 1.1885176778340951,
+    "mean_abs": 0.3568732608066247
+  },
+  "padding": {
+    "y_nominalpad": [
+      0.9100000262260437,
+      1.0800000429153442,
+      1.4700000286102295,
+      2.549999952316284,
+      3.1600000858306885,
+      3.809999942779541,
+      3.532956600189209,
+      3.776052474975586,
+      4.098957061767578,
+      4.4089674949646,
+      4.687896728515625,
+      4.9089555740356445,
+      5.108885765075684,
+      5.365133285522461,
+      5.736907482147217,
+      5.91510009765625,
+      6.055235862731934,
+      6.4244513511657715,
+      6.50632905960083,
+      6.767306327819824
+    ],
+    "y_MAPpad": [
+      0.9100000262260437,
+      1.0800000429153442,
+      1.4700000286102295,
+      2.549999952316284,
+      3.1600000858306885,
+      3.809999942779541,
+      4.688421249389648,
+      4.800662040710449,
+      5.120466232299805,
+      5.526819705963135,
+      6.036895751953125,
+      6.552423000335693,
+      6.728074550628662,
+      6.976852893829346,
+      7.519908905029297,
+      7.7283616065979,
+      8.091191291809082,
+      8.183960914611816,
+      8.369668006896973,
+      8.583288192749023
+    ],
+    "higher_mode_difference": [
+      1.1554646492004395,
+      1.0246095657348633,
+      1.0215091705322266,
+      1.1178522109985352,
+      1.3489990234375,
+      1.6434674263000488,
+      1.6191887855529785,
+      1.6117196083068848,
+      1.78300142288208,
+      1.8132615089416504,
+      2.0359554290771484,
+      1.759509563446045,
+      1.8633389472961426,
+      1.8159818649291992
+    ],
+    "higher_mode_l2_difference": 5.907284975992542,
+    "higher_mode_max_abs_difference": 2.0359554290771484,
+    "higher_mode_mean_abs_difference": 1.5438470840454102,
+    "higher_mode_relative_l2_difference": 0.2961392668967589
+  }
+}

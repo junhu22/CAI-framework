@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-09-18T12:56:22.631077+00:00",
+  "pid": 21988,
+  "config": "N50000_L8",
+  "training_seed": 202,
+  "manual_recovery_authorized_by_user": true,
+  "authorized_training_calls": 1,
+  "automatic_retry": false,
+  "seed_replacement": false,
+  "source_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\ablation_multiseed\\recovery_control\\run_seed202_recovery.py",
+  "source_sha256": "086439a145e723629d11075edd912947b5a6e6c5d17dfbd71a60893fed56a105"
+}

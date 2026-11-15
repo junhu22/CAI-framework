@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-09-18T08:45:04.956291+00:00",
+  "files": {
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\ablation_multiseed\\phase_b_control\\common.py": "2ebdec717a8806950cd3ab5184578bc21f94761a1dc814e8cac6bb96b545a2ba",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\ablation_multiseed\\phase_b_control\\run_phase_b_frozen.py": "f625327ede59ae95fe0cc2ea511c47db24642b925b139213dae8052ebec98cc4",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\ablation_multiseed\\phase_b_control\\run_phase_b_io_fixed.py": "cca7aafee5194d1731a212e55e8666443865aa3e823ad116c1f569f963a4ff78",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\ablation_multiseed\\phase_b_control\\takeover_after_run.py": "a37ea2cd6aa73b3bc653a1036884d432356690f2f6d6a715e085ef22e1389400"
+  },
+  "training_source": "Unchanged train function extracted by AST from frozen run_ablation_multiseed.py",
+  "evaluation_source": "Unchanged evaluate function extracted by AST from frozen run_ablation_multiseed.py",
+  "progress_hook": "Returns None, changes no model output, RNG, optimizer, scheduler, gradient or stopping decision; records each validation epoch. Hook and disk logging time are included in training wall time.",
+  "phase_a_top_level_runner_executed": false,
+  "negative_proposals_filtered": 0,
+  "command": "python -B -u ablation_multiseed/phase_b_control/run_phase_b_frozen.py",
+  "io_fix": "Epoch progress changed from atomic replacement to append-only JSONL; critical outputs use unique temporary files and bounded rename retries. No seed is retrained.",
+  "controller_switch_evidence": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\ablation_multiseed\\phase_b_control\\CONTROLLER_SWITCH_EVIDENCE.json"
+}

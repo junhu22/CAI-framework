@@ -1,0 +1,65 @@
+{
+  "observations": [
+    {
+      "id": "ablation_obs1",
+      "observation_seed": 42,
+      "source_recipe": "ablation_study.py:main, fixed test_thetas",
+      "max_abs_observation_difference_hz": 4.76837158203125e-07,
+      "atol_hz": 1e-06,
+      "status": "RECIPE_REPRODUCED",
+      "limitation": "Reproducing observations supports the source recipe but does not recover the reference chain or prove convergence."
+    },
+    {
+      "id": "ablation_obs2",
+      "observation_seed": 43,
+      "source_recipe": "ablation_study.py:main, fixed test_thetas",
+      "max_abs_observation_difference_hz": 0.0,
+      "atol_hz": 1e-06,
+      "status": "RECIPE_REPRODUCED",
+      "limitation": "Reproducing observations supports the source recipe but does not recover the reference chain or prove convergence."
+    },
+    {
+      "id": "ablation_obs3",
+      "observation_seed": 44,
+      "source_recipe": "ablation_study.py:main, fixed test_thetas",
+      "max_abs_observation_difference_hz": 4.76837158203125e-07,
+      "atol_hz": 1e-06,
+      "status": "RECIPE_REPRODUCED",
+      "limitation": "Reproducing observations supports the source recipe but does not recover the reference chain or prove convergence."
+    },
+    {
+      "id": "ablation_obs4",
+      "observation_seed": 45,
+      "source_recipe": "ablation_study.py:main, fixed test_thetas",
+      "max_abs_observation_difference_hz": 0.0,
+      "atol_hz": 1e-06,
+      "status": "RECIPE_REPRODUCED",
+      "limitation": "Reproducing observations supports the source recipe but does not recover the reference chain or prove convergence."
+    },
+    {
+      "id": "ablation_obs5",
+      "observation_seed": 46,
+      "source_recipe": "ablation_study.py:main, fixed test_thetas",
+      "max_abs_observation_difference_hz": 4.76837158203125e-07,
+      "atol_hz": 1e-06,
+      "status": "RECIPE_REPRODUCED",
+      "limitation": "Reproducing observations supports the source recipe but does not recover the reference chain or prove convergence."
+    }
+  ],
+  "training_batch_check": {
+    "N": 2000,
+    "generation_seed": 42,
+    "theta_max_abs_difference": 0.0,
+    "observation_max_abs_difference_hz": 9.5367431640625e-07,
+    "status": "RECIPE_REPRODUCED",
+    "atol_y_hz": 2e-06
+  },
+  "training_out_of_surrogate_domain": {
+    "prefix_5000": 0.10999999940395355,
+    "prefix_10000": 0.11890000104904175,
+    "prefix_25000": 0.11648000031709671,
+    "prefix_50000": 0.11646000295877457,
+    "prefix_100000": 0.11738000065088272
+  },
+  "validation_out_of_surrogate_domain_fraction": 0.11599999666213989
+}

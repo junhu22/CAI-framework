@@ -1,0 +1,66 @@
+{
+  "created_utc_before_sampling": "2026-09-19T13:41:34.637773+00:00",
+  "case": "sailboat_boundary_e1_075",
+  "scientific_target": {
+    "observation": [
+      0.6489209532737732,
+      0.7836908102035522,
+      1.1370563507080078,
+      1.91010320186615,
+      2.2462711334228516,
+      2.5129308700561523,
+      3.4019975662231445,
+      3.568819999694824,
+      3.762984275817871,
+      4.163909912109375,
+      4.237831115722656,
+      4.6024580001831055,
+      4.766416549682617,
+      5.0692644119262695,
+      5.50869607925415,
+      5.5515594482421875,
+      5.697169303894043,
+      5.875096321105957,
+      6.176621437072754,
+      6.4200239181518555
+    ],
+    "observation_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\run_20260917_094722_21d144f3db844a6b8a2e8167c5282dbe\\routing_arrays\\sailboat_boundary_e1_075_seed42_N8000.npz",
+    "surrogate_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models_broad_ext\\member_0.pt",
+    "surrogate_sha256": "4821100192a768327212ed724090732e63483650f4e80421f89a8df3f984f447",
+    "likelihood": "relative-error Gaussian potential, kappa_sq=0.001, K=20",
+    "prior": "independent untruncated LogNormal(log_mean=0, log_sigma=0.55)",
+    "parameterization": "z=log(theta); LogNormal Jacobian cancels in z target"
+  },
+  "sampler": {
+    "implementation": "Pyro NUTS",
+    "target_accept_prob": 0.95,
+    "warmup_steps": 500,
+    "retained_per_chain": 600,
+    "seeds_predeclared": [
+      711,
+      712,
+      713,
+      714
+    ],
+    "theta_init_all_chains": [
+      1.2214027581601699,
+      1.1274968515793757,
+      1.0408107741923882,
+      0.9607894391523232,
+      0.8869204367171575,
+      0.8187307530779818
+    ],
+    "automatic_retries": 0,
+    "drop_or_replace_chain": false
+  },
+  "environment": {
+    "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.6.0+cu124",
+    "pyro": "1.9.1",
+    "device": "cpu",
+    "torch_threads": 6
+  },
+  "routing_samples_unchanged": true,
+  "new_fast_or_routing_draws": 0
+}

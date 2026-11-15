@@ -1,0 +1,161 @@
+{
+  "manifest": {
+    "target": "ablation_obs4",
+    "historical_chain_index": 1,
+    "seed": 702,
+    "surrogate_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+    "surrogate_sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+    "reference_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\REFERENCE_ablation_obs4.npz",
+    "reference_sha256": "a8861a0222abb6efae6dbe1b03f6f2e9b84c3f93ff1432894396256fc5c4385a",
+    "runner_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\run_reference_nuts.py",
+    "runner_sha256": "079046a50afd640a20b5fb1e10ef2978738ca6ecf8c2768419ca51a56f525bdc",
+    "library_sha256": "1b5fe93fb06181420749a4a9f985846fefac93615828d51ed9f2cbab64567b12",
+    "K": 20,
+    "observation": [
+      0.6222923398017883,
+      0.7873743772506714,
+      1.15683114528656,
+      1.961527705192566,
+      2.1550257205963135,
+      2.4485976696014404,
+      3.1156678199768066,
+      3.296816349029541,
+      3.7275309562683105,
+      3.9166250228881836,
+      4.075758457183838,
+      4.6837029457092285,
+      4.72285270690918,
+      4.852419376373291,
+      5.17813777923584,
+      4.950986862182617,
+      5.223950386047363,
+      5.231000900268555,
+      6.150445938110352,
+      6.308088779449463
+    ],
+    "observation_dtype": "float64",
+    "sigma_log": 0.3,
+    "kappa_sq": 0.001,
+    "prior": "independent untruncated lognormal",
+    "prior_log_mean": 0.0,
+    "parameterization": "log-theta",
+    "sampler": "Pyro NUTS",
+    "target_accept_prob": 0.8,
+    "num_samples": 600,
+    "warmup_steps": 500,
+    "CPU": true,
+    "torch_threads": 6,
+    "environment": {
+      "python": "C:\\Users\\junhu\\miniconda3\\python.exe",
+      "torch_version": "2.6.0+cu124",
+      "pyro_version": "1.9.1",
+      "numpy_version": "2.4.4"
+    },
+    "init_rule": "np.ones(6)",
+    "rebuilt_init": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "init_dtype": "float64",
+    "init_log_float32": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "init_inputs": [],
+    "reconstructed_fast_exactly_matches_saved_reference_fast": true,
+    "reconstructed_init_fast_exactly_matches_historical_logged_init": true,
+    "RNG_rule": "Original run_chain torch.manual_seed(702); no other RNG reset",
+    "diagnostic_chain_key": "chain 0",
+    "exact_rule": "np.array_equal == True OR max_abs_difference == 0"
+  },
+  "attempt": {
+    "started_utc": "2026-09-18T14:24:33.322228+00:00",
+    "target": "ablation_obs4",
+    "historical_chain_index": 1,
+    "seed": 702,
+    "call_number": 10,
+    "pid": 36944
+  },
+  "status": "COMPLETED",
+  "exact_reproduction_pass": true,
+  "classification": "EXACT_HISTORICAL_CHAIN_REPRODUCTION",
+  "recovered_historical_divergence_count": 0,
+  "recovered_historical_acceptance_rate": 1.0,
+  "replay_diagnostics_attributed_to_historical_chain": true,
+  "comparison": {
+    "shape_identical": true,
+    "original_shape": [
+      600,
+      6
+    ],
+    "replay_shape": [
+      600,
+      6
+    ],
+    "original_dtype": "float32",
+    "replay_dtype": "float32",
+    "dtype_identical": true,
+    "np_array_equal": true,
+    "max_abs_difference": 0.0,
+    "mean_abs_difference": 0.0,
+    "number_of_different_elements": 0,
+    "total_elements": 3600,
+    "allclose_atol0_rtol0": true,
+    "allclose_atol1e_minus8_rtol1e_minus7": true,
+    "exact_reproduction_pass": true,
+    "classification": "EXACT_HISTORICAL_CHAIN_REPRODUCTION"
+  },
+  "runtime_s": 21.703182458877563,
+  "replay_theta_all_finite": true,
+  "raw_mc_diagnostics": {
+    "z": {
+      "n_eff": [
+        255.13674926757812,
+        370.1618957519531,
+        339.7990417480469,
+        549.5249633789062,
+        686.3607177734375,
+        775.5112915039062
+      ],
+      "r_hat": [
+        1.0113919973373413,
+        1.0134861469268799,
+        0.9997419714927673,
+        1.0009961128234863,
+        1.006258249282837,
+        1.0003694295883179
+      ]
+    },
+    "divergences": {
+      "chain 0": []
+    },
+    "acceptance rate": {
+      "chain 0": 1.0
+    }
+  },
+  "raw_diagnostics_serialized_sha256": "de67be578ca1910251808f6444e0fcfacea1b0c5517948c5772a103fa6c6b3b9",
+  "replay_divergence_count": 0,
+  "replay_divergence_indices": [],
+  "replay_acceptance_rate": 1.0,
+  "recovered_historical_divergence_indices": [],
+  "artifact_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\reference_quality_4chain\\historical_divergence_recovery\\RECOVER_ablation_obs4_seed702.npz",
+  "artifact_sha256": "61777ca136199845f8e70667d98897aa496fd30a621af63c21f43d513af80d39",
+  "finished_utc": "2026-09-18T14:24:55.050189+00:00",
+  "preservation_after": {
+    "checked_utc": "2026-09-18T14:24:55.405084+00:00",
+    "protected_files": 534,
+    "all_sha256_unchanged": true,
+    "changed_files": [],
+    "git_tracked_unchanged": true
+  },
+  "log_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\reference_quality_4chain\\historical_divergence_recovery\\RECOVER_ablation_obs4_seed702.log",
+  "log_sha256": "5f2bbc28aca4c270dacd655f555314f65c01bb7cbde80f52d08abeb2a0f25d10"
+}

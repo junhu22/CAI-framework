@@ -1,0 +1,12 @@
+{
+  "n_fe_points": 50,
+  "rho_max": 0.11355311695538062,
+  "rho_per_point_max_median": 0.08314408362204725,
+  "delta_post": 0.009425324496418655,
+  "bound_standard": 56.8184572041003,
+  "bound_residual_aware": 6.688160074893817,
+  "tightening_factor": 8.495379382049608,
+  "measured_dll_max": 0.2883409616634163,
+  "residual_aware_holds": true,
+  "note": "Case B row of Table A.1; A and C rho/bounds come from task1_retrain/appendixA_numbers.json"
+}

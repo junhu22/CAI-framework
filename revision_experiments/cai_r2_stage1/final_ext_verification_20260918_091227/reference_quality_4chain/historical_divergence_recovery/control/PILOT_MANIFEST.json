@@ -1,0 +1,141 @@
+{
+  "created_utc": "2026-09-18T14:01:29.213188+00:00",
+  "target": "ablation_obs1",
+  "historical_chain_index": 0,
+  "seed": 701,
+  "authorized_scientific_chain_calls": 1,
+  "pilot_only": true,
+  "other_target_calls": 0,
+  "other_seed_calls": 0,
+  "surrogate_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+  "surrogate_sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+  "K": 20,
+  "observation": [
+    0.7696980834007263,
+    0.9178454279899597,
+    1.3419350385665894,
+    2.0014193058013916,
+    2.3845598697662354,
+    2.927281141281128,
+    3.922089099884033,
+    4.226160526275635,
+    4.203915119171143,
+    4.3833327293396,
+    4.550574779510498,
+    5.184450626373291,
+    5.203165054321289,
+    5.670333385467529,
+    5.772945404052734,
+    6.393089294433594,
+    6.60704231262207,
+    6.947646617889404,
+    7.298630237579346,
+    7.233098030090332
+  ],
+  "observation_dtype": "float64",
+  "sigma_log": 0.3,
+  "kappa_sq": 0.001,
+  "prior": "independent untruncated lognormal(0,0.30)",
+  "parameterization": "log-theta",
+  "sampler": "Pyro NUTS",
+  "target_accept_prob": 0.8,
+  "num_samples": 600,
+  "warmup_steps": 500,
+  "CPU": true,
+  "torch_threads": 6,
+  "environment": {
+    "python": "C:\\Users\\junhu\\miniconda3\\python.exe",
+    "torch_version": "2.6.0+cu124",
+    "pyro_version": "1.9.1",
+    "numpy_version": "2.4.4",
+    "torch_matches_original_manifest": true,
+    "pyro_matches_frozen_environment_snapshot": true,
+    "original_reference_runner_did_not_record_pyro_version": true
+  },
+  "init_rule": "clip(nanmean(concatenate(seed42..46 theta, axis=0), axis=0),0.15,5.0)",
+  "rebuilt_init": [
+    0.7243513464927673,
+    1.3224684000015259,
+    1.7299937009811401,
+    1.051373839378357,
+    1.0748653411865234,
+    1.057140588760376
+  ],
+  "init_dtype": "float32",
+  "init_log_float32": [
+    -0.322478711605072,
+    0.27949997782707214,
+    0.5481177568435669,
+    0.05009772628545761,
+    0.0721953883767128,
+    0.055567704141139984
+  ],
+  "inputs": [
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\run_20260917_094722_21d144f3db844a6b8a2e8167c5282dbe\\routing_arrays\\ablation_obs1_seed42_N8000.npz",
+      "sha256": "3ce97605ba13d8cd879d57576e0709e456c2e5f71be7246f28fa97bad6da9caf",
+      "fast_seed": 42,
+      "theta_shape": [
+        8000,
+        6
+      ],
+      "theta_dtype": "float32",
+      "observation_exact_match": true
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\run_20260917_094722_21d144f3db844a6b8a2e8167c5282dbe\\routing_arrays\\ablation_obs1_seed43_N8000.npz",
+      "sha256": "facf4deee7c7c40880eff49542483109b76c9e1699786725a9f9b0133896dc2f",
+      "fast_seed": 43,
+      "theta_shape": [
+        8000,
+        6
+      ],
+      "theta_dtype": "float32",
+      "observation_exact_match": true
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\run_20260917_094722_21d144f3db844a6b8a2e8167c5282dbe\\routing_arrays\\ablation_obs1_seed44_N8000.npz",
+      "sha256": "d9e9418fd154a6c2ece05637d016cd1ae61aa4aa917c269f31a624b5992c9368",
+      "fast_seed": 44,
+      "theta_shape": [
+        8000,
+        6
+      ],
+      "theta_dtype": "float32",
+      "observation_exact_match": true
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\run_20260917_094722_21d144f3db844a6b8a2e8167c5282dbe\\routing_arrays\\ablation_obs1_seed45_N8000.npz",
+      "sha256": "4cba90a3bebec315f4d9ab7bd7afe3420fc101164c982f433c2a4aa1da6d9961",
+      "fast_seed": 45,
+      "theta_shape": [
+        8000,
+        6
+      ],
+      "theta_dtype": "float32",
+      "observation_exact_match": true
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\run_20260917_094722_21d144f3db844a6b8a2e8167c5282dbe\\routing_arrays\\ablation_obs1_seed46_N8000.npz",
+      "sha256": "583f12c34d3c231670e52f2d05b260a3a5a71488d210817ef55c05198657b005",
+      "fast_seed": 46,
+      "theta_shape": [
+        8000,
+        6
+      ],
+      "theta_dtype": "float32",
+      "observation_exact_match": true
+    }
+  ],
+  "reconstructed_fast_exactly_matches_saved_reference_fast": true,
+  "reconstructed_init_exactly_matches_original_logged_init": true,
+  "runner_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\run_reference_nuts.py",
+  "runner_sha256": "079046a50afd640a20b5fb1e10ef2978738ca6ecf8c2768419ca51a56f525bdc",
+  "library_sha256": "1b5fe93fb06181420749a4a9f985846fefac93615828d51ed9f2cbab64567b12",
+  "reference_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\REFERENCE_ablation_obs1.npz",
+  "reference_sha256": "3d7243ba20bdf1b7ca2fa80cfe069a6e4dd558bff7d5124e43ccfaa15198a067",
+  "original_log_sha256": "1dd9c2d7242567a331aa13230163e6966e62f469b1264093890541ad856e464f",
+  "RNG_rule": "Original run_chain() torch.manual_seed(701); no added Python/NumPy/Pyro RNG reset",
+  "acceptance_and_divergence_chain_key": "chain 0",
+  "exact_rule": "np.array_equal == True OR max_abs_difference == 0"
+}

@@ -1,0 +1,39 @@
+{
+  "created_utc_before_map_or_sampling": "2026-09-19T13:52:57.404623+00:00",
+  "target": "coupled field, first six Hu et al. measured modes",
+  "observation_decimal": [
+    2.06,
+    2.3,
+    2.62,
+    6.14,
+    6.53,
+    6.76
+  ],
+  "likelihood": "relative-error Gaussian potential, kappa_sq=0.0009",
+  "theta_prior": "independent Uniform(0.5,4.0)^3",
+  "nuts_transform": "theta=0.5+3.5*sigmoid(z), with sum log|dtheta/dz| included",
+  "surrogate_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models_coupled\\member_0.pt",
+  "surrogate_sha256": "6a1e4f530d4e3628e0b7fdbf08661b4dc32a71a0c2b538b26f5af9d7c07b9986",
+  "map": {
+    "objective": "box-constrained maximum likelihood; Uniform prior constant in box",
+    "starts": "27-point interior grid plus 5 PCG64 Uniform-box draws",
+    "start_seed": 20260919,
+    "optimizer": "SciPy L-BFGS-B with explicit [0.5,4.0]^3 bounds and analytic autograd gradient"
+  },
+  "nuts": {
+    "seeds_predeclared": [
+      811,
+      812,
+      813,
+      814
+    ],
+    "warmup_steps": 500,
+    "retained_per_chain": 600,
+    "target_accept_prob": 0.9,
+    "initialization_rule_predeclared": "all chains initialize at the accepted Uniform-target theta_MAP",
+    "drop_or_replace_chain": false,
+    "automatic_retries": 0
+  },
+  "new_fe_calls": 0,
+  "surrogate_training_calls": 0
+}

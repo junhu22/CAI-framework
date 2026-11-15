@@ -1,0 +1,107 @@
+{
+  "schema": "bounded-uniform-case-c-selection-v1",
+  "reference_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_presubmit_phaseB_20260919_213647\\COUPLED_UNIFORM\\COUPLED_UNIFORM_NUTS_REFERENCE_2000.npz",
+  "reference_sha256": "c3174b9f49aed3cf0cd2ef68afddd7290ad10f47f5c20744ea60491cc1819d60",
+  "reference_shape": [
+    4,
+    2000,
+    3
+  ],
+  "chain_order": [
+    811,
+    812,
+    813,
+    814
+  ],
+  "counts": [
+    13,
+    13,
+    12,
+    12
+  ],
+  "total": 50,
+  "generator": "numpy.random.Generator(numpy.random.PCG64(20260920))",
+  "replacement": false,
+  "index_base": 0,
+  "within_chain_order": "generator-return order; not sorted",
+  "selections": [
+    {
+      "chain_position": 0,
+      "chain_seed": 811,
+      "count": 13,
+      "retained_indices_zero_based_generator_order": [
+        1778,
+        1890,
+        1036,
+        422,
+        87,
+        1835,
+        184,
+        937,
+        621,
+        1561,
+        1970,
+        1611,
+        743
+      ]
+    },
+    {
+      "chain_position": 1,
+      "chain_seed": 812,
+      "count": 13,
+      "retained_indices_zero_based_generator_order": [
+        1427,
+        1026,
+        628,
+        259,
+        831,
+        212,
+        1837,
+        1377,
+        1952,
+        707,
+        28,
+        1827,
+        1577
+      ]
+    },
+    {
+      "chain_position": 2,
+      "chain_seed": 813,
+      "count": 12,
+      "retained_indices_zero_based_generator_order": [
+        1859,
+        1982,
+        647,
+        163,
+        271,
+        459,
+        416,
+        841,
+        571,
+        121,
+        1938,
+        192
+      ]
+    },
+    {
+      "chain_position": 3,
+      "chain_seed": 814,
+      "count": 12,
+      "retained_indices_zero_based_generator_order": [
+        1112,
+        678,
+        910,
+        1848,
+        1693,
+        681,
+        762,
+        1434,
+        1489,
+        1361,
+        1551,
+        460
+      ]
+    }
+  ]
+}

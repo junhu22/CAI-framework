@@ -1,0 +1,24 @@
+{
+  "checkpoint": "C:\\nf-pmcmc\\experiments\\results\\ablation_checkpoint.pt",
+  "checkpoint_sha256": "35e3853b4e57d76fd9f61751edd07de707a745e50ac3a88bb6989330626e75c2",
+  "configs": [
+    "N5000_L8",
+    "N10000_L8",
+    "N25000_L8"
+  ],
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "fast_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "reference_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\REFERENCE_GAP_SUMMARY.csv",
+  "metric": "MAE vs matched NUTS reference; all6 plus active e1-e3",
+  "train_rule": "same frozen nested bank, same validation, min validation loss, patience30, no test selection"
+}

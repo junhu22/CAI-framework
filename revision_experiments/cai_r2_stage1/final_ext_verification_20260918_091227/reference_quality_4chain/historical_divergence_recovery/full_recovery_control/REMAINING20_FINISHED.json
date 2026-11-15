@@ -1,0 +1,21 @@
+{
+  "exact_reproduced_chains": 21,
+  "expected_historical_chains": 21,
+  "all_21_exact_reproduced": true,
+  "remaining_chain_calls": 20,
+  "authorized_remaining_chain_calls": 20,
+  "historical_divergences_total": 1,
+  "exact_reproduced_subset_divergences": 1,
+  "min_acceptance_rate": 0.9966666666666667,
+  "max_acceptance_rate": 1.0,
+  "any_exact_replay_failure": false,
+  "failure_position": null,
+  "mcmc_stopped": true,
+  "eligible_for_four_chain_quality_recovery": true,
+  "automatic_retries": 0,
+  "pilot_chain_reruns": 0,
+  "flow_training_calls": 0,
+  "flow_resampling_calls": 0,
+  "new_seed_calls": 0,
+  "fifth_chain_calls": 0
+}

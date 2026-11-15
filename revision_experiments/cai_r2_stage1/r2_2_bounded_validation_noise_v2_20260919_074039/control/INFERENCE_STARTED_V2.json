@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-09-18T23:46:39.618820+00:00",
+  "allowed_new_grid_inferences": 108,
+  "allowed_new_FE_inferences": 216,
+  "e1_e3_and_NN_pair_samples_reused": true,
+  "standardized_epsilon_and_latent_states_frozen": true,
+  "relative_noise_rule": "y_source=f_source+kappa*abs(f_source)*epsilon",
+  "new_seed_designs": 0,
+  "controller_sha256": "0a1ea9ea954410a3e406189afa47a3a14d9f34e88f2a2f5dfc89eaff9ae87794"
+}

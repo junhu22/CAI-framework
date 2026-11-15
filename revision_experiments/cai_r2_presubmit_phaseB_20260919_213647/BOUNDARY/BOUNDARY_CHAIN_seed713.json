@@ -1,0 +1,49 @@
+{
+  "chain_index": 2,
+  "seed": 713,
+  "started_utc": "2026-09-19T13:43:17.526926+00:00",
+  "finished_utc": "2026-09-19T13:44:00.464081+00:00",
+  "runtime_s": 42.92837142944336,
+  "acceptance_rate": 1.0,
+  "divergence_count": 0,
+  "divergence_indices": [],
+  "adapted_step_size": 0.18583722274679362,
+  "inverse_mass_matrix": {
+    "('z',)": [
+      0.007161154877394438,
+      0.023936666548252106,
+      0.005953882355242968,
+      0.29056358337402344,
+      0.3239991068840027,
+      0.2563125193119049
+    ]
+  },
+  "raw_diagnostics": {
+    "z": {
+      "n_eff": [
+        172.22283935546875,
+        190.9329376220703,
+        280.8114929199219,
+        398.2231140136719,
+        543.0865478515625,
+        352.85333251953125
+      ],
+      "r_hat": [
+        1.0035203695297241,
+        1.0051531791687012,
+        0.9983402490615845,
+        0.9995337128639221,
+        0.9998005032539368,
+        0.9983401298522949
+      ]
+    },
+    "divergences": {
+      "chain 0": []
+    },
+    "acceptance rate": {
+      "chain 0": 1.0
+    }
+  },
+  "artifact_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_presubmit_phaseB_20260919_213647\\BOUNDARY\\BOUNDARY_CHAIN_seed713.npz",
+  "artifact_sha256": "35f4e43ccd45bddd6d3396ccc4675417298ea3818703943dd7c0021122e67c85"
+}

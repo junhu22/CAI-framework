@@ -1,0 +1,49 @@
+{
+  "created_utc": "2026-09-18T14:44:02.445174+00:00",
+  "verification_pass": true,
+  "summary": {
+    "r2_1_formal_reference_targets_PASS": "6/6",
+    "r2_3_formal_reference_targets_PASS": "5/5",
+    "boundary": "EXCLUDED_BY_PRESPECIFIED_REFERENCE_QUALITY_GATE",
+    "five_FAST_cases_max_active_MAE": 0.030170147981908608,
+    "field_active_MAE": 1.8567809438539875,
+    "high_ESS_field_scale_large_gap_missed_escalation": false,
+    "r2_1_main_conclusion_changed": false,
+    "r2_3_data_size_main_conclusion_changed": false,
+    "r2_3_depth_main_conclusion_changed": false,
+    "flow_checkpoints_successfully_reevaluated": "24/24",
+    "all_work_stopped": true,
+    "awaiting_review": true
+  },
+  "protected_files_checked": 630,
+  "all_SHA256_unchanged": true,
+  "Git_tracked_files_unchanged": true,
+  "statistics_sample_SD_checks_pass": true,
+  "final_integrity_sha256": "7f7c2096042cc83098816d60c722e3eece3b02f7677f87cd653dfbfeb82941a1",
+  "outputs": {
+    "ROUTING_VS_GAP_4CHAIN_QUALIFIED.csv": {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\reference_quality_4chain\\ROUTING_VS_GAP_4CHAIN_QUALIFIED.csv",
+      "sha256": "3844a00ddce135cdd8731a6ae4ea90a8a563b551c9bc58a62c627b32b3179ca8"
+    },
+    "ROUTING_VS_GAP_4CHAIN_QUALIFIED_AUDIT.md": {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\reference_quality_4chain\\ROUTING_VS_GAP_4CHAIN_QUALIFIED_AUDIT.md",
+      "sha256": "b73face2e163070408f0f9f66f5c383b9095ff975915030cd6eef3f5bdd4884e"
+    },
+    "BOUNDARY_REFERENCE_EXCLUSION_NOTE.md": {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\reference_quality_4chain\\BOUNDARY_REFERENCE_EXCLUSION_NOTE.md",
+      "sha256": "f7a07ff24305603a348b7f4d304f1f1131b4006fca1ced0a303af690aa0ee532"
+    },
+    "FULL_ABLATION_4CHAIN_REFERENCE.csv": {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\reference_quality_4chain\\FULL_ABLATION_4CHAIN_REFERENCE.csv",
+      "sha256": "5e54f0a28f1cdad3f9c52879abb9681e28f8ec8b278283072b7640a3c144fc4c"
+    },
+    "FULL_ABLATION_4CHAIN_REFERENCE_AUDIT.md": {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\reference_quality_4chain\\FULL_ABLATION_4CHAIN_REFERENCE_AUDIT.md",
+      "sha256": "2f945da04e219543252d0d32d45cdb236cbdd5e3230e35271c157190ad90e552"
+    },
+    "QUALIFIED_4CHAIN_FINAL_AUDIT.md": {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\reference_quality_4chain\\QUALIFIED_4CHAIN_FINAL_AUDIT.md",
+      "sha256": "6391f46486dac218af5358a07bd1eba60927d39d6a7bf2688f73476e9a528ec2"
+    }
+  }
+}

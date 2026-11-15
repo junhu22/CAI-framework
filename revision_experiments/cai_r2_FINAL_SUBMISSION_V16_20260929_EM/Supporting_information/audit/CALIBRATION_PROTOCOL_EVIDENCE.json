@@ -1,0 +1,1231 @@
+{
+  "original_d6_training": {
+    "path": "C:\\nf-pmcmc\\experiments\\corrected_amortized.py",
+    "sha256": "ea6726da9e5ef71a80741b6f073d49f905b99d8b4ae7155158a582ffd8cf432a",
+    "source_excerpts": [
+      {
+        "start_line": 262,
+        "end_line": 296,
+        "lines": [
+          {
+            "line": 262,
+            "text": "def generate_training_data(surrogate, n_train=50000, n_val=5000,"
+          },
+          {
+            "line": 263,
+            "text": "                           kappa=math.sqrt(1e-3), prior_sigma=0.3):"
+          },
+          {
+            "line": 264,
+            "text": "    \"\"\""
+          },
+          {
+            "line": 265,
+            "text": "    Generate (\u03b8, y) pairs by:"
+          },
+          {
+            "line": 266,
+            "text": "      1. Sample \u03b8 ~ p(\u03b8) = LogNormal(0, \u03c3\u00b2)"
+          },
+          {
+            "line": 267,
+            "text": "      2. Compute y = f\u0302(\u03b8) + \u03b5,  \u03b5 ~ N(0, \u03ba\u00b2\u00b7diag(y\u00b2))"
+          },
+          {
+            "line": 268,
+            "text": ""
+          },
+          {
+            "line": 269,
+            "text": "    This creates a dataset of observation-parameter pairs that the"
+          },
+          {
+            "line": 270,
+            "text": "    conditional NF will learn to invert."
+          },
+          {
+            "line": 271,
+            "text": "    \"\"\""
+          },
+          {
+            "line": 272,
+            "text": "    print(f\"  Generating {n_train + n_val} (\u03b8, y) pairs...\")"
+          },
+          {
+            "line": 273,
+            "text": ""
+          },
+          {
+            "line": 274,
+            "text": "    all_theta = []"
+          },
+          {
+            "line": 275,
+            "text": "    all_y = []"
+          },
+          {
+            "line": 276,
+            "text": ""
+          },
+          {
+            "line": 277,
+            "text": "    total = n_train + n_val"
+          },
+          {
+            "line": 278,
+            "text": "    batch_size = 2000"
+          },
+          {
+            "line": 279,
+            "text": ""
+          },
+          {
+            "line": 280,
+            "text": "    with torch.no_grad():"
+          },
+          {
+            "line": 281,
+            "text": "        for start in range(0, total, batch_size):"
+          },
+          {
+            "line": 282,
+            "text": "            end = min(start + batch_size, total)"
+          },
+          {
+            "line": 283,
+            "text": "            B = end - start"
+          },
+          {
+            "line": 284,
+            "text": ""
+          },
+          {
+            "line": 285,
+            "text": "            # Sample \u03b8 from log-normal prior"
+          },
+          {
+            "line": 286,
+            "text": "            log_theta = prior_sigma * torch.randn(B, D, device=DEV)"
+          },
+          {
+            "line": 287,
+            "text": "            theta = torch.exp(log_theta)"
+          },
+          {
+            "line": 288,
+            "text": ""
+          },
+          {
+            "line": 289,
+            "text": "            # Compute clean frequencies"
+          },
+          {
+            "line": 290,
+            "text": "            f_clean = surrogate(theta)  # (B, M)"
+          },
+          {
+            "line": 291,
+            "text": ""
+          },
+          {
+            "line": 292,
+            "text": "            # Add relative Gaussian noise"
+          },
+          {
+            "line": 293,
+            "text": "            noise = kappa * f_clean * torch.randn_like(f_clean)"
+          },
+          {
+            "line": 294,
+            "text": "            y = f_clean + noise"
+          },
+          {
+            "line": 295,
+            "text": ""
+          },
+          {
+            "line": 296,
+            "text": "            all_theta.append(theta)"
+          }
+        ]
+      }
+    ]
+  },
+  "calibration_script": {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\E4_calibration_sbc\\e4_coverage_sbc.py",
+    "sha256": "2a1b0900a5d5aede2908cc2f79fcedce419aa828fa3861921ab0c6d942165d67",
+    "source_excerpts": [
+      {
+        "start_line": 1,
+        "end_line": 100,
+        "lines": [
+          {
+            "line": 1,
+            "text": "\"\"\""
+          },
+          {
+            "line": 2,
+            "text": "E4 (Step 6): posterior calibration \u2014 coverage + SBC (R1#14)."
+          },
+          {
+            "line": 3,
+            "text": ""
+          },
+          {
+            "line": 4,
+            "text": "Config: D=6 ORIGINAL surrogate + CNF (conditional_flow.pt). For a VALID calibration"
+          },
+          {
+            "line": 5,
+            "text": "test the test prior must equal the CNF's training prior, so we use the training"
+          },
+          {
+            "line": 6,
+            "text": "prior sigma=0.30 and training noise kappa=sqrt(1e-3)=3.16% (the manual's \"sigma=0.5,"
+          },
+          {
+            "line": 7,
+            "text": "kappa=3%\" would probe outside the training distribution and is not a valid SBC)."
+          },
+          {
+            "line": 8,
+            "text": ""
+          },
+          {
+            "line": 9,
+            "text": "Coverage: 100 theta~prior, y=f_hat(theta)+noise; fast-mode 50%/90% central credible"
+          },
+          {
+            "line": 10,
+            "text": "intervals; fraction covering the truth (expect ~0.50 / ~0.90). 10 exact-mode spot checks."
+          },
+          {
+            "line": 11,
+            "text": "SBC: 500 prior-predictive (theta,y); L=100 fast-mode draws; rank of truth per param;"
+          },
+          {
+            "line": 12,
+            "text": "rank histograms + ECDF-difference plot with 95% envelope."
+          },
+          {
+            "line": 13,
+            "text": "\"\"\""
+          },
+          {
+            "line": 14,
+            "text": "import sys, json"
+          },
+          {
+            "line": 15,
+            "text": "from pathlib import Path"
+          },
+          {
+            "line": 16,
+            "text": "import numpy as np, torch"
+          },
+          {
+            "line": 17,
+            "text": "torch.set_num_threads(4)"
+          },
+          {
+            "line": 18,
+            "text": "sys.path.insert(0, r\"C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\")"
+          },
+          {
+            "line": 19,
+            "text": "import revlib as R"
+          },
+          {
+            "line": 20,
+            "text": "import matplotlib; matplotlib.use(\"Agg\")"
+          },
+          {
+            "line": 21,
+            "text": "import matplotlib.pyplot as plt"
+          },
+          {
+            "line": 22,
+            "text": ""
+          },
+          {
+            "line": 23,
+            "text": "HERE = Path(__file__).resolve().parent"
+          },
+          {
+            "line": 24,
+            "text": "torch.manual_seed(42); np.random.seed(42)"
+          },
+          {
+            "line": 25,
+            "text": "SIGMA, KAPPA = 0.30, np.sqrt(1e-3)"
+          },
+          {
+            "line": 26,
+            "text": "sur = R.load_d6(); cnf = R.load_d6_cnf()"
+          },
+          {
+            "line": 27,
+            "text": "PN = [\"e1\", \"e2\", \"e3\", \"e4\", \"e5\", \"e6\"]"
+          },
+          {
+            "line": 28,
+            "text": ""
+          },
+          {
+            "line": 29,
+            "text": "def draw_theta(n):"
+          },
+          {
+            "line": 30,
+            "text": "    return np.clip(np.exp(SIGMA * np.random.randn(n, 6)), 0.5, 2.0)"
+          },
+          {
+            "line": 31,
+            "text": ""
+          },
+          {
+            "line": 32,
+            "text": "def gen_y(theta):"
+          },
+          {
+            "line": 33,
+            "text": "    with torch.no_grad():"
+          },
+          {
+            "line": 34,
+            "text": "        f = sur(torch.tensor(theta, dtype=torch.float32)).numpy()"
+          },
+          {
+            "line": 35,
+            "text": "    return f + KAPPA * np.abs(f) * np.random.randn(*f.shape)"
+          },
+          {
+            "line": 36,
+            "text": ""
+          },
+          {
+            "line": 37,
+            "text": "def fast_samples(y, N):"
+          },
+          {
+            "line": 38,
+            "text": "    return cnf.sample(torch.tensor(y, dtype=torch.float32), n_samples=N).numpy()"
+          },
+          {
+            "line": 39,
+            "text": ""
+          },
+          {
+            "line": 40,
+            "text": "# \u2500\u2500 Coverage \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500"
+          },
+          {
+            "line": 41,
+            "text": "NCOV = 100"
+          },
+          {
+            "line": 42,
+            "text": "th_cov = draw_theta(NCOV); y_cov = gen_y(th_cov)"
+          },
+          {
+            "line": 43,
+            "text": "cov50 = np.zeros(6); cov90 = np.zeros(6)"
+          },
+          {
+            "line": 44,
+            "text": "for i in range(NCOV):"
+          },
+          {
+            "line": 45,
+            "text": "    s = fast_samples(y_cov[i], 2000)"
+          },
+          {
+            "line": 46,
+            "text": "    lo50, hi50 = np.quantile(s, [0.25, 0.75], axis=0)"
+          },
+          {
+            "line": 47,
+            "text": "    lo90, hi90 = np.quantile(s, [0.05, 0.95], axis=0)"
+          },
+          {
+            "line": 48,
+            "text": "    cov50 += (th_cov[i] >= lo50) & (th_cov[i] <= hi50)"
+          },
+          {
+            "line": 49,
+            "text": "    cov90 += (th_cov[i] >= lo90) & (th_cov[i] <= hi90)"
+          },
+          {
+            "line": 50,
+            "text": "cov50 /= NCOV; cov90 /= NCOV"
+          },
+          {
+            "line": 51,
+            "text": "print(\"Coverage 50%:\", cov50.round(3), \" overall\", cov50.mean().round(3))"
+          },
+          {
+            "line": 52,
+            "text": "print(\"Coverage 90%:\", cov90.round(3), \" overall\", cov90.mean().round(3))"
+          },
+          {
+            "line": 53,
+            "text": ""
+          },
+          {
+            "line": 54,
+            "text": "# \u2500\u2500 Exact-mode spot checks (10) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500"
+          },
+          {
+            "line": 55,
+            "text": "exact_cov90 = []"
+          },
+          {
+            "line": 56,
+            "text": "for i in range(10):"
+          },
+          {
+            "line": 57,
+            "text": "    y_t = torch.tensor(y_cov[i], dtype=torch.float32)"
+          },
+          {
+            "line": 58,
+            "text": "    lp = R.make_log_post(sur, y_cov[i], \"d6\")"
+          },
+          {
+            "line": 59,
+            "text": "    smp = R.NeuTraHMC_Conditional(lp.forward, cnf, y_t, step_size=0.05, n_leapfrog=20)"
+          },
+          {
+            "line": 60,
+            "text": "    chain, ar = smp.run(torch.ones(6), n_samples=300, n_burnin=150)"
+          },
+          {
+            "line": 61,
+            "text": "    ch = chain.numpy()"
+          },
+          {
+            "line": 62,
+            "text": "    lo, hi = np.quantile(ch, [0.05, 0.95], axis=0)"
+          },
+          {
+            "line": 63,
+            "text": "    exact_cov90.append(((th_cov[i] >= lo) & (th_cov[i] <= hi)).mean())"
+          },
+          {
+            "line": 64,
+            "text": "exact_cov90 = float(np.mean(exact_cov90))"
+          },
+          {
+            "line": 65,
+            "text": "print(f\"Exact-mode 90% coverage (10 spot checks, per-obs avg): {exact_cov90:.3f}\")"
+          },
+          {
+            "line": 66,
+            "text": ""
+          },
+          {
+            "line": 67,
+            "text": "# \u2500\u2500 SBC \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500"
+          },
+          {
+            "line": 68,
+            "text": "NSBC, L = 500, 100"
+          },
+          {
+            "line": 69,
+            "text": "th_sbc = draw_theta(NSBC); y_sbc = gen_y(th_sbc)"
+          },
+          {
+            "line": 70,
+            "text": "ranks = np.zeros((NSBC, 6), dtype=int)"
+          },
+          {
+            "line": 71,
+            "text": "for i in range(NSBC):"
+          },
+          {
+            "line": 72,
+            "text": "    s = fast_samples(y_sbc[i], L)"
+          },
+          {
+            "line": 73,
+            "text": "    ranks[i] = (s < th_sbc[i]).sum(axis=0)          # rank in 0..L"
+          },
+          {
+            "line": 74,
+            "text": "print(\"SBC ranks computed; mean rank/L =\", (ranks.mean(0)/L).round(3))"
+          },
+          {
+            "line": 75,
+            "text": ""
+          },
+          {
+            "line": 76,
+            "text": "# rank histograms"
+          },
+          {
+            "line": 77,
+            "text": "fig, axes = plt.subplots(2, 3, figsize=(11, 5.5))"
+          },
+          {
+            "line": 78,
+            "text": "nbins = 20"
+          },
+          {
+            "line": 79,
+            "text": "for d, ax in enumerate(axes.ravel()):"
+          },
+          {
+            "line": 80,
+            "text": "    ax.hist(ranks[:, d], bins=nbins, range=(0, L), color=\"#4c72b0\", alpha=0.85)"
+          },
+          {
+            "line": 81,
+            "text": "    exp = NSBC / nbins"
+          },
+          {
+            "line": 82,
+            "text": "    band = 1.96 * np.sqrt(exp * (1 - 1/nbins))"
+          },
+          {
+            "line": 83,
+            "text": "    ax.axhline(exp, color=\"k\", lw=1)"
+          },
+          {
+            "line": 84,
+            "text": "    ax.axhspan(exp - band, exp + band, color=\"grey\", alpha=0.25)"
+          },
+          {
+            "line": 85,
+            "text": "    ax.set_title(f\"{PN[d]}\"); ax.set_xlabel(\"rank\")"
+          },
+          {
+            "line": 86,
+            "text": "fig.suptitle(f\"E4 SBC rank histograms (N={NSBC}, L={L}, D=6 original, sigma={SIGMA})\")"
+          },
+          {
+            "line": 87,
+            "text": "fig.tight_layout(); fig.savefig(HERE / \"E4_sbc_ranks.png\", dpi=150)"
+          },
+          {
+            "line": 88,
+            "text": "fig.savefig(HERE / \"E4_sbc_ranks.pdf\")"
+          },
+          {
+            "line": 89,
+            "text": ""
+          },
+          {
+            "line": 90,
+            "text": "# ECDF-difference plot with 95% envelope"
+          },
+          {
+            "line": 91,
+            "text": "fig2, ax = plt.subplots(figsize=(6.5, 4.2))"
+          },
+          {
+            "line": 92,
+            "text": "grid = np.linspace(0, 1, 200)"
+          },
+          {
+            "line": 93,
+            "text": "for d in range(6):"
+          },
+          {
+            "line": 94,
+            "text": "    u = (ranks[:, d] + 0.5) / (L + 1)"
+          },
+          {
+            "line": 95,
+            "text": "    ecdf = np.array([(u <= g).mean() for g in grid])"
+          },
+          {
+            "line": 96,
+            "text": "    ax.plot(grid, ecdf - grid, lw=1, label=PN[d])"
+          },
+          {
+            "line": 97,
+            "text": "band = 1.36 / np.sqrt(NSBC)          # KS 95%"
+          },
+          {
+            "line": 98,
+            "text": "ax.axhspan(-band, band, color=\"grey\", alpha=0.25, label=\"95% envelope\")"
+          },
+          {
+            "line": 99,
+            "text": "ax.axhline(0, color=\"k\", lw=0.8)"
+          },
+          {
+            "line": 100,
+            "text": "ax.set_xlabel(\"normalised rank\"); ax.set_ylabel(\"ECDF - uniform\")"
+          }
+        ]
+      }
+    ]
+  },
+  "calibration_results": {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\E4_calibration_sbc\\E4_results.json",
+    "sha256": "c787a6704abec57169e8b1da9f58b66fc3872513c27cc09c74b418c034498a42",
+    "results": {
+      "cov50": [
+        0.5,
+        0.46,
+        0.47,
+        0.56,
+        0.46,
+        0.53
+      ],
+      "cov90": [
+        0.84,
+        0.91,
+        0.9,
+        0.92,
+        0.88,
+        0.92
+      ],
+      "exact_cov90": 0.9166666666666666,
+      "ks": [
+        0.027108910891089022,
+        0.02528712871287131,
+        0.030930693069306958,
+        0.034099009900990074,
+        0.042910891089108893,
+        0.021386138613861405
+      ],
+      "sigma": 0.3,
+      "kappa": 0.03162277660168379
+    }
+  },
+  "operational_target": {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\experiments\\cai_lib.py",
+    "sha256": "1b5fe93fb06181420749a4a9f985846fefac93615828d51ed9f2cbab64567b12",
+    "source_excerpts": [
+      {
+        "start_line": 170,
+        "end_line": 210,
+        "lines": [
+          {
+            "line": 170,
+            "text": "def load_cnf(cnf_path, dim_theta=6, dim_y=20, n_layers=8, hidden_dim=128):"
+          },
+          {
+            "line": 171,
+            "text": "    cnf = ConditionalRealNVP(dim_theta, dim_y, n_layers, hidden_dim).to(DEV)"
+          },
+          {
+            "line": 172,
+            "text": "    state = torch.load(cnf_path, map_location=DEV, weights_only=True)"
+          },
+          {
+            "line": 173,
+            "text": "    cnf.load_state_dict(state)"
+          },
+          {
+            "line": 174,
+            "text": "    cnf.eval()"
+          },
+          {
+            "line": 175,
+            "text": "    return cnf"
+          },
+          {
+            "line": 176,
+            "text": ""
+          },
+          {
+            "line": 177,
+            "text": ""
+          },
+          {
+            "line": 178,
+            "text": "# \u2500\u2500 Log-posterior on K (\u2264 M) measured modes \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500"
+          },
+          {
+            "line": 179,
+            "text": "class KModeLogPosterior(nn.Module):"
+          },
+          {
+            "line": 180,
+            "text": "    \"\"\"Log posterior using only the first K modes from the surrogate output."
+          },
+          {
+            "line": 181,
+            "text": ""
+          },
+          {
+            "line": 182,
+            "text": "    log \u03c0(\u03b8|y) = -0.5/\u03ba\u00b2 \u03a3_{i=1..K} ((f_pred_i - y_i) / y_i)\u00b2 + log-normal prior"
+          },
+          {
+            "line": 183,
+            "text": "    \"\"\""
+          },
+          {
+            "line": 184,
+            "text": ""
+          },
+          {
+            "line": 185,
+            "text": "    def __init__(self, surrogate, observed_freqs, kappa_sq=1e-3, prior_sigma=0.3):"
+          },
+          {
+            "line": 186,
+            "text": "        super().__init__()"
+          },
+          {
+            "line": 187,
+            "text": "        self.surrogate = surrogate"
+          },
+          {
+            "line": 188,
+            "text": "        self.K = len(observed_freqs)"
+          },
+          {
+            "line": 189,
+            "text": "        self.register_buffer(\"f_obs\","
+          },
+          {
+            "line": 190,
+            "text": "                             torch.tensor(observed_freqs, dtype=torch.float32))"
+          },
+          {
+            "line": 191,
+            "text": "        self.kappa_sq = kappa_sq"
+          },
+          {
+            "line": 192,
+            "text": "        self.prior_sigma = prior_sigma"
+          },
+          {
+            "line": 193,
+            "text": ""
+          },
+          {
+            "line": 194,
+            "text": "    def forward(self, theta):"
+          },
+          {
+            "line": 195,
+            "text": "        if theta.dim() == 1:"
+          },
+          {
+            "line": 196,
+            "text": "            theta = theta.unsqueeze(0)"
+          },
+          {
+            "line": 197,
+            "text": "        f_pred = self.surrogate(theta)[:, :self.K]"
+          },
+          {
+            "line": 198,
+            "text": "        resid = (f_pred - self.f_obs) / self.f_obs"
+          },
+          {
+            "line": 199,
+            "text": "        ll = -0.5 / self.kappa_sq * (resid ** 2).sum(dim=-1)"
+          },
+          {
+            "line": 200,
+            "text": "        if (theta <= 0).any(dim=-1).any():"
+          },
+          {
+            "line": 201,
+            "text": "            lp = torch.full_like(ll, -1e30)"
+          },
+          {
+            "line": 202,
+            "text": "            valid = (theta > 0).all(dim=-1)"
+          },
+          {
+            "line": 203,
+            "text": "            log_t = torch.log(theta[valid].clamp(min=1e-30))"
+          },
+          {
+            "line": 204,
+            "text": "            lp[valid] = ll[valid] + ("
+          },
+          {
+            "line": 205,
+            "text": "                -0.5 * (log_t / self.prior_sigma) ** 2 - log_t"
+          },
+          {
+            "line": 206,
+            "text": "            ).sum(dim=-1)"
+          },
+          {
+            "line": 207,
+            "text": "            return lp"
+          },
+          {
+            "line": 208,
+            "text": "        log_t = torch.log(theta)"
+          },
+          {
+            "line": 209,
+            "text": "        lp_prior = (-0.5 * (log_t / self.prior_sigma) ** 2 - log_t).sum(dim=-1)"
+          },
+          {
+            "line": 210,
+            "text": "        return ll + lp_prior"
+          }
+        ]
+      }
+    ]
+  },
+  "target_wrapper": {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\revlib.py",
+    "sha256": "06661a2c920a69f3690fef9183f79c5b8b7bbb3100f62bd83b56ed5a9c090d37",
+    "source_excerpts": [
+      {
+        "start_line": 55,
+        "end_line": 82,
+        "lines": [
+          {
+            "line": 55,
+            "text": "    \"narrow\":      [1.2207874, 2.6167192, 2.1256261, 0.9051405, 0.9775811, 1.4227651],"
+          },
+          {
+            "line": 56,
+            "text": "    \"broad\":       [1.2868387, 2.4812047, 1.7759950, 0.8944345, 1.0234228, 1.0731375],"
+          },
+          {
+            "line": 57,
+            "text": "    \"broad_mass\":  [1.3992568, 2.4102411, 1.8381885, 0.9351584, 0.9421184, 1.1927426],"
+          },
+          {
+            "line": 58,
+            "text": "}"
+          },
+          {
+            "line": 59,
+            "text": "FIELD_FASTMEAN = [1.2977122, 1.3546389, 1.3393221, 1.1355579, 1.0362222, 1.3487413]"
+          },
+          {
+            "line": 60,
+            "text": "COUP_THETA_MAP  = [3.4315545558929443, 0.7805843949317932, 2.8936502933502197]"
+          },
+          {
+            "line": 61,
+            "text": "COUP_NORMAL_MEAN = [3.227696657180786, 1.1847851276397705, 3.300145387649536]"
+          },
+          {
+            "line": 62,
+            "text": "COUP_DAMAGE_MEAN = [0.5070630311965942, 1.1409382820129395, 0.9872524738311768]"
+          },
+          {
+            "line": 63,
+            "text": "# Full 20-mode y used to condition the coupled CNF (from coupled_results.json)"
+          },
+          {
+            "line": 64,
+            "text": "COUP_NORMAL_YFULL = [2.06, 2.30, 2.62, 6.14, 6.53, 6.76, 7.233523, 8.926735,"
+          },
+          {
+            "line": 65,
+            "text": "    9.065089, 10.551189, 10.581640, 10.894555, 11.742413, 12.575490, 12.690943,"
+          },
+          {
+            "line": 66,
+            "text": "    12.883026, 13.133237, 13.473139, 13.918221, 13.985258]"
+          },
+          {
+            "line": 67,
+            "text": "COUP_DAMAGE_YFULL = [0.927721, 1.057796, 1.069256, 2.702219, 3.085872, 3.217286,"
+          },
+          {
+            "line": 68,
+            "text": "    3.285917, 4.048956, 4.249094, 4.381341, 4.693439, 4.894359, 4.955325, 5.267453,"
+          },
+          {
+            "line": 69,
+            "text": "    5.318134, 5.442022, 5.515037, 5.707598, 5.931717, 6.051433]"
+          },
+          {
+            "line": 70,
+            "text": ""
+          },
+          {
+            "line": 71,
+            "text": "def field_yfull(broad_surrogate):"
+          },
+          {
+            "line": 72,
+            "text": "    \"\"\"20-mode hybrid y for the field CNF: [measured_6, surrogate(theta=1)[6:20]].\"\"\""
+          },
+          {
+            "line": 73,
+            "text": "    with torch.no_grad():"
+          },
+          {
+            "line": 74,
+            "text": "        f_nom = broad_surrogate(torch.ones(1, 6)).squeeze(0).numpy()"
+          },
+          {
+            "line": 75,
+            "text": "    return np.concatenate([FIELD_MEASURED, f_nom[6:]]).astype(np.float32)"
+          },
+          {
+            "line": 76,
+            "text": ""
+          },
+          {
+            "line": 77,
+            "text": "# D=6 robustness thetas (from robustness_test.py), Obs2 theta (corrected_amortized.py)"
+          },
+          {
+            "line": 78,
+            "text": "ROBUST_THETAS = ["
+          },
+          {
+            "line": 79,
+            "text": "    [0.7, 1.2, 1.8, 1.0, 0.8, 1.1], [0.5, 0.6, 0.7, 0.8, 0.9, 1.0],"
+          },
+          {
+            "line": 80,
+            "text": "    [1.5, 1.4, 1.3, 1.2, 1.1, 1.0], [0.6, 1.8, 0.7, 1.5, 0.9, 1.3],"
+          },
+          {
+            "line": 81,
+            "text": "    [1.0, 1.0, 1.0, 1.0, 1.0, 1.0], [0.8, 0.9, 1.9, 0.7, 1.4, 0.6],"
+          },
+          {
+            "line": 82,
+            "text": "    [1.3, 1.3, 1.3, 1.3, 1.3, 1.3], [0.55, 1.0, 1.5, 0.85, 1.2, 0.75],"
+          }
+        ]
+      },
+      {
+        "start_line": 199,
+        "end_line": 240,
+        "lines": [
+          {
+            "line": 199,
+            "text": ""
+          },
+          {
+            "line": 200,
+            "text": "class CondRealNVP12(nn.Module):"
+          },
+          {
+            "line": 201,
+            "text": "    def __init__(self, D=12, M=20, n_layers=12, hidden=192, embed_dim=32):"
+          },
+          {
+            "line": 202,
+            "text": "        super().__init__()"
+          },
+          {
+            "line": 203,
+            "text": "        self.D = D"
+          },
+          {
+            "line": 204,
+            "text": "        self.embed = nn.Sequential(nn.Linear(M, embed_dim*2), nn.SiLU(),"
+          },
+          {
+            "line": 205,
+            "text": "                                   nn.Linear(embed_dim*2, embed_dim))"
+          },
+          {
+            "line": 206,
+            "text": "        self.layers = nn.ModuleList(["
+          },
+          {
+            "line": 207,
+            "text": "            CondAffineCoupling12(D, embed_dim, hidden, mask_even=(i % 2 == 0))"
+          },
+          {
+            "line": 208,
+            "text": "            for i in range(n_layers)])"
+          },
+          {
+            "line": 209,
+            "text": "    def forward(self, theta, y):"
+          },
+          {
+            "line": 210,
+            "text": "        cond = self.embed(y); z = theta; log_det = 0"
+          },
+          {
+            "line": 211,
+            "text": "        for layer in self.layers:"
+          },
+          {
+            "line": 212,
+            "text": "            z, ld = layer(z, cond); log_det = log_det + ld"
+          },
+          {
+            "line": 213,
+            "text": "        return z, log_det"
+          },
+          {
+            "line": 214,
+            "text": "    def inverse(self, z, y):"
+          },
+          {
+            "line": 215,
+            "text": "        cond = self.embed(y); x = z"
+          },
+          {
+            "line": 216,
+            "text": "        for layer in reversed(self.layers): x = layer.inverse(x, cond)"
+          },
+          {
+            "line": 217,
+            "text": "        return x"
+          },
+          {
+            "line": 218,
+            "text": "    def log_prob(self, theta, y):"
+          },
+          {
+            "line": 219,
+            "text": "        z, log_det = self.forward(theta, y)"
+          },
+          {
+            "line": 220,
+            "text": "        log_pz = -0.5 * (z**2 + np.log(2*np.pi)).sum(dim=-1)"
+          },
+          {
+            "line": 221,
+            "text": "        return log_pz + log_det"
+          },
+          {
+            "line": 222,
+            "text": ""
+          },
+          {
+            "line": 223,
+            "text": "def load_d12(pt_path=D12_PT):"
+          },
+          {
+            "line": 224,
+            "text": "    blob = torch.load(pt_path, map_location=DEV, weights_only=False)"
+          },
+          {
+            "line": 225,
+            "text": "    nn_sur = NNSurrogate12(12, 20, 256, 6).double()"
+          },
+          {
+            "line": 226,
+            "text": "    nn_sur.load_state_dict(blob[\"nn_state_dict\"]); nn_sur.eval()"
+          },
+          {
+            "line": 227,
+            "text": "    flow = CondRealNVP12(12, 20, 12, 192, 32).double()"
+          },
+          {
+            "line": 228,
+            "text": "    flow.load_state_dict(blob[\"flow_state_dict\"]); flow.eval()"
+          },
+          {
+            "line": 229,
+            "text": "    return nn_sur, flow, blob"
+          },
+          {
+            "line": 230,
+            "text": ""
+          },
+          {
+            "line": 231,
+            "text": "def d12_log_posterior(log_theta, y_obs, nn_sur, kappa=0.03, sigma_prior=0.5):"
+          },
+          {
+            "line": 232,
+            "text": "    theta = torch.exp(log_theta)"
+          },
+          {
+            "line": 233,
+            "text": "    y_pred = nn_sur(theta)"
+          },
+          {
+            "line": 234,
+            "text": "    rel = (y_pred - y_obs) / y_obs"
+          },
+          {
+            "line": 235,
+            "text": "    return -0.5 * (rel**2).sum(dim=-1) / kappa**2 - 0.5 * (log_theta**2).sum(dim=-1) / sigma_prior**2"
+          },
+          {
+            "line": 236,
+            "text": ""
+          },
+          {
+            "line": 237,
+            "text": "def d12_fast_sample(flow, y_obs, N=2000):"
+          },
+          {
+            "line": 238,
+            "text": "    with torch.no_grad():"
+          },
+          {
+            "line": 239,
+            "text": "        z = torch.randn(N, flow.D, dtype=torch.float64)"
+          },
+          {
+            "line": 240,
+            "text": "        lt = flow.inverse(z, y_obs.unsqueeze(0).expand(N, -1))"
+          }
+        ]
+      }
+    ]
+  },
+  "field_performance_script": {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\task_r3_domain\\field_freeze.py",
+    "sha256": "0ecafdc5c6fb53c8a801514b5aecee0099fd47879dabade2cdeb12ccf67d0c9c",
+    "source_excerpts": [
+      {
+        "start_line": 54,
+        "end_line": 75,
+        "lines": [
+          {
+            "line": 54,
+            "text": "def nuts_narrow(init, nsamp=500, seed=0):"
+          },
+          {
+            "line": 55,
+            "text": "    yt = torch.tensor(y6)"
+          },
+          {
+            "line": 56,
+            "text": "    def U(p):"
+          },
+          {
+            "line": 57,
+            "text": "        z = p[\"z\"]; f = sur(torch.exp(z).unsqueeze(0)).squeeze(0)[:6]"
+          },
+          {
+            "line": 58,
+            "text": "        return -(-0.5 * (((f - yt) / yt) ** 2).sum() / 1e-3 - 0.5 * (z ** 2).sum() / SIG_N ** 2)"
+          },
+          {
+            "line": 59,
+            "text": "    torch.manual_seed(seed)"
+          },
+          {
+            "line": 60,
+            "text": "    mc = MCMC(NUTS(potential_fn=U, target_accept_prob=0.8), num_samples=nsamp, warmup_steps=500,"
+          },
+          {
+            "line": 61,
+            "text": "              initial_params={\"z\": torch.log(torch.tensor(init, dtype=torch.float32))}, disable_progbar=True)"
+          },
+          {
+            "line": 62,
+            "text": "    t = time.time(); mc.run(); dt = time.time() - t"
+          },
+          {
+            "line": 63,
+            "text": "    th = torch.exp(mc.get_samples()[\"z\"])"
+          },
+          {
+            "line": 64,
+            "text": "    try: ap = float(np.mean(mc.diagnostics()[\"acceptance rate\"][\"z\"]))"
+          },
+          {
+            "line": 65,
+            "text": "    except Exception: ap = 0.8"
+          },
+          {
+            "line": 66,
+            "text": "    return th, dt, ap"
+          },
+          {
+            "line": 67,
+            "text": ""
+          },
+          {
+            "line": 68,
+            "text": "inits = [R.FIELD_FASTMEAN, np.ones(6), (np.array(R.FIELD_FASTMEAN) * 1.3)]"
+          },
+          {
+            "line": 69,
+            "text": "nuts_chains = []"
+          },
+          {
+            "line": 70,
+            "text": "for ci, init in enumerate(inits):"
+          },
+          {
+            "line": 71,
+            "text": "    th, dt, ap = nuts_narrow(init, 500, seed=42 + ci)"
+          },
+          {
+            "line": 72,
+            "text": "    nuts_chains.append(th.numpy())"
+          },
+          {
+            "line": 73,
+            "text": "    if ci == 0:"
+          },
+          {
+            "line": 74,
+            "text": "        t_nu, ess_nu, mean_nu = dt, float(R.effective_sample_size(th).min()), th.numpy().mean(0)"
+          },
+          {
+            "line": 75,
+            "text": "        print(f\"[F1] NUTS: ESS_min={ess_nu:.1f} time={dt:.1f}s AR~{ap:.2f} mean e1={mean_nu[0]:.2f}\", flush=True)"
+          }
+        ]
+      }
+    ]
+  },
+  "field_performance_results": {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\task_r3_domain\\field_freeze_results.json",
+    "sha256": "be058db4aea8b0b0f7fc73592ee00ef28a57879373234618e5bd2939c94dabe4",
+    "results": {
+      "frozen_config": "narrow prior sigma=0.30 + ext surrogate/CNF [0.5,3.5]",
+      "fast_ess_mean": 0.0008827130570758159,
+      "fast_ess_std": 0.0003275677742783648,
+      "table13": {
+        "mass_neutra": {
+          "AR": 0.404,
+          "ESS_min": 22.86789894104004,
+          "time_s": 231.5384361743927,
+          "mean": [
+            2.1638853549957275,
+            1.0274945497512817,
+            1.72513747215271,
+            1.0874439477920532,
+            1.0561528205871582,
+            1.5326175689697266
+          ],
+          "mass_diag": [
+            0.06307649612426758,
+            0.7699674963951111,
+            1.159061312675476,
+            0.6947562098503113,
+            0.7058583498001099,
+            9.01181411743164
+          ]
+        },
+        "nuts": {
+          "ESS_min": 295.705078125,
+          "time_s": 76.91349601745605,
+          "mean": [
+            2.2210867404937744,
+            1.1391620635986328,
+            1.6467636823654175,
+            1.0633232593536377,
+            1.0276795625686646,
+            1.0424283742904663
+          ]
+        },
+        "split_rhat_3chain": [
+          1.001691460609436,
+          1.0029401779174805,
+          1.0001388788223267,
+          0.9997850060462952,
+          1.0024604797363281,
+          1.0019484758377075
+        ],
+        "neutra_vs_nuts_mean_mae": 0.1316709667444229,
+        "neutra_ess_min_lt_20": false
+      },
+      "fit_rms_narrow_mean": 3.9413483874831816,
+      "narrow_e1_mean": 2.2210867404937744,
+      "broad_e1_mean": 3.265439510345459,
+      "broad_fit_rms": 5.4579767708795845
+    }
+  }
+}

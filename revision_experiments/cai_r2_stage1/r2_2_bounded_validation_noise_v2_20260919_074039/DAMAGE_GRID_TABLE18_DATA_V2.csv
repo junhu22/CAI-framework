@@ -1,0 +1,10 @@
+parameter,severity,severity_percent,kappa_percent,repeats_total,averaging,AUC,TPR_at_5pct_FPR,localization_parameter_recovery_error_percent,fast_route_count_tau05,correction_route_count_tau05
+e1,0.1,10.0,1;3;5,36,"Equal-weight across kappa only, never across structural groups",0.5863425925925926,0.0,10.778673784232431,5,31
+e1,0.25,25.0,1;3;5,36,"Equal-weight across kappa only, never across structural groups",0.6821759259259258,0.0,9.461205756222759,3,33
+e1,0.5,50.0,1;3;5,36,"Equal-weight across kappa only, never across structural groups",0.9048611111111112,0.4166666666666667,10.716426041391161,0,36
+e2,0.1,10.0,1;3;5,36,"Equal-weight across kappa only, never across structural groups",0.6578703703703703,0.0,15.261719293064543,4,32
+e2,0.25,25.0,1;3;5,36,"Equal-weight across kappa only, never across structural groups",0.7354166666666666,0.0,15.381617016262476,4,32
+e2,0.5,50.0,1;3;5,36,"Equal-weight across kappa only, never across structural groups",0.8967592592592593,0.4444444444444444,21.48472120364507,0,36
+e3,0.1,10.0,1;3;5,36,"Equal-weight across kappa only, never across structural groups",0.5842592592592593,0.0,8.839237800350896,2,34
+e3,0.25,25.0,1;3;5,36,"Equal-weight across kappa only, never across structural groups",0.7062499999999999,0.0,6.669348036801374,0,36
+e3,0.5,50.0,1;3;5,36,"Equal-weight across kappa only, never across structural groups",0.9344907407407407,0.4166666666666667,4.216935568385654,0,36

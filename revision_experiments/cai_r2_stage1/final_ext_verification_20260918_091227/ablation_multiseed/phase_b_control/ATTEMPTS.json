@@ -1,0 +1,137 @@
+[
+  {
+    "config": "N50000_L8",
+    "training_seed": 101,
+    "status": "COMPLETED",
+    "started_utc": "2026-09-18T08:42:41.727133+00:00",
+    "pid": 23156,
+    "attempt_number": 1,
+    "finished_utc": "2026-09-18T09:12:27.540085+00:00"
+  },
+  {
+    "config": "N50000_L8",
+    "training_seed": 202,
+    "status": "FAILED",
+    "started_utc": "2026-09-18T09:12:28.342693+00:00",
+    "pid": 23156,
+    "attempt_number": 2,
+    "finished_utc": "2026-09-18T09:34:54.490968+00:00"
+  },
+  {
+    "config": "N50000_L8",
+    "training_seed": 303,
+    "status": "COMPLETED",
+    "started_utc": "2026-09-18T09:34:55.241491+00:00",
+    "pid": 23156,
+    "attempt_number": 3,
+    "finished_utc": "2026-09-18T09:54:41.098485+00:00"
+  },
+  {
+    "config": "N100000_L8",
+    "training_seed": 101,
+    "status": "COMPLETED",
+    "started_utc": "2026-09-18T09:54:42.953216+00:00",
+    "pid": 25492,
+    "attempt_number": 4,
+    "finished_utc": "2026-09-18T10:22:14.349665+00:00"
+  },
+  {
+    "config": "N100000_L8",
+    "training_seed": 202,
+    "status": "COMPLETED",
+    "started_utc": "2026-09-18T10:22:15.130215+00:00",
+    "pid": 25492,
+    "attempt_number": 5,
+    "finished_utc": "2026-09-18T10:51:48.422477+00:00"
+  },
+  {
+    "config": "N100000_L8",
+    "training_seed": 303,
+    "status": "COMPLETED",
+    "started_utc": "2026-09-18T10:51:48.947704+00:00",
+    "pid": 25492,
+    "attempt_number": 6,
+    "finished_utc": "2026-09-18T11:09:32.995286+00:00"
+  },
+  {
+    "config": "N50000_L4",
+    "training_seed": 101,
+    "status": "COMPLETED",
+    "started_utc": "2026-09-18T11:09:33.538466+00:00",
+    "pid": 25492,
+    "attempt_number": 7,
+    "finished_utc": "2026-09-18T11:14:53.045003+00:00"
+  },
+  {
+    "config": "N50000_L4",
+    "training_seed": 202,
+    "status": "COMPLETED",
+    "started_utc": "2026-09-18T11:14:53.564805+00:00",
+    "pid": 25492,
+    "attempt_number": 8,
+    "finished_utc": "2026-09-18T11:20:14.033239+00:00"
+  },
+  {
+    "config": "N50000_L4",
+    "training_seed": 303,
+    "status": "COMPLETED",
+    "started_utc": "2026-09-18T11:20:14.553596+00:00",
+    "pid": 25492,
+    "attempt_number": 9,
+    "finished_utc": "2026-09-18T11:25:34.751857+00:00"
+  },
+  {
+    "config": "N50000_L6",
+    "training_seed": 101,
+    "status": "COMPLETED",
+    "started_utc": "2026-09-18T11:25:35.280206+00:00",
+    "pid": 25492,
+    "attempt_number": 10,
+    "finished_utc": "2026-09-18T11:32:45.737499+00:00"
+  },
+  {
+    "config": "N50000_L6",
+    "training_seed": 202,
+    "status": "COMPLETED",
+    "started_utc": "2026-09-18T11:32:46.276985+00:00",
+    "pid": 25492,
+    "attempt_number": 11,
+    "finished_utc": "2026-09-18T11:40:20.371524+00:00"
+  },
+  {
+    "config": "N50000_L6",
+    "training_seed": 303,
+    "status": "COMPLETED",
+    "started_utc": "2026-09-18T11:40:20.937360+00:00",
+    "pid": 25492,
+    "attempt_number": 12,
+    "finished_utc": "2026-09-18T11:48:49.828899+00:00"
+  },
+  {
+    "config": "N50000_L12",
+    "training_seed": 101,
+    "status": "COMPLETED",
+    "started_utc": "2026-09-18T11:48:50.405141+00:00",
+    "pid": 25492,
+    "attempt_number": 13,
+    "finished_utc": "2026-09-18T12:09:18.224989+00:00"
+  },
+  {
+    "config": "N50000_L12",
+    "training_seed": 202,
+    "status": "COMPLETED",
+    "started_utc": "2026-09-18T12:09:22.064155+00:00",
+    "pid": 25492,
+    "attempt_number": 14,
+    "finished_utc": "2026-09-18T12:23:36.861344+00:00"
+  },
+  {
+    "config": "N50000_L12",
+    "training_seed": 303,
+    "status": "COMPLETED",
+    "started_utc": "2026-09-18T12:23:37.383399+00:00",
+    "pid": 25492,
+    "attempt_number": 15,
+    "finished_utc": "2026-09-18T12:36:23.229058+00:00"
+  }
+]

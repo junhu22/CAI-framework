@@ -1,0 +1,40 @@
+{
+  "chain_index": 3,
+  "seed": 814,
+  "started_utc": "2026-09-19T13:55:39.134595+00:00",
+  "finished_utc": "2026-09-19T13:56:13.118241+00:00",
+  "runtime_s": 33.98109722137451,
+  "acceptance_rate": 0.9916666666666667,
+  "divergence_count": 0,
+  "divergence_indices": [],
+  "adapted_step_size": 0.2417678042405184,
+  "inverse_mass_matrix": {
+    "('z',)": [
+      0.4511793255805969,
+      4.655566692352295,
+      0.5484244227409363
+    ]
+  },
+  "raw_diagnostics": {
+    "z": {
+      "n_eff": [
+        149.33059692382812,
+        422.53350830078125,
+        132.76104736328125
+      ],
+      "r_hat": [
+        0.9994686245918274,
+        0.9990701079368591,
+        1.046769142150879
+      ]
+    },
+    "divergences": {
+      "chain 0": []
+    },
+    "acceptance rate": {
+      "chain 0": 0.9916666666666667
+    }
+  },
+  "artifact_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_presubmit_phaseB_20260919_213647\\COUPLED_UNIFORM\\COUPLED_UNIFORM_NUTS_CHAIN_seed814.npz",
+  "artifact_sha256": "755c4a764d54413a63f05dd8295966278d0273c13480efa4de79664b3da6dd18"
+}

@@ -1,0 +1,68 @@
+{
+  "arviz": "0.23.4",
+  "targets": {
+    "ablation_obs1": {
+      "n_chains": 4,
+      "draws_per_chain": 500,
+      "rank_rhat_max": 1.004373142328989,
+      "bulk_ess_min": 1326.5652047236963,
+      "tail_ess_min": 499.3425062922423,
+      "predeclared_new_reference_criteria_applicable": true,
+      "criteria_pass": true
+    },
+    "ablation_obs2": {
+      "n_chains": 4,
+      "draws_per_chain": 500,
+      "rank_rhat_max": 1.0039168561485183,
+      "bulk_ess_min": 1086.3971586032924,
+      "tail_ess_min": 759.2622979002189,
+      "predeclared_new_reference_criteria_applicable": true,
+      "criteria_pass": true
+    },
+    "ablation_obs3": {
+      "n_chains": 4,
+      "draws_per_chain": 500,
+      "rank_rhat_max": 1.0053995422739475,
+      "bulk_ess_min": 817.3608696036329,
+      "tail_ess_min": 903.9995348205081,
+      "predeclared_new_reference_criteria_applicable": true,
+      "criteria_pass": true
+    },
+    "ablation_obs4": {
+      "n_chains": 4,
+      "draws_per_chain": 500,
+      "rank_rhat_max": 1.0056666694570917,
+      "bulk_ess_min": 1700.352968941861,
+      "tail_ess_min": 1120.754426749794,
+      "predeclared_new_reference_criteria_applicable": true,
+      "criteria_pass": true
+    },
+    "ablation_obs5": {
+      "n_chains": 4,
+      "draws_per_chain": 500,
+      "rank_rhat_max": 1.0027543223822863,
+      "bulk_ess_min": 1074.6781691231192,
+      "tail_ess_min": 829.048036522938,
+      "predeclared_new_reference_criteria_applicable": true,
+      "criteria_pass": true
+    },
+    "sailboat_boundary_e1_075": {
+      "n_chains": 4,
+      "draws_per_chain": 500,
+      "rank_rhat_max": 1.0051264086134977,
+      "bulk_ess_min": 1189.1764969566052,
+      "tail_ess_min": 800.6386192786624,
+      "predeclared_new_reference_criteria_applicable": true,
+      "criteria_pass": true
+    },
+    "sailboat_field_frozen": {
+      "n_chains": 3,
+      "draws_per_chain": 500,
+      "rank_rhat_max": 1.0025638920991855,
+      "bulk_ess_min": 823.4643833446264,
+      "tail_ess_min": 863.0461234792688,
+      "predeclared_new_reference_criteria_applicable": false,
+      "criteria_pass": true
+    }
+  }
+}

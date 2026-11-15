@@ -1,0 +1,14 @@
+{
+  "n_valid": 50,
+  "delta_post_random_max": 0.06017335939312172,
+  "delta_post_random_median": 0.004458595276521937,
+  "delta_post_all_max": 0.06017335939312172,
+  "dloglik_max": 11.319861441809685,
+  "dloglik_mean": 0.8713857904677258,
+  "old_round1": {
+    "delta_post_random_max": 0.24,
+    "delta_median": 0.1,
+    "dloglik_max": 489
+  },
+  "vs_global_delta_1.2e-4": 501.44466160934763
+}

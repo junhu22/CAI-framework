@@ -1,0 +1,54 @@
+{
+  "global": {
+    "M": 20,
+    "delta": 0.00012,
+    "kappa": 0.03,
+    "two_ksq": 0.0018,
+    "B_correct": 2.6668266666666667,
+    "d_TV_le": 0.9305276652400534,
+    "paper_reported": 0.0027,
+    "paper_recompute_with_1.8": 0.0026668266666666665,
+    "slip_factor": 1000.0000000000001
+  },
+  "cases": {
+    "A": {
+      "K": 20,
+      "kappa_sq": 0.001,
+      "delta_post": 0.001953109578464773,
+      "rho_maxres": 0.06316292456590819,
+      "dtv_bound_post": 1.0,
+      "llbound_standard": 39.10033793955037,
+      "llbound_resaware": 2.5054286297253725,
+      "measured_dll_max": 0.12552924902464047,
+      "measured_dll_mean": 0.026787330385894672,
+      "resaware_holds": true,
+      "tightening_factor": 15.606246961357776
+    },
+    "B": {
+      "K": 6,
+      "kappa_sq": 0.001,
+      "delta_post": 0.8564161448498605,
+      "rho_maxres": 0.2334488800392157,
+      "dtv_bound_post": 1.0,
+      "llbound_standard": 7338.842708577655,
+      "llbound_resaware": 3399.9221786547077,
+      "measured_dll_max": 489.52167244476925,
+      "measured_dll_mean": 41.172227543842865,
+      "resaware_holds": true,
+      "tightening_factor": 2.1585325554367576
+    },
+    "C": {
+      "K": 6,
+      "kappa_sq": 0.0009,
+      "delta_post": 0.0017278677842668825,
+      "rho_maxres": 0.5915577748091603,
+      "dtv_bound_post": 0.9999901601522414,
+      "llbound_standard": 11.529070318712241,
+      "llbound_resaware": 6.824175901102032,
+      "measured_dll_max": 1.0240229576281763,
+      "measured_dll_mean": 0.03803121696356767,
+      "resaware_holds": true,
+      "tightening_factor": 1.6894450679166138
+    }
+  }
+}

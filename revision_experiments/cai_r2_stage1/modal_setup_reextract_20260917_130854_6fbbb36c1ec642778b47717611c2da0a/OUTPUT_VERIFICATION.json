@@ -1,0 +1,687 @@
+{
+  "status": "PASSED",
+  "results_rows": 84,
+  "summary_rows": 6,
+  "mode6_setup_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "setup_pairs_unique": true,
+  "frq_equals_OptVctr_first_all_84": true,
+  "CSV_statistics_recomputed_exactly": true,
+  "CSV_no_blank_values": true,
+  "source_and_previous_reports_unchanged": true,
+  "source_fingerprints": [
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0001_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619859617707300,
+      "sha256": "ebf6c20f583a5a980dff1240818f17cd897814c036cf1df3fcc52e71cdd2bd0b"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0002_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619859653299200,
+      "sha256": "5babe9d0e1a18786f257009bb10c38095bad8204e0753e9b931fe81ac3456711"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0003_id.mat",
+      "size_bytes": 523,
+      "mtime_ns": 1789619859711539600,
+      "sha256": "fa13a253e6c84a95d1382175f35ab8dcfc306dce69a868d0e618e7d1c5c18fef"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0004_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619859748190600,
+      "sha256": "e29b9319618a988a25c54a715db186a8fbbc3e99b2b36fd7eaa7167194010d62"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0005_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619859809699900,
+      "sha256": "277a017d90b8bf63462a58bdf3af71873a10f4a3a94cb297d26aad2bcda39a5d"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0006_id.mat",
+      "size_bytes": 523,
+      "mtime_ns": 1789619859846707700,
+      "sha256": "73acf094d4fa85c760bec00776c449821f631e3458c400852908c83178fa670e"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0007_id.mat",
+      "size_bytes": 524,
+      "mtime_ns": 1789619859905223300,
+      "sha256": "e9af6ae79b31573788d04dec9e23c797837021dbe68b242655cb735f3ee2f775"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0008_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619859940715500,
+      "sha256": "4401d5dc10e6db91988cd601ee6bf6638ce9920540bdebba6e0da7f1e7517604"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0009_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619860009739300,
+      "sha256": "9ae61529306f6b9937c04959ea6560f78723a7a4be25a167e4612910244be9dd"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0010_id.mat",
+      "size_bytes": 520,
+      "mtime_ns": 1789619860042365100,
+      "sha256": "1b8001f4c18d923d21615627af89b32ee9b2b49f252ea407596db38753fc2f65"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0011_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619860111487700,
+      "sha256": "2210649de5b7cd0d97b35a34c08c99b94f9008689046d5d536bd58b27f1c4d90"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0012_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619860152488700,
+      "sha256": "4fba8bd973548f02cf54306cd9c656ecfda9b2e010af7aeadb5e26b02cb77601"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0013_id.mat",
+      "size_bytes": 524,
+      "mtime_ns": 1789619860212309700,
+      "sha256": "3a3ac0cc3c677eeb95bd91d3888a11cec73a06034820af9a1dd9a0cb2d13b3a8"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0014_id.mat",
+      "size_bytes": 523,
+      "mtime_ns": 1789619860257937700,
+      "sha256": "9cb75e23e06710137416ec2df3a0d01e698b4e29674895833b0b928af71baba5"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0001_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619860499807800,
+      "sha256": "e333835a4daa6db8367d0ce57103772968fbc8d21e1d97d0cc54976d34ad6edb"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0002_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619860558815900,
+      "sha256": "e3daeaa0dfba73f706d4023f7f10508b15a7078425d4d5eec13da656232cf09d"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0003_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619860597503000,
+      "sha256": "e9cd6c3a1730007dcf24d444be4ef08cb7430a975ecaa855eb4fd0671e5c39f5"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0004_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619860655521100,
+      "sha256": "e6a74a2b42765f262a95baaa5d1f56a11511c48216d586df9a28cd0447a183f3"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0005_id.mat",
+      "size_bytes": 520,
+      "mtime_ns": 1789619860691613500,
+      "sha256": "37fb75029a5e8fff67eb4fa5e688388a2e8354b09ed524f9e8f1deaf7d5a888a"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0006_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619860749815000,
+      "sha256": "dff3d16020b6f3040abd044b5addbc7b9bb9e29a468f7e6fd890c39399262cb7"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0007_id.mat",
+      "size_bytes": 520,
+      "mtime_ns": 1789619860782647400,
+      "sha256": "e6e890bcebc2486299be328f8fe7fc6cdc051ede81ad69439339040904743302"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0008_id.mat",
+      "size_bytes": 519,
+      "mtime_ns": 1789619860841162500,
+      "sha256": "bc4e1b29cf5151ddeb98f9ad4730d7d7524ab9fb3d157f4f3759e38f713edf56"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0009_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619860874636200,
+      "sha256": "0a59a3abc5ad1b828392f46ea1ae7fff0c2183193fa6433a365d1aed67d9fdde"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0010_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619860934087900,
+      "sha256": "1b68c22eb9373ca00a973a66f8da5df773945351104cefe07df250f6f5c0e313"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0011_id.mat",
+      "size_bytes": 520,
+      "mtime_ns": 1789619860968093700,
+      "sha256": "649305dfaacfacf2200518745a6a3975a996634dce29a3d15bf1022d7ecf32cd"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0012_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619861028656700,
+      "sha256": "96c8b2fc26bcb6592c33f58decb46338094942953c190da1832955b910e74ff4"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0013_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619861063665600,
+      "sha256": "ecdcd72d755c312bb9ab896cd9f5f1ba8b5bb47e5cdf11261cfc03cd4b9513a5"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0014_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619861123606400,
+      "sha256": "cd06d95a25b95b162f5607ca8f4b2c8d901f7121b114eae043dd9c29df215cdc"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0001_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619861373426000,
+      "sha256": "b761b1e29d416de44477cb2c9eab85affb977ac3bd25f623d53161701e320637"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0002_id.mat",
+      "size_bytes": 524,
+      "mtime_ns": 1789619861414712700,
+      "sha256": "eee9c4add1a37d0387e8f41a5e273e0c2f0add39b4b332e2f78645d90672b3e3"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0003_id.mat",
+      "size_bytes": 520,
+      "mtime_ns": 1789619861472692700,
+      "sha256": "3f0308452e2bde5d4c495198b2a96a1146ef5c9ef5e748c1fa5e79e5d077ec70"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0004_id.mat",
+      "size_bytes": 523,
+      "mtime_ns": 1789619861507798600,
+      "sha256": "1772eee8ede83507c17e85a47bba878675f660c076ab09104b7a3494b4433fe6"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0005_id.mat",
+      "size_bytes": 520,
+      "mtime_ns": 1789619861574105300,
+      "sha256": "796055314b6c8ba0ce58e5f3242312676707d27ec4f560c4ed43f3fae9c7637b"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0006_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619861615621300,
+      "sha256": "fa33f75442790cb8cea0301b621e71bbfcc470f6c6558b35dfd66930afc4073d"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0007_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619861673981400,
+      "sha256": "e6987d7e87c9e2160d8b20ea7989071ef5fa9bf33d9795d9a787699d4cd6ac4d"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0008_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619861707504900,
+      "sha256": "9cd8002a2ba2f9d1a20bf19b984ecb6c7b6f8a5d8e1704484dfaa58183e16dbe"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0009_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619861767500400,
+      "sha256": "e0d97d7d31ef9379d94bec847978be110fca14ae1c1586d88073ff7f12747eb0"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0010_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619861802015900,
+      "sha256": "9da5a85224b7b6541d4c218a4d548b40712bcbadb08f40bccb363c7731e43bae"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0011_id.mat",
+      "size_bytes": 523,
+      "mtime_ns": 1789619861862933400,
+      "sha256": "8a3ab3a6c7a5476ec170779ac8747c64fb7d05b0b30bd235bb508459e275ff8b"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0012_id.mat",
+      "size_bytes": 520,
+      "mtime_ns": 1789619861896991800,
+      "sha256": "43d280706da5ac20eba69dac3f1cb344050ce1f8360e69a930fa2e7f2862b281"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0013_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619861957707700,
+      "sha256": "870ccd940d598df9c918cfeae9913a30451eecde74626eb2611fd488f5188bcc"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0014_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619861992227600,
+      "sha256": "a98ff9feb92cdb50312158ae505316cde45c1f0890c307a00349ee44ee3b5339"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0001_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619862201534200,
+      "sha256": "17ae54da096fe4911921ee6ccfd540fb40db3968db20c777bbdff14fe38a5783"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0002_id.mat",
+      "size_bytes": 523,
+      "mtime_ns": 1789619862263029200,
+      "sha256": "934b132a8a756cce042bb995fa9917ce455c82b32cb9a4fd333dcd2ac04614c3"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0003_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619862302324300,
+      "sha256": "b013a8bc7ab887c70e9b0103d2d350b5544f3b538aee8764175dff50e4dfdd32"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0004_id.mat",
+      "size_bytes": 525,
+      "mtime_ns": 1789619862363405900,
+      "sha256": "93f49d3573ed888642b8b691d37d6eb09158f33a9937e8e3baea655257e855fc"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0005_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619862399694400,
+      "sha256": "5ab1d14dcf35b52296c256d61c26e63627a8b738ad29d43cd779e18760caea66"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0006_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619862459694200,
+      "sha256": "7f72aaf4266c4a2e50f4d31c8a18e5a3dc02e6a91dcc34e0262bf37c0dd59c80"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0007_id.mat",
+      "size_bytes": 520,
+      "mtime_ns": 1789619862494793900,
+      "sha256": "0ff8ee3c64e03a51b15d022e45e65db3a32d2a75f5fb02db26604fa521fa6761"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0008_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619862560793400,
+      "sha256": "d9df0fd89eb944a60ae0bdf0ca5c29475deda2055153184de727e3956c1061f8"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0009_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619862603233300,
+      "sha256": "06939e398d0f91d72671dbb6b5954f316170eb0433ee7838e4f6ca204573c420"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0010_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619862661824500,
+      "sha256": "468a1fa875ce2e5ea29ead8941b5d9320e3f5b5c1e802ce3bfe11dea9e2f6e82"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0011_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619862700240900,
+      "sha256": "9a70238d5ff719a1c949f2cf9f8df40d58e27f120c2e67d737f2d1e11be8276d"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0012_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619862761555100,
+      "sha256": "2f5bc0e75cb75ff8a5df8fc97e7a80c82ef74e64a69aaf8b725a0d4dda338550"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0013_id.mat",
+      "size_bytes": 523,
+      "mtime_ns": 1789619862797475900,
+      "sha256": "551327f72249b9c78c5887a8c1aeb069e01a779f5afeeadd0be7afba3d209d4b"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0014_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619862869488800,
+      "sha256": "33444ef31245886ee77c06d2d5356d89a8eb790a8cea7d2dfd323d734ed4ce28"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0001_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619863100502700,
+      "sha256": "dd968228001c9476c65aa1aca7952666ce849414a826e069d5ba28e5a5f9296b"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0002_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619863141309800,
+      "sha256": "2279cfd074287642112de2d0d3b297ef91b68f03787b3352c4b3698077ff45fe"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0003_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619863204635400,
+      "sha256": "fc36b92ded42bb690f4f0a5f25f21201ba55d475f5fa30536bc30facacc78850"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0004_id.mat",
+      "size_bytes": 519,
+      "mtime_ns": 1789619863246404800,
+      "sha256": "011619833ef0a5e4abfdc36c84d0f28a0a1d4ad8490612b8fc2219e727fc059a"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0005_id.mat",
+      "size_bytes": 519,
+      "mtime_ns": 1789619863312416700,
+      "sha256": "da6cdc0339085a6590a27cc05a07c4c1cfad2c2641b83f81f84383cc4eda56c2"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0006_id.mat",
+      "size_bytes": 519,
+      "mtime_ns": 1789619863352718000,
+      "sha256": "a554e6a6e664bbea9733a631d97a3529751bc9325802012aa3852b015ab08609"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0007_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619863413999800,
+      "sha256": "5fd7c753fda65e0e328f12eae6d5119ca390d651b57a6a295f13593b9c528c06"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0008_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619863456610700,
+      "sha256": "4ad38ba32d5a1ed14b3e55bcc198b3111d74915384158cc2e709b91b1c2413ea"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0009_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619863515926300,
+      "sha256": "e01da457d8562a9a8eaa3bfdce33380af6a106e1f93d969dfd39eaf17f815ba0"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0010_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619863553926000,
+      "sha256": "daa6c4a948b55bfd5b05e3756464097624e4a178509d1b78e94098a01618ef92"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0011_id.mat",
+      "size_bytes": 520,
+      "mtime_ns": 1789619863618613100,
+      "sha256": "9d7a25eaed3467adb786f573b53f48bff2676b5101ea5a4681b352f488bfe7f8"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0012_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619863656612000,
+      "sha256": "bb5d03e335659f531eac5266de47690ed8461314a7c9b733b6223256d42a1f96"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0013_id.mat",
+      "size_bytes": 523,
+      "mtime_ns": 1789619863719032600,
+      "sha256": "bdc3e03872200b5b3d6e92801459404babc60f64b9d5bd6cdb8125e1c416ffae"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0014_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619863754900300,
+      "sha256": "84a4d244ec86d3c897ef2dde5d64d372c6bc1048a4ed339c4bbfa49d538987f1"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0001_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619320550135700,
+      "sha256": "488af3b021074a5eac3ad45a93e7492933431425869ea46c9753dd53524d8a11"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0002_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619363264599600,
+      "sha256": "88a457692a4d13b757fbf8fdfec69d15c21d246612496cb9fdc97482879ef4c8"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0003_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619404327737000,
+      "sha256": "2168f5de1e1c5786ff50ac5952f351efc405b2de343719634fa939f7a7c3db8e"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0004_id.mat",
+      "size_bytes": 520,
+      "mtime_ns": 1789619453547197300,
+      "sha256": "419511dd86aeb1c22d5d88a9fc4b7e41c3ced099e6b7ab16baac98460ca1ece4"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0005_id.mat",
+      "size_bytes": 520,
+      "mtime_ns": 1789619494386437500,
+      "sha256": "bf40ff310f17eded7281d24857a07e6670aac87c8e6297752eea4d718124b7f5"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0006_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619534393699500,
+      "sha256": "740b801dd5b3300c89722d8cd74aaec8f39a8cc1f6ae501f072f020507dde5fc"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0007_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619574738586400,
+      "sha256": "6d1cf915d6581d805cfc8436cbcca0e5fc0fe4ee93dcbfd155165f2c71f936ee"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0008_id.mat",
+      "size_bytes": 520,
+      "mtime_ns": 1789619615681057400,
+      "sha256": "a647c5daf4cc61ea7dac932214f72ccd174cb650b50a6511c6cd0f42e3e26973"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0009_id.mat",
+      "size_bytes": 520,
+      "mtime_ns": 1789619655259925600,
+      "sha256": "fcb4cf8c4b68a430d48f1ca8f18a469732e6f5478d0f044cfdc04abda41c8603"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0010_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619694661541700,
+      "sha256": "2a39ed1f72b4742fbda22d6f65206e497e583703cab2c66303483688e96159bc"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0011_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619735611224500,
+      "sha256": "684bd6ac62d29f06847f66377919fdd598eea9ddd8037288f727563aa0f66663"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0012_id.mat",
+      "size_bytes": 521,
+      "mtime_ns": 1789619776082343000,
+      "sha256": "72dc386fff1bbe868eab08b0203b3d903e9dbc9d1b30185a3f0ee72b286451d0"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0013_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619816449456100,
+      "sha256": "e914bf9ef35ff191ca4ef7ebe574fe9e47cab103a3a8f356a2d9eda074a96226"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0014_id.mat",
+      "size_bytes": 522,
+      "mtime_ns": 1789619859226282000,
+      "sha256": "03fb5deb3b5162b5aa8ddb09b5a3e38030e9a61510d1778eb4ef94f1ba6bb883"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0001.mat",
+      "size_bytes": 170181698,
+      "mtime_ns": 1789619320532135000,
+      "sha256": "NOT_HASHED_RAW_SIGNAL_METADATA_ONLY"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0002.mat",
+      "size_bytes": 164459980,
+      "mtime_ns": 1789619363246550600,
+      "sha256": "NOT_HASHED_RAW_SIGNAL_METADATA_ONLY"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0003.mat",
+      "size_bytes": 165007364,
+      "mtime_ns": 1789619404310737200,
+      "sha256": "NOT_HASHED_RAW_SIGNAL_METADATA_ONLY"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0004.mat",
+      "size_bytes": 165221896,
+      "mtime_ns": 1789619453528198500,
+      "sha256": "NOT_HASHED_RAW_SIGNAL_METADATA_ONLY"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0005.mat",
+      "size_bytes": 164220748,
+      "mtime_ns": 1789619494366366400,
+      "sha256": "NOT_HASHED_RAW_SIGNAL_METADATA_ONLY"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0006.mat",
+      "size_bytes": 164083664,
+      "mtime_ns": 1789619534376696800,
+      "sha256": "NOT_HASHED_RAW_SIGNAL_METADATA_ONLY"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0007.mat",
+      "size_bytes": 164361057,
+      "mtime_ns": 1789619574719584300,
+      "sha256": "NOT_HASHED_RAW_SIGNAL_METADATA_ONLY"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0008.mat",
+      "size_bytes": 164581665,
+      "mtime_ns": 1789619615665055700,
+      "sha256": "NOT_HASHED_RAW_SIGNAL_METADATA_ONLY"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0009.mat",
+      "size_bytes": 164486962,
+      "mtime_ns": 1789619655242009200,
+      "sha256": "NOT_HASHED_RAW_SIGNAL_METADATA_ONLY"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0010.mat",
+      "size_bytes": 163915661,
+      "mtime_ns": 1789619694643805000,
+      "sha256": "NOT_HASHED_RAW_SIGNAL_METADATA_ONLY"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0011.mat",
+      "size_bytes": 164256727,
+      "mtime_ns": 1789619735594222200,
+      "sha256": "NOT_HASHED_RAW_SIGNAL_METADATA_ONLY"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0012.mat",
+      "size_bytes": 164695327,
+      "mtime_ns": 1789619776064741800,
+      "sha256": "NOT_HASHED_RAW_SIGNAL_METADATA_ONLY"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0013.mat",
+      "size_bytes": 164033279,
+      "mtime_ns": 1789619816431466100,
+      "sha256": "NOT_HASHED_RAW_SIGNAL_METADATA_ONLY"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0014.mat",
+      "size_bytes": 164167708,
+      "mtime_ns": 1789619859212283000,
+      "sha256": "NOT_HASHED_RAW_SIGNAL_METADATA_ONLY"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\run_20260917_094722_21d144f3db844a6b8a2e8167c5282dbe\\TARGET_MANIFEST.json",
+      "size_bytes": 65177,
+      "mtime_ns": 1789610698796787900,
+      "sha256": "f50a40889007208c27912f17a3f6ef032c9fa1dbb0c4f6c71f856986e111cd7d"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\run_20260917_094722_21d144f3db844a6b8a2e8167c5282dbe\\STAGE1_REPORT.md",
+      "size_bytes": 21638,
+      "mtime_ns": 1789610779365290200,
+      "sha256": "297701be84c69d3555d0c0072eb544bffa2cf069094c5ae42c7da7cd77e2dd96"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\run_20260917_094722_21d144f3db844a6b8a2e8167c5282dbe\\FE_OVERLAP_AUDIT.json",
+      "size_bytes": 66755,
+      "mtime_ns": 1789610155009933300,
+      "sha256": "5dc795cf0ea57e82ad14b38f55970d2795f7b6107bb7d45aef84bcc856c627b0"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\AC3_material_check_20260917_124310_a552fa014ed84784b83763588a08643d\\MODAL_MATERIAL_CHECK.md",
+      "size_bytes": 67171,
+      "mtime_ns": 1789620801859186500,
+      "sha256": "da59c40d65b7d8882507c39293df3ded41e7143e500fa677035e51798ee62e27"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\AC3_material_check_20260917_124310_a552fa014ed84784b83763588a08643d\\MODAL_IDENTIFICATION_EXTRACT.csv",
+      "size_bytes": 231183,
+      "mtime_ns": 1789620801862186000,
+      "sha256": "074a246869a30390a87134096ddf2429cc02567972822f491b1bdf04669b5712"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\MnFunNoUnctnty.m",
+      "size_bytes": 3526,
+      "mtime_ns": 1789619859549169700,
+      "sha256": "35bb783c88ecdb8b569f60c4516077aa0975cf4f44c58897d0fe973dfac71006"
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\ObjL.m",
+      "size_bytes": 665,
+      "mtime_ns": 1789619864299263000,
+      "sha256": "b50e5b4075b8175289aab505f20daef39540616d89926b5f1916788f223200f8"
+    }
+  ],
+  "global_std_or_z_computed": false,
+  "modal_identification_executed": false,
+  "FE_executed": false,
+  "MCMC_executed": false,
+  "training_executed": false,
+  "dependencies_installed": false,
+  "ablation_24_runs": "NOT_RUN",
+  "outputs": [
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\modal_setup_reextract_20260917_130854_6fbbb36c1ec642778b47717611c2da0a\\MODAL_SETUP_RESULTS.csv",
+      "sha256": "bae2a1cf99fd8240ec63a84fcf78e6d7cfe77204a13004f8a6b50df60aaa99a9",
+      "size_bytes": 63952
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\modal_setup_reextract_20260917_130854_6fbbb36c1ec642778b47717611c2da0a\\MODAL_SETUP_SUMMARY.csv",
+      "sha256": "722b48c8322fa6d787bce4e2739791069d6171f08e91be7b46920703241e4cc4",
+      "size_bytes": 6304
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\modal_setup_reextract_20260917_130854_6fbbb36c1ec642778b47717611c2da0a\\MODAL_SETUP_REPORT.md",
+      "sha256": "dfea431633da2680bd38938a44f8c11d1782ccd6f4651a38f846a347f92a8d21",
+      "size_bytes": 12872
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\modal_setup_reextract_20260917_130854_6fbbb36c1ec642778b47717611c2da0a\\AUTHOR_CONFIRMED_EXTRACTION_EVIDENCE.json",
+      "sha256": "033647e70531aebbc8c736e9af8478700a752f666845a7aecb8cfc2df696e397",
+      "size_bytes": 79070
+    }
+  ]
+}

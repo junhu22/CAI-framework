@@ -1,0 +1,14 @@
+{
+  "overall_gate": "PASS",
+  "gates": {
+    "rank_rhat": true,
+    "bulk_ess": true,
+    "tail_ess": true,
+    "divergences": true
+  },
+  "max_rhat": 1.002742441099194,
+  "min_bulk_ess": 1308.4922878248408,
+  "min_tail_ess": 909.0653276587858,
+  "total_divergences": 0,
+  "gap_computed": true
+}

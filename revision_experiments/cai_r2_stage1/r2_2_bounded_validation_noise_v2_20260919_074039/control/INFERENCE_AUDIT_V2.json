@@ -1,0 +1,196 @@
+{
+  "finished_utc": "2026-09-18T23:47:21.273105+00:00",
+  "runtime_seconds": 41.65439779999724,
+  "historical_provenance_inverse_verification_calls": 684,
+  "new_e2_grid_flow_sample_calls": 108,
+  "new_FE_matched_flow_sample_calls": 216,
+  "new_e1_e3_or_NN_matched_flow_sample_calls": 0,
+  "new_training_calls": 0,
+  "new_MCMC_calls": 0,
+  "new_FE_solve_calls": 0,
+  "new_PSIS_calls": 0,
+  "new_MATLAB_calls": 0,
+  "new_random_seed_designs": 0,
+  "V1_classification": "SUPERSEDED_FOR_NOISE_SCALING_SEMANTICS_ONLY",
+  "V1_fully_preserved": true,
+  "direct_hash_verified_copies": [
+    {
+      "source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\r2_2_bounded_validation_20260918_225643\\DAMAGE_GRID_ACTIVE_GROUPS.csv",
+      "output": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\r2_2_bounded_validation_noise_v2_20260919_074039\\DAMAGE_GRID_ACTIVE_GROUPS_V2.csv",
+      "source_SHA256": "30e1946b388c6a8e2c0d2621342af1a94fe8a6acf8de3b2204c1fc18ea70a547",
+      "output_SHA256": "30e1946b388c6a8e2c0d2621342af1a94fe8a6acf8de3b2204c1fc18ea70a547",
+      "bitwise_identical": true
+    },
+    {
+      "source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\r2_2_bounded_validation_20260918_225643\\FE_HOLDOUT_MODAL_COMPARISON.csv",
+      "output": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\r2_2_bounded_validation_noise_v2_20260919_074039\\FE_HOLDOUT_MODAL_COMPARISON.csv",
+      "source_SHA256": "46183f28a1b94b4b8cb3c83e4d1983b48c0fd8f2df09f9c4a59b29e8a0486283",
+      "output_SHA256": "46183f28a1b94b4b8cb3c83e4d1983b48c0fd8f2df09f9c4a59b29e8a0486283",
+      "bitwise_identical": true
+    },
+    {
+      "source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\r2_2_bounded_validation_20260918_225643\\FIELD_MODAL_UNCERTAINTY_TABLE.csv",
+      "output": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\r2_2_bounded_validation_noise_v2_20260919_074039\\FIELD_MODAL_UNCERTAINTY_TABLE.csv",
+      "source_SHA256": "8afe6de1729c98986a29bf72fe854eeb7a0c4037e99a133c40254343d2f35c95",
+      "output_SHA256": "8afe6de1729c98986a29bf72fe854eeb7a0c4037e99a133c40254343d2f35c95",
+      "bitwise_identical": true
+    },
+    {
+      "source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\r2_2_bounded_validation_20260918_225643\\FIELD_MODE6_UNCERTAINTY_NOTE.md",
+      "output": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\r2_2_bounded_validation_noise_v2_20260919_074039\\FIELD_MODE6_UNCERTAINTY_NOTE.md",
+      "source_SHA256": "42f5fde04ba914cf5063eac2bc91164c471ea009b36306b623e564615aec74f5",
+      "output_SHA256": "42f5fde04ba914cf5063eac2bc91164c471ea009b36306b623e564615aec74f5",
+      "bitwise_identical": true
+    }
+  ],
+  "overall": {
+    "matched_pairs": 216,
+    "mean_affected_coordinate_absolute_difference": 0.0012367668527143974,
+    "maximum_affected_coordinate_absolute_difference": 0.009992480278015137,
+    "route_agreement_count": 215,
+    "route_changes": 1,
+    "AUC_FE_minus_NN_min": -0.002777777777777768,
+    "AUC_FE_minus_NN_max": 0.002777777777777879,
+    "AUC_FE_minus_NN_mean": -0.00011574074074073416,
+    "TPR_FE_minus_NN_min": 0.0,
+    "TPR_FE_minus_NN_max": 0.0,
+    "point_kappa_blocks_with_TPR_difference": 0
+  },
+  "table18": [
+    {
+      "parameter": "e1",
+      "severity": 0.1,
+      "severity_percent": 10.0,
+      "kappa_percent": "1;3;5",
+      "repeats_total": 36,
+      "averaging": "Equal-weight across kappa only, never across structural groups",
+      "AUC": 0.5863425925925926,
+      "TPR_at_5pct_FPR": 0.0,
+      "localization_parameter_recovery_error_percent": 10.778673784232431,
+      "fast_route_count_tau05": 5,
+      "correction_route_count_tau05": 31
+    },
+    {
+      "parameter": "e1",
+      "severity": 0.25,
+      "severity_percent": 25.0,
+      "kappa_percent": "1;3;5",
+      "repeats_total": 36,
+      "averaging": "Equal-weight across kappa only, never across structural groups",
+      "AUC": 0.6821759259259258,
+      "TPR_at_5pct_FPR": 0.0,
+      "localization_parameter_recovery_error_percent": 9.461205756222759,
+      "fast_route_count_tau05": 3,
+      "correction_route_count_tau05": 33
+    },
+    {
+      "parameter": "e1",
+      "severity": 0.5,
+      "severity_percent": 50.0,
+      "kappa_percent": "1;3;5",
+      "repeats_total": 36,
+      "averaging": "Equal-weight across kappa only, never across structural groups",
+      "AUC": 0.9048611111111112,
+      "TPR_at_5pct_FPR": 0.4166666666666667,
+      "localization_parameter_recovery_error_percent": 10.716426041391161,
+      "fast_route_count_tau05": 0,
+      "correction_route_count_tau05": 36
+    },
+    {
+      "parameter": "e2",
+      "severity": 0.1,
+      "severity_percent": 10.0,
+      "kappa_percent": "1;3;5",
+      "repeats_total": 36,
+      "averaging": "Equal-weight across kappa only, never across structural groups",
+      "AUC": 0.6578703703703703,
+      "TPR_at_5pct_FPR": 0.0,
+      "localization_parameter_recovery_error_percent": 15.261719293064543,
+      "fast_route_count_tau05": 4,
+      "correction_route_count_tau05": 32
+    },
+    {
+      "parameter": "e2",
+      "severity": 0.25,
+      "severity_percent": 25.0,
+      "kappa_percent": "1;3;5",
+      "repeats_total": 36,
+      "averaging": "Equal-weight across kappa only, never across structural groups",
+      "AUC": 0.7354166666666666,
+      "TPR_at_5pct_FPR": 0.0,
+      "localization_parameter_recovery_error_percent": 15.381617016262476,
+      "fast_route_count_tau05": 4,
+      "correction_route_count_tau05": 32
+    },
+    {
+      "parameter": "e2",
+      "severity": 0.5,
+      "severity_percent": 50.0,
+      "kappa_percent": "1;3;5",
+      "repeats_total": 36,
+      "averaging": "Equal-weight across kappa only, never across structural groups",
+      "AUC": 0.8967592592592593,
+      "TPR_at_5pct_FPR": 0.4444444444444444,
+      "localization_parameter_recovery_error_percent": 21.48472120364507,
+      "fast_route_count_tau05": 0,
+      "correction_route_count_tau05": 36
+    },
+    {
+      "parameter": "e3",
+      "severity": 0.1,
+      "severity_percent": 10.0,
+      "kappa_percent": "1;3;5",
+      "repeats_total": 36,
+      "averaging": "Equal-weight across kappa only, never across structural groups",
+      "AUC": 0.5842592592592593,
+      "TPR_at_5pct_FPR": 0.0,
+      "localization_parameter_recovery_error_percent": 8.839237800350896,
+      "fast_route_count_tau05": 2,
+      "correction_route_count_tau05": 34
+    },
+    {
+      "parameter": "e3",
+      "severity": 0.25,
+      "severity_percent": 25.0,
+      "kappa_percent": "1;3;5",
+      "repeats_total": 36,
+      "averaging": "Equal-weight across kappa only, never across structural groups",
+      "AUC": 0.7062499999999999,
+      "TPR_at_5pct_FPR": 0.0,
+      "localization_parameter_recovery_error_percent": 6.669348036801374,
+      "fast_route_count_tau05": 0,
+      "correction_route_count_tau05": 36
+    },
+    {
+      "parameter": "e3",
+      "severity": 0.5,
+      "severity_percent": 50.0,
+      "kappa_percent": "1;3;5",
+      "repeats_total": 36,
+      "averaging": "Equal-weight across kappa only, never across structural groups",
+      "AUC": 0.9344907407407407,
+      "TPR_at_5pct_FPR": 0.4166666666666667,
+      "localization_parameter_recovery_error_percent": 4.216935568385654,
+      "fast_route_count_tau05": 0,
+      "correction_route_count_tau05": 36
+    }
+  ],
+  "negative_proposals": "Retained in raw fast means; zero target weight for nonpositive support",
+  "diagnostic_target": {
+    "K": 20,
+    "sigma_log": 0.55,
+    "kappa_sq": 0.001,
+    "prior": "Independent untruncated lognormal",
+    "tau": 0.5
+  },
+  "preservation_after": {
+    "checked_utc": "2026-09-18T23:47:22.392249+00:00",
+    "checked_protected_files": 906,
+    "checked_V1_files": 36,
+    "all_protected_SHA256_unchanged": true,
+    "checked_Git_tracked_files": 305,
+    "all_tracked_SHA256_unchanged": true,
+    "Git_tracked_status_unchanged": true
+  },
+  "controller_sha256": "0a1ea9ea954410a3e406189afa47a3a14d9f34e88f2a2f5dfc89eaff9ae87794"
+}

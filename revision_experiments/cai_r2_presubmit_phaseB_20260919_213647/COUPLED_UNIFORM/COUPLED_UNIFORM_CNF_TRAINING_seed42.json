@@ -1,0 +1,58 @@
+{
+  "seed": 42,
+  "role": "primary",
+  "selection_rule": "seed 42 remains primary; no seed selection",
+  "theta_distribution": "independent Uniform(0.5,4.0)^3",
+  "theta_min_per_coordinate": [
+    0.5000484585762024,
+    0.5000467300415039,
+    0.5000620484352112
+  ],
+  "theta_max_per_coordinate": [
+    3.9999611377716064,
+    3.9997239112854004,
+    3.9999194145202637
+  ],
+  "theta_mean_per_coordinate": [
+    2.2502737045288086,
+    2.2431859970092773,
+    2.2483811378479004
+  ],
+  "training_pairs": 50000,
+  "validation_pairs": 5000,
+  "noise": "multiplicative independent Gaussian, kappa=0.03",
+  "architecture": {
+    "coupling_layers": 8,
+    "hidden": 128,
+    "y_embed": [
+      20,
+      64,
+      20
+    ],
+    "parameters": 165508
+  },
+  "optimizer": {
+    "name": "Adam",
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "batch_size": 512,
+    "gradient_clip": 5.0,
+    "scheduler": "CosineAnnealingLR(500)",
+    "patience": 50,
+    "max_epochs": 500
+  },
+  "normalization": "none for direct theta/y flow inputs (unchanged from old script)",
+  "best_validation_nll": -3.5181093215942383,
+  "stop_epoch": 283,
+  "runtime_s": 357.75936102867126,
+  "max_roundtrip_reconstruction_error": 1.1920928955078125e-06,
+  "checkpoint": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_presubmit_phaseB_20260919_213647\\COUPLED_UNIFORM\\conditional_flow_coupled_uniform_primary.pt",
+  "checkpoint_sha256": "690d5dbd8ae507e10b7393590721faa7b78cb1d24919330062429e12d4381cc3",
+  "history": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_presubmit_phaseB_20260919_213647\\COUPLED_UNIFORM\\COUPLED_UNIFORM_CNF_TRAINING_seed42.csv",
+  "surrogate": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models_coupled\\member_0.pt",
+  "surrogate_sha256": "6a1e4f530d4e3628e0b7fdbf08661b4dc32a71a0c2b538b26f5af9d7c07b9986",
+  "source_old_training_script": "C:\\neutra-hmc-surrogate\\surrogate_training\\experiments\\coupled_building\\04_train_cnf_coupled.py",
+  "source_old_training_script_sha256": "844446aff945285062f9b0b9a1e536252233718e6d5aebb3642ae53a2513369f",
+  "new_fe_calls": 0,
+  "surrogate_training_calls": 0
+}

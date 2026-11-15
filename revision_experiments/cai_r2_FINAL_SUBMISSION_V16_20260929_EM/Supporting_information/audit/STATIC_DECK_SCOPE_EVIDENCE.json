@@ -1,0 +1,1213 @@
+{
+  "generated_at": "2026-09-21T09:12:42.705545+08:00",
+  "method": "read-only static command/section trace; no FE solve or surrogate evaluation",
+  "sources": {
+    "apdl_template/run_sample_template.mac": {
+      "sha256": "7399bf181743affeef110adfafc890187f7f9165e55e472ff6d63d6c65486682",
+      "lines": 213,
+      "selected_commands": [
+        {
+          "line": 14,
+          "text": "ET,1,SHELL181"
+        },
+        {
+          "line": 15,
+          "text": "ET,2,BEAM189"
+        },
+        {
+          "line": 17,
+          "text": "mp,ex,1,e1"
+        },
+        {
+          "line": 21,
+          "text": "mp,ex,2,e2"
+        },
+        {
+          "line": 25,
+          "text": "mp,ex,3,e3"
+        },
+        {
+          "line": 29,
+          "text": "mp,ex,4,9.94e10"
+        },
+        {
+          "line": 33,
+          "text": "mp,ex,5,3.5e10"
+        },
+        {
+          "line": 37,
+          "text": "mp,ex,6,e4"
+        },
+        {
+          "line": 41,
+          "text": "mp,ex,7,e5"
+        },
+        {
+          "line": 45,
+          "text": "mp,ex,8,e6"
+        },
+        {
+          "line": 49,
+          "text": "sectype,1,beam,rect,column1"
+        },
+        {
+          "line": 51,
+          "text": "secdata,2,2.6"
+        },
+        {
+          "line": 52,
+          "text": "sectype,2,beam,rect,column2"
+        },
+        {
+          "line": 54,
+          "text": "secdata,2.6,2.8"
+        },
+        {
+          "line": 55,
+          "text": "sectype,3,beam,rect,column3"
+        },
+        {
+          "line": 57,
+          "text": "secdata,2.8,3"
+        },
+        {
+          "line": 58,
+          "text": "sectype,4,beam,rect,column4"
+        },
+        {
+          "line": 60,
+          "text": "secdata,2.8,3.2"
+        },
+        {
+          "line": 61,
+          "text": "sectype,5,beam,rect,column5"
+        },
+        {
+          "line": 63,
+          "text": "secdata,2.4,2.6"
+        },
+        {
+          "line": 64,
+          "text": "sectype,6,beam,rect,column6"
+        },
+        {
+          "line": 66,
+          "text": "secdata,2.4,2.4"
+        },
+        {
+          "line": 67,
+          "text": "sectype,7,beam,rect,column7"
+        },
+        {
+          "line": 69,
+          "text": "secdata,2,3.2"
+        },
+        {
+          "line": 70,
+          "text": "sectype,8,beam,rect,column8"
+        },
+        {
+          "line": 72,
+          "text": "secdata,1.6,2"
+        },
+        {
+          "line": 73,
+          "text": "sectype,9,beam,csolid,column9"
+        },
+        {
+          "line": 75,
+          "text": "secdata,3.2,16,2"
+        },
+        {
+          "line": 76,
+          "text": "sectype,10,shell,,Roof"
+        },
+        {
+          "line": 78,
+          "text": "secdata,0.4,1"
+        },
+        {
+          "line": 79,
+          "text": "sectype,11,beam,rect,beam1"
+        },
+        {
+          "line": 81,
+          "text": "secdata,0.5,4.2"
+        },
+        {
+          "line": 82,
+          "text": "sectype,12,beam,rect,beam2"
+        },
+        {
+          "line": 84,
+          "text": "secdata,1.2,1.2"
+        },
+        {
+          "line": 85,
+          "text": "sectype,13,beam,rect,beam3"
+        },
+        {
+          "line": 87,
+          "text": "secdata,1.2,1.2"
+        },
+        {
+          "line": 88,
+          "text": "sectype,14,shell,,Core"
+        },
+        {
+          "line": 90,
+          "text": "secdata,0.8,1"
+        }
+      ]
+    },
+    "apdl_template/run_coupled_template.mac": {
+      "sha256": "deaa56767c3d7a1f6ccd5a1814af1b9b13283613c4ff75109932b8eab80735d9",
+      "lines": 1691,
+      "selected_commands": [
+        {
+          "line": 17,
+          "text": "ET,1,SHELL181"
+        },
+        {
+          "line": 18,
+          "text": "ET,2,BEAM189"
+        },
+        {
+          "line": 23,
+          "text": "mp,ex,1,e1"
+        },
+        {
+          "line": 28,
+          "text": "mp,ex,2,e2"
+        },
+        {
+          "line": 33,
+          "text": "mp,ex,3,e3"
+        },
+        {
+          "line": 39,
+          "text": "sectype,1,beam,rect,column1"
+        },
+        {
+          "line": 41,
+          "text": "secdata,1.5,2.6"
+        },
+        {
+          "line": 44,
+          "text": "sectype,2,beam,rect,column2"
+        },
+        {
+          "line": 46,
+          "text": "secdata,1.5,2.6"
+        },
+        {
+          "line": 49,
+          "text": "sectype,3,beam,rect,column3"
+        },
+        {
+          "line": 51,
+          "text": "secdata,1.5,1.5"
+        },
+        {
+          "line": 54,
+          "text": "sectype,4,beam,rect,column4"
+        },
+        {
+          "line": 56,
+          "text": "secdata,1.1,1,.5"
+        },
+        {
+          "line": 59,
+          "text": "sectype,5,beam,rect,column5"
+        },
+        {
+          "line": 61,
+          "text": "secdata,1.3,1.3"
+        },
+        {
+          "line": 64,
+          "text": "sectype,6,beam,rect,beam1"
+        },
+        {
+          "line": 66,
+          "text": "secdata,1.8,1.8"
+        },
+        {
+          "line": 68,
+          "text": "sectype,7,beam,rect,beam2"
+        },
+        {
+          "line": 70,
+          "text": "secdata,0.5,0.7"
+        },
+        {
+          "line": 72,
+          "text": "sectype,8,beam,rect,beam3"
+        },
+        {
+          "line": 74,
+          "text": "secdata,0.7,2.1"
+        },
+        {
+          "line": 77,
+          "text": "sectype,9,shell,,Roof"
+        },
+        {
+          "line": 79,
+          "text": "secdata,0.4,1"
+        },
+        {
+          "line": 82,
+          "text": "sectype,10,shell,,staircase"
+        },
+        {
+          "line": 84,
+          "text": "secdata,0.15,1"
+        },
+        {
+          "line": 910,
+          "text": "latt,1,,2,,,,1"
+        },
+        {
+          "line": 931,
+          "text": "latt,1,,2,,,,2"
+        },
+        {
+          "line": 969,
+          "text": "latt,1,,2,,,,3"
+        },
+        {
+          "line": 984,
+          "text": "latt,1,,2,,,,4"
+        },
+        {
+          "line": 993,
+          "text": "latt,1,,2,,,,5"
+        },
+        {
+          "line": 1535,
+          "text": "latt,3,,2,,,,6"
+        },
+        {
+          "line": 1547,
+          "text": "latt,3,,2,,,,6"
+        },
+        {
+          "line": 1590,
+          "text": "latt,3,,2,,,,8"
+        },
+        {
+          "line": 1599,
+          "text": "latt,3,,2,,,,8"
+        },
+        {
+          "line": 1636,
+          "text": "latt,3,,2,,,,8"
+        },
+        {
+          "line": 1642,
+          "text": "AATT,2,,1,,9"
+        },
+        {
+          "line": 1646,
+          "text": "AATT,2,,1,,10"
+        }
+      ]
+    },
+    "02_run_batch.py": {
+      "sha256": "8f963dc537cf591741652ec3a74b17b7f6be363abc6fd696b0c5f082a67d4d48",
+      "lines": 144,
+      "selected_commands": [
+        {
+          "line": 13,
+          "text": "E_BASE = 2e10  # Nominal elastic modulus"
+        }
+      ]
+    },
+    "experiments/coupled_building/02_run_batch_coupled.py": {
+      "sha256": "ba7eda0e507394c5dab76e57faf41b4e196cef5e27b634ca2c30f3fda0a479aa",
+      "lines": 134,
+      "selected_commands": []
+    },
+    "update.mac": {
+      "sha256": "d7521327e8048843b0e265e5c3fa6e4d3519359d6986f0633fb5e2320b121091",
+      "lines": 1823,
+      "selected_commands": [
+        {
+          "line": 8,
+          "text": "*ulib,D:\\updating\\mread,mac"
+        },
+        {
+          "line": 9,
+          "text": "*use,updaparame"
+        },
+        {
+          "line": 13,
+          "text": "*SET,e1,updaparamets(1,1)*2e10"
+        },
+        {
+          "line": 14,
+          "text": "*SET,e2,updaparamets(2,1)*2e10"
+        },
+        {
+          "line": 15,
+          "text": "*SET,e3,updaparamets(3,1)*2e10"
+        },
+        {
+          "line": 16,
+          "text": "*SET,e4,updaparamets(4,1)*2e10"
+        },
+        {
+          "line": 17,
+          "text": "*SET,e5,updaparamets(5,1)*2e10"
+        },
+        {
+          "line": 18,
+          "text": "*SET,e6,updaparamets(6,1)*2e10"
+        },
+        {
+          "line": 23,
+          "text": "ET,1,SHELL181"
+        },
+        {
+          "line": 24,
+          "text": "ET,2,BEAM189"
+        },
+        {
+          "line": 29,
+          "text": "mp,ex,1,e1"
+        },
+        {
+          "line": 34,
+          "text": "mp,ex,2,e2"
+        },
+        {
+          "line": 39,
+          "text": "mp,ex,3,e3"
+        },
+        {
+          "line": 44,
+          "text": "mp,ex,4,9.94e10"
+        },
+        {
+          "line": 49,
+          "text": "mp,ex,5,3.5e10"
+        },
+        {
+          "line": 54,
+          "text": "mp,ex,6,e4"
+        },
+        {
+          "line": 59,
+          "text": "mp,ex,7,e5"
+        },
+        {
+          "line": 64,
+          "text": "mp,ex,8,e6"
+        },
+        {
+          "line": 70,
+          "text": "sectype,1,beam,rect,column1"
+        },
+        {
+          "line": 72,
+          "text": "secdata,2,2.6"
+        },
+        {
+          "line": 74,
+          "text": "sectype,2,beam,rect,column2"
+        },
+        {
+          "line": 76,
+          "text": "secdata,2.6,2.8"
+        },
+        {
+          "line": 78,
+          "text": "sectype,3,beam,rect,column3"
+        },
+        {
+          "line": 80,
+          "text": "secdata,2.8,3"
+        },
+        {
+          "line": 82,
+          "text": "sectype,4,beam,rect,column4"
+        },
+        {
+          "line": 84,
+          "text": "secdata,2.8,3.2"
+        },
+        {
+          "line": 86,
+          "text": "sectype,5,beam,rect,column5"
+        },
+        {
+          "line": 88,
+          "text": "secdata,2.4,2.6"
+        },
+        {
+          "line": 90,
+          "text": "sectype,6,beam,rect,column6"
+        },
+        {
+          "line": 92,
+          "text": "secdata,2.4,2.4"
+        },
+        {
+          "line": 94,
+          "text": "sectype,7,beam,rect,column7"
+        },
+        {
+          "line": 96,
+          "text": "secdata,2,3.2"
+        },
+        {
+          "line": 98,
+          "text": "sectype,8,beam,rect,column8"
+        },
+        {
+          "line": 100,
+          "text": "secdata,1.6,2"
+        },
+        {
+          "line": 103,
+          "text": "sectype,9,beam,csolid,column9"
+        },
+        {
+          "line": 105,
+          "text": "secdata,3.2,16,2"
+        },
+        {
+          "line": 108,
+          "text": "sectype,10,shell,,Roof"
+        },
+        {
+          "line": 110,
+          "text": "secdata,0.4,1"
+        },
+        {
+          "line": 114,
+          "text": "sectype,11,beam,rect,beam1"
+        },
+        {
+          "line": 116,
+          "text": "secdata,0.5,4.2"
+        },
+        {
+          "line": 119,
+          "text": "sectype,12,beam,rect,beam2"
+        },
+        {
+          "line": 121,
+          "text": "secdata,1.2,1.2"
+        },
+        {
+          "line": 124,
+          "text": "sectype,13,beam,rect,beam3"
+        },
+        {
+          "line": 126,
+          "text": "secdata,1.2,1.2"
+        },
+        {
+          "line": 129,
+          "text": "sectype,14,shell,,Core"
+        },
+        {
+          "line": 131,
+          "text": "secdata,0.8,1"
+        },
+        {
+          "line": 1226,
+          "text": "latt,1,,2,,,,9"
+        },
+        {
+          "line": 1232,
+          "text": "latt,1,,2,,,,7"
+        },
+        {
+          "line": 1238,
+          "text": "latt,1,,2,,,,6"
+        },
+        {
+          "line": 1272,
+          "text": "latt,1,,2,,,,1"
+        },
+        {
+          "line": 1304,
+          "text": "latt,1,,2,,,,4"
+        },
+        {
+          "line": 1322,
+          "text": "latt,1,,2,,,,2"
+        },
+        {
+          "line": 1340,
+          "text": "latt,1,,2,,,,3"
+        },
+        {
+          "line": 1349,
+          "text": "latt,1,,2,,,,1"
+        },
+        {
+          "line": 1357,
+          "text": "latt,1,,2,,,,4"
+        },
+        {
+          "line": 1363,
+          "text": "latt,1,,2,,,,2"
+        },
+        {
+          "line": 1369,
+          "text": "latt,1,,2,,,,3"
+        },
+        {
+          "line": 1410,
+          "text": "latt,2,,2,,,,8"
+        },
+        {
+          "line": 1438,
+          "text": "latt,2,,2,,,,1"
+        },
+        {
+          "line": 1528,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1533,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1541,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1547,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1553,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1558,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1578,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1593,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1599,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1604,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1644,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1660,
+          "text": "latt,3,,2,,,,12"
+        },
+        {
+          "line": 1672,
+          "text": "latt,3,,2,,,,13"
+        },
+        {
+          "line": 1679,
+          "text": "latt,3,,2,,,,12"
+        },
+        {
+          "line": 1685,
+          "text": "latt,3,,2,,,,13"
+        },
+        {
+          "line": 1694,
+          "text": "latt,3,,2,,,,12"
+        },
+        {
+          "line": 1706,
+          "text": "latt,3,,2,,,,13"
+        },
+        {
+          "line": 1723,
+          "text": "latt,3,,2,,,,12"
+        },
+        {
+          "line": 1739,
+          "text": "latt,3,,2,,,,13"
+        },
+        {
+          "line": 1770,
+          "text": "AATT,4,,1,,10"
+        },
+        {
+          "line": 1776,
+          "text": "AATT,5,,1,,14"
+        },
+        {
+          "line": 1781,
+          "text": "AATT,5,,1,,14"
+        },
+        {
+          "line": 1812,
+          "text": "*ulib,D:\\updating\\mread,mac"
+        },
+        {
+          "line": 1813,
+          "text": "*use,modeldata"
+        },
+        {
+          "line": 1818,
+          "text": "*ulib,D:\\updating\\mread,mac"
+        },
+        {
+          "line": 1819,
+          "text": "*use,outputdata"
+        }
+      ]
+    },
+    "revision_experiments/cai_r2_stage1/local_fe_rerun_20260918_085458/p01/run.mac": {
+      "sha256": "ba3a71c579391fd60b63d916dd825ba101cd2d4fa62c9b4eb5e75926267bf779",
+      "lines": 1832,
+      "selected_commands": [
+        {
+          "line": 6,
+          "text": "*SET,e1,stage_e1*2e10"
+        },
+        {
+          "line": 8,
+          "text": "*SET,e2,stage_e2*2e10"
+        },
+        {
+          "line": 10,
+          "text": "*SET,e3,stage_e3*2e10"
+        },
+        {
+          "line": 12,
+          "text": "*SET,e4,stage_e4*2e10"
+        },
+        {
+          "line": 14,
+          "text": "*SET,e5,stage_e5*2e10"
+        },
+        {
+          "line": 16,
+          "text": "*SET,e6,stage_e6*2e10"
+        },
+        {
+          "line": 34,
+          "text": "ET,1,SHELL181"
+        },
+        {
+          "line": 35,
+          "text": "ET,2,BEAM189"
+        },
+        {
+          "line": 40,
+          "text": "mp,ex,1,e1"
+        },
+        {
+          "line": 45,
+          "text": "mp,ex,2,e2"
+        },
+        {
+          "line": 50,
+          "text": "mp,ex,3,e3"
+        },
+        {
+          "line": 55,
+          "text": "mp,ex,4,9.94e10"
+        },
+        {
+          "line": 60,
+          "text": "mp,ex,5,3.5e10"
+        },
+        {
+          "line": 65,
+          "text": "mp,ex,6,e4"
+        },
+        {
+          "line": 70,
+          "text": "mp,ex,7,e5"
+        },
+        {
+          "line": 75,
+          "text": "mp,ex,8,e6"
+        },
+        {
+          "line": 81,
+          "text": "sectype,1,beam,rect,column1"
+        },
+        {
+          "line": 83,
+          "text": "secdata,2,2.6"
+        },
+        {
+          "line": 85,
+          "text": "sectype,2,beam,rect,column2"
+        },
+        {
+          "line": 87,
+          "text": "secdata,2.6,2.8"
+        },
+        {
+          "line": 89,
+          "text": "sectype,3,beam,rect,column3"
+        },
+        {
+          "line": 91,
+          "text": "secdata,2.8,3"
+        },
+        {
+          "line": 93,
+          "text": "sectype,4,beam,rect,column4"
+        },
+        {
+          "line": 95,
+          "text": "secdata,2.8,3.2"
+        },
+        {
+          "line": 97,
+          "text": "sectype,5,beam,rect,column5"
+        },
+        {
+          "line": 99,
+          "text": "secdata,2.4,2.6"
+        },
+        {
+          "line": 101,
+          "text": "sectype,6,beam,rect,column6"
+        },
+        {
+          "line": 103,
+          "text": "secdata,2.4,2.4"
+        },
+        {
+          "line": 105,
+          "text": "sectype,7,beam,rect,column7"
+        },
+        {
+          "line": 107,
+          "text": "secdata,2,3.2"
+        },
+        {
+          "line": 109,
+          "text": "sectype,8,beam,rect,column8"
+        },
+        {
+          "line": 111,
+          "text": "secdata,1.6,2"
+        },
+        {
+          "line": 114,
+          "text": "sectype,9,beam,csolid,column9"
+        },
+        {
+          "line": 116,
+          "text": "secdata,3.2,16,2"
+        },
+        {
+          "line": 119,
+          "text": "sectype,10,shell,,Roof"
+        },
+        {
+          "line": 121,
+          "text": "secdata,0.4,1"
+        },
+        {
+          "line": 125,
+          "text": "sectype,11,beam,rect,beam1"
+        },
+        {
+          "line": 127,
+          "text": "secdata,0.5,4.2"
+        },
+        {
+          "line": 130,
+          "text": "sectype,12,beam,rect,beam2"
+        },
+        {
+          "line": 132,
+          "text": "secdata,1.2,1.2"
+        },
+        {
+          "line": 135,
+          "text": "sectype,13,beam,rect,beam3"
+        },
+        {
+          "line": 137,
+          "text": "secdata,1.2,1.2"
+        },
+        {
+          "line": 140,
+          "text": "sectype,14,shell,,Core"
+        },
+        {
+          "line": 142,
+          "text": "secdata,0.8,1"
+        },
+        {
+          "line": 1237,
+          "text": "latt,1,,2,,,,9"
+        },
+        {
+          "line": 1243,
+          "text": "latt,1,,2,,,,7"
+        },
+        {
+          "line": 1249,
+          "text": "latt,1,,2,,,,6"
+        },
+        {
+          "line": 1283,
+          "text": "latt,1,,2,,,,1"
+        },
+        {
+          "line": 1315,
+          "text": "latt,1,,2,,,,4"
+        },
+        {
+          "line": 1333,
+          "text": "latt,1,,2,,,,2"
+        },
+        {
+          "line": 1351,
+          "text": "latt,1,,2,,,,3"
+        },
+        {
+          "line": 1360,
+          "text": "latt,1,,2,,,,1"
+        },
+        {
+          "line": 1368,
+          "text": "latt,1,,2,,,,4"
+        },
+        {
+          "line": 1374,
+          "text": "latt,1,,2,,,,2"
+        },
+        {
+          "line": 1380,
+          "text": "latt,1,,2,,,,3"
+        },
+        {
+          "line": 1421,
+          "text": "latt,2,,2,,,,8"
+        },
+        {
+          "line": 1449,
+          "text": "latt,2,,2,,,,1"
+        },
+        {
+          "line": 1539,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1544,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1552,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1558,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1564,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1569,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1589,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1604,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1610,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1615,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1655,
+          "text": "latt,3,,2,,,,11"
+        },
+        {
+          "line": 1671,
+          "text": "latt,3,,2,,,,12"
+        },
+        {
+          "line": 1683,
+          "text": "latt,3,,2,,,,13"
+        },
+        {
+          "line": 1690,
+          "text": "latt,3,,2,,,,12"
+        },
+        {
+          "line": 1696,
+          "text": "latt,3,,2,,,,13"
+        },
+        {
+          "line": 1705,
+          "text": "latt,3,,2,,,,12"
+        },
+        {
+          "line": 1717,
+          "text": "latt,3,,2,,,,13"
+        },
+        {
+          "line": 1734,
+          "text": "latt,3,,2,,,,12"
+        },
+        {
+          "line": 1750,
+          "text": "latt,3,,2,,,,13"
+        },
+        {
+          "line": 1781,
+          "text": "AATT,4,,1,,10"
+        },
+        {
+          "line": 1787,
+          "text": "AATT,5,,1,,14"
+        },
+        {
+          "line": 1792,
+          "text": "AATT,5,,1,,14"
+        }
+      ]
+    },
+    "batch_runs_coupled_train/s000000/run.mac": {
+      "sha256": "cf6f74f4ddbd04a010d294ed9c8bd2f1e95a72cad88cc05cd5d73f2f1e18f867",
+      "lines": 1693,
+      "selected_commands": [
+        {
+          "line": 12,
+          "text": "*SET,e1,1.5601436617e+10"
+        },
+        {
+          "line": 13,
+          "text": "*SET,e2,1.0478760764e+10"
+        },
+        {
+          "line": 14,
+          "text": "*SET,e3,6.5614337020e+09"
+        },
+        {
+          "line": 19,
+          "text": "ET,1,SHELL181"
+        },
+        {
+          "line": 20,
+          "text": "ET,2,BEAM189"
+        },
+        {
+          "line": 25,
+          "text": "mp,ex,1,e1"
+        },
+        {
+          "line": 30,
+          "text": "mp,ex,2,e2"
+        },
+        {
+          "line": 35,
+          "text": "mp,ex,3,e3"
+        },
+        {
+          "line": 41,
+          "text": "sectype,1,beam,rect,column1"
+        },
+        {
+          "line": 43,
+          "text": "secdata,1.5,2.6"
+        },
+        {
+          "line": 46,
+          "text": "sectype,2,beam,rect,column2"
+        },
+        {
+          "line": 48,
+          "text": "secdata,1.5,2.6"
+        },
+        {
+          "line": 51,
+          "text": "sectype,3,beam,rect,column3"
+        },
+        {
+          "line": 53,
+          "text": "secdata,1.5,1.5"
+        },
+        {
+          "line": 56,
+          "text": "sectype,4,beam,rect,column4"
+        },
+        {
+          "line": 58,
+          "text": "secdata,1.1,1,.5"
+        },
+        {
+          "line": 61,
+          "text": "sectype,5,beam,rect,column5"
+        },
+        {
+          "line": 63,
+          "text": "secdata,1.3,1.3"
+        },
+        {
+          "line": 66,
+          "text": "sectype,6,beam,rect,beam1"
+        },
+        {
+          "line": 68,
+          "text": "secdata,1.8,1.8"
+        },
+        {
+          "line": 70,
+          "text": "sectype,7,beam,rect,beam2"
+        },
+        {
+          "line": 72,
+          "text": "secdata,0.5,0.7"
+        },
+        {
+          "line": 74,
+          "text": "sectype,8,beam,rect,beam3"
+        },
+        {
+          "line": 76,
+          "text": "secdata,0.7,2.1"
+        },
+        {
+          "line": 79,
+          "text": "sectype,9,shell,,Roof"
+        },
+        {
+          "line": 81,
+          "text": "secdata,0.4,1"
+        },
+        {
+          "line": 84,
+          "text": "sectype,10,shell,,staircase"
+        },
+        {
+          "line": 86,
+          "text": "secdata,0.15,1"
+        },
+        {
+          "line": 912,
+          "text": "latt,1,,2,,,,1"
+        },
+        {
+          "line": 933,
+          "text": "latt,1,,2,,,,2"
+        },
+        {
+          "line": 971,
+          "text": "latt,1,,2,,,,3"
+        },
+        {
+          "line": 986,
+          "text": "latt,1,,2,,,,4"
+        },
+        {
+          "line": 995,
+          "text": "latt,1,,2,,,,5"
+        },
+        {
+          "line": 1537,
+          "text": "latt,3,,2,,,,6"
+        },
+        {
+          "line": 1549,
+          "text": "latt,3,,2,,,,6"
+        },
+        {
+          "line": 1592,
+          "text": "latt,3,,2,,,,8"
+        },
+        {
+          "line": 1601,
+          "text": "latt,3,,2,,,,8"
+        },
+        {
+          "line": 1638,
+          "text": "latt,3,,2,,,,8"
+        },
+        {
+          "line": 1644,
+          "text": "AATT,2,,1,,9"
+        },
+        {
+          "line": 1648,
+          "text": "AATT,2,,1,,10"
+        }
+      ]
+    },
+    "experiments/coupled_building/config_coupled.py": {
+      "sha256": "4ec24e28eb8be226d29b39eb399023db2a600e47bd51d41119904a3e0cc4b7ef",
+      "selected_commands": [
+        {
+          "line": 20,
+          "text": "E_BASE = 1e10  # Pa; E_actual = scaling * E_BASE"
+        }
+      ]
+    }
+  },
+  "sailboat_assembled_vs_successful_material_command_sequence_equal": true,
+  "findings": {
+    "sailboat": {
+      "shell_sections": [
+        10,
+        14
+      ],
+      "shell_layer_materials": [
+        1,
+        1
+      ],
+      "element_types": [
+        "SHELL181",
+        "BEAM189"
+      ],
+      "e1": "assigned column groups and roof/core shell layers",
+      "e2": "higher-storey column groups",
+      "e3": "beam groups",
+      "e4_e6": "no active element assignments for mapped materials 6-8"
+    },
+    "coupled": {
+      "shell_sections": [
+        9,
+        10
+      ],
+      "shell_layer_materials": [
+        1,
+        1
+      ],
+      "e1": "columns and shell layers",
+      "e2": "retained interface coordinate; not an independently identified shell stiffness",
+      "e3": "beam groups",
+      "nominal_e1_e2_modulus_pa": 10000000000.0,
+      "nominal_equality_scope": "e1=e2=1 only; does not establish equivalent parameterization for updated states"
+    }
+  },
+  "strict_zero_surrogate_effect_claim": false
+}

@@ -1,0 +1,3613 @@
+{
+  "author_confirmations": [
+    "作者确认：mode1–mode5文件夹分别对应论文第1–5阶模态。",
+    "作者确认：顶层data_0001–data_0014对应论文第6阶的14个setup；论文3.81 Hz取自这14个setup频率的算术均值。",
+    "作者确认：单setup coefv.f为无量纲相对不确定性；百分数=100×coefv.f；按频率CoV解释时σ_Hz=同setup同模态频率_Hz×coefv.f。",
+    "作者确认：当前BayOMA仅提供单setup不确定性，没有现成的全局不确定性输出。",
+    "作者本次未确认cmat坐标定义；本次不读取或解释cmat，不读取/解释/运行P-code，无需BayOMA可读源码。"
+  ],
+  "nonrecursive_targeted_folder_listings": {
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1": [
+      "data_0001_id.mat",
+      "data_0002_id.mat",
+      "data_0003_id.mat",
+      "data_0004_id.mat",
+      "data_0005_id.mat",
+      "data_0006_id.mat",
+      "data_0007_id.mat",
+      "data_0008_id.mat",
+      "data_0009_id.mat",
+      "data_0010_id.mat",
+      "data_0011_id.mat",
+      "data_0012_id.mat",
+      "data_0013_id.mat",
+      "data_0014_id.mat"
+    ],
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2": [
+      "data_0001_id.mat",
+      "data_0002_id.mat",
+      "data_0003_id.mat",
+      "data_0004_id.mat",
+      "data_0005_id.mat",
+      "data_0006_id.mat",
+      "data_0007_id.mat",
+      "data_0008_id.mat",
+      "data_0009_id.mat",
+      "data_0010_id.mat",
+      "data_0011_id.mat",
+      "data_0012_id.mat",
+      "data_0013_id.mat",
+      "data_0014_id.mat"
+    ],
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3": [
+      "data_0001_id.mat",
+      "data_0002_id.mat",
+      "data_0003_id.mat",
+      "data_0004_id.mat",
+      "data_0005_id.mat",
+      "data_0006_id.mat",
+      "data_0007_id.mat",
+      "data_0008_id.mat",
+      "data_0009_id.mat",
+      "data_0010_id.mat",
+      "data_0011_id.mat",
+      "data_0012_id.mat",
+      "data_0013_id.mat",
+      "data_0014_id.mat"
+    ],
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4": [
+      "data_0001_id.mat",
+      "data_0002_id.mat",
+      "data_0003_id.mat",
+      "data_0004_id.mat",
+      "data_0005_id.mat",
+      "data_0006_id.mat",
+      "data_0007_id.mat",
+      "data_0008_id.mat",
+      "data_0009_id.mat",
+      "data_0010_id.mat",
+      "data_0011_id.mat",
+      "data_0012_id.mat",
+      "data_0013_id.mat",
+      "data_0014_id.mat"
+    ],
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5": [
+      "data_0001_id.mat",
+      "data_0002_id.mat",
+      "data_0003_id.mat",
+      "data_0004_id.mat",
+      "data_0005_id.mat",
+      "data_0006_id.mat",
+      "data_0007_id.mat",
+      "data_0008_id.mat",
+      "data_0009_id.mat",
+      "data_0010_id.mat",
+      "data_0011_id.mat",
+      "data_0012_id.mat",
+      "data_0013_id.mat",
+      "data_0014_id.mat"
+    ]
+  },
+  "setup_output_metadata": [
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0001_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0002_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0003_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0004_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0005_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0006_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0007_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0008_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0009_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0010_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0011_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0012_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0013_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode1\\data_0014_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0001_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0002_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0003_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0004_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0005_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0006_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0007_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0008_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0009_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0010_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0011_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0012_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0013_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode2\\data_0014_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0001_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0002_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0003_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0004_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0005_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0006_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0007_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0008_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0009_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0010_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0011_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0012_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0013_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode3\\data_0014_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0001_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0002_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0003_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0004_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0005_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0006_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0007_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0008_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0009_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0010_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0011_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0012_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0013_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode4\\data_0014_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0001_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0002_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0003_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0004_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0005_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0006_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0007_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0008_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0009_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0010_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0011_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0012_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0013_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\mode5\\data_0014_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0001_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0002_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0003_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0004_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0005_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0006_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0007_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0008_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0009_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0010_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0011_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0012_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0013_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    },
+    {
+      "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0014_id.mat",
+      "variables": [
+        {
+          "name": "OptVctr",
+          "shape": [
+            4,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "SNR",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "MshpOpt",
+          "shape": [
+            18,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "frq",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "struct_fields": {}
+    }
+  ],
+  "raw_input_metadata_only": {
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0001.mat": {
+      "status": "EXISTS_HEADER_AND_FS_READ_ONLY",
+      "variables": [
+        {
+          "name": "fs",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "tdata",
+          "shape": [
+            1228800,
+            18
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "sample_rate_hz": 2048.0
+    },
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0002.mat": {
+      "status": "EXISTS_HEADER_AND_FS_READ_ONLY",
+      "variables": [
+        {
+          "name": "fs",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "tdata",
+          "shape": [
+            1228800,
+            18
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "sample_rate_hz": 2048.0
+    },
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0003.mat": {
+      "status": "EXISTS_HEADER_AND_FS_READ_ONLY",
+      "variables": [
+        {
+          "name": "fs",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "tdata",
+          "shape": [
+            1228800,
+            18
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "sample_rate_hz": 2048.0
+    },
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0004.mat": {
+      "status": "EXISTS_HEADER_AND_FS_READ_ONLY",
+      "variables": [
+        {
+          "name": "fs",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "tdata",
+          "shape": [
+            1228800,
+            18
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "sample_rate_hz": 2048.0
+    },
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0005.mat": {
+      "status": "EXISTS_HEADER_AND_FS_READ_ONLY",
+      "variables": [
+        {
+          "name": "fs",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "tdata",
+          "shape": [
+            1228800,
+            18
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "sample_rate_hz": 2048.0
+    },
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0006.mat": {
+      "status": "EXISTS_HEADER_AND_FS_READ_ONLY",
+      "variables": [
+        {
+          "name": "fs",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "tdata",
+          "shape": [
+            1228800,
+            18
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "sample_rate_hz": 2048.0
+    },
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0007.mat": {
+      "status": "EXISTS_HEADER_AND_FS_READ_ONLY",
+      "variables": [
+        {
+          "name": "fs",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "tdata",
+          "shape": [
+            1228800,
+            18
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "sample_rate_hz": 2048.0
+    },
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0008.mat": {
+      "status": "EXISTS_HEADER_AND_FS_READ_ONLY",
+      "variables": [
+        {
+          "name": "fs",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "tdata",
+          "shape": [
+            1228800,
+            18
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "sample_rate_hz": 2048.0
+    },
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0009.mat": {
+      "status": "EXISTS_HEADER_AND_FS_READ_ONLY",
+      "variables": [
+        {
+          "name": "fs",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "tdata",
+          "shape": [
+            1228800,
+            18
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "sample_rate_hz": 2048.0
+    },
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0010.mat": {
+      "status": "EXISTS_HEADER_AND_FS_READ_ONLY",
+      "variables": [
+        {
+          "name": "fs",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "tdata",
+          "shape": [
+            1228800,
+            18
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "sample_rate_hz": 2048.0
+    },
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0011.mat": {
+      "status": "EXISTS_HEADER_AND_FS_READ_ONLY",
+      "variables": [
+        {
+          "name": "fs",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "tdata",
+          "shape": [
+            1228800,
+            18
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "sample_rate_hz": 2048.0
+    },
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0012.mat": {
+      "status": "EXISTS_HEADER_AND_FS_READ_ONLY",
+      "variables": [
+        {
+          "name": "fs",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "tdata",
+          "shape": [
+            1228800,
+            18
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "sample_rate_hz": 2048.0
+    },
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0013.mat": {
+      "status": "EXISTS_HEADER_AND_FS_READ_ONLY",
+      "variables": [
+        {
+          "name": "fs",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "tdata",
+          "shape": [
+            1228800,
+            18
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "sample_rate_hz": 2048.0
+    },
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0014.mat": {
+      "status": "EXISTS_HEADER_AND_FS_READ_ONLY",
+      "variables": [
+        {
+          "name": "fs",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "double"
+        },
+        {
+          "name": "tdata",
+          "shape": [
+            1228800,
+            18
+          ],
+          "MATLAB_class": "double"
+        }
+      ],
+      "sample_rate_hz": 2048.0
+    }
+  },
+  "prior_report_unchanged": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\AC3_material_check_20260917_124310_a552fa014ed84784b83763588a08643d\\MODAL_MATERIAL_CHECK.md",
+  "stage1_manifest": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\run_20260917_094722_21d144f3db844a6b8a2e8167c5282dbe\\TARGET_MANIFEST.json",
+  "actual_frozen_observation_hz": [
+    0.9100000262260437,
+    1.0800000429153442,
+    1.4700000286102295,
+    2.549999952316284,
+    3.1600000858306885,
+    3.809999942779541
+  ],
+  "cmat_definition": "NOT_CONFIRMED_NOT_INTERPRETED",
+  "BayOMA_Pcode": "NOT_READ_NOT_EXECUTED",
+  "result_AC3_link_to_84_setups": "NOT_CONFIRMED_NOT_USED_FOR_PAIRING",
+  "approx_residual_source": "User instruction: about -7.8%; not a retrieved predicted-frequency output",
+  "approx_residual_hz_scale": -0.29718,
+  "descriptive_residual_over_between_setup_sd": 6.062217518926956,
+  "global_z_computed": false,
+  "single_setup_uncertainty_available_total": 0
+}

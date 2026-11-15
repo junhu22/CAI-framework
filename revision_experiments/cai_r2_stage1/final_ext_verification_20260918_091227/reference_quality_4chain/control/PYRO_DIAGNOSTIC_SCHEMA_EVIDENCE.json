@@ -1,0 +1,9 @@
+{
+  "pyro_version": "1.9.1",
+  "source_path": "C:\\Users\\junhu\\miniconda3\\Lib\\site-packages\\pyro\\infer\\mcmc\\api.py",
+  "source_sha256": "151dc7fc3d18dbe176c2213f7e8fa779b90e85609ee2acf4eb0884df682b5c67",
+  "MCMC_diagnostics_source": "    def diagnostics(self):\n        \"\"\"\n        Gets some diagnostics statistics such as effective sample size, split\n        Gelman-Rubin, or divergent transitions from the sampler.\n        \"\"\"\n        diag = diagnostics(self._samples)\n        for diag_name in self._diagnostics[0]:\n            diag[diag_name] = {\n                \"chain {}\".format(i): self._diagnostics[i][diag_name]\n                for i in range(self.num_chains)\n            }\n        return diag\n",
+  "NUTS_diagnostics_source": "    def diagnostics(self):\n        return {\n            \"divergences\": self._divergences,\n            \"acceptance rate\": self._accept_cnt / (self._t - self._warmup_steps),\n        }\n",
+  "historical_log_lookup_key": "z",
+  "actual_sampler_diagnostics_chain_key": "chain 0"
+}

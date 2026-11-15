@@ -1,0 +1,51 @@
+{
+  "finished_utc": "2026-09-18T13:41:19.634085+00:00",
+  "statuses": [
+    {
+      "target": "ablation_obs1",
+      "status": "COMPLETED",
+      "run_json": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\reference_quality_4chain\\REFERENCE4_ablation_obs1_RUN.json"
+    },
+    {
+      "target": "ablation_obs2",
+      "status": "COMPLETED",
+      "run_json": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\reference_quality_4chain\\REFERENCE4_ablation_obs2_RUN.json"
+    },
+    {
+      "target": "ablation_obs3",
+      "status": "COMPLETED",
+      "run_json": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\reference_quality_4chain\\REFERENCE4_ablation_obs3_RUN.json"
+    },
+    {
+      "target": "ablation_obs4",
+      "status": "COMPLETED",
+      "run_json": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\reference_quality_4chain\\REFERENCE4_ablation_obs4_RUN.json"
+    },
+    {
+      "target": "ablation_obs5",
+      "status": "COMPLETED",
+      "run_json": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\reference_quality_4chain\\REFERENCE4_ablation_obs5_RUN.json"
+    },
+    {
+      "target": "sailboat_field_frozen",
+      "status": "COMPLETED",
+      "run_json": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\reference_quality_4chain\\REFERENCE4_sailboat_field_frozen_RUN.json"
+    },
+    {
+      "target": "sailboat_boundary_e1_075",
+      "status": "COMPLETED",
+      "run_json": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\reference_quality_4chain\\REFERENCE4_sailboat_boundary_e1_075_RUN.json"
+    }
+  ],
+  "authorized_chain_attempts": 7,
+  "training_calls": 0,
+  "additional_chains": 0,
+  "preservation_after": {
+    "checked_utc": "2026-09-18T13:41:20.077913+00:00",
+    "checked_files": 449,
+    "all_sha256_unchanged": true,
+    "changed_files": [],
+    "git_tracked_unchanged": true
+  },
+  "mcmc_stopped": true
+}

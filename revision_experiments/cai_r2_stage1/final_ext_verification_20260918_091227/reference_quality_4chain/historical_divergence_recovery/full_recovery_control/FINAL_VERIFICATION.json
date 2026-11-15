@@ -1,0 +1,38 @@
+{
+  "checked_utc": "2026-09-18T14:30:10.801086+00:00",
+  "verification_pass": true,
+  "protected_files_checked": 534,
+  "all_frozen_SHA256_unchanged": true,
+  "git_tracked_hashes_unchanged": true,
+  "git_tracked_status_unchanged": true,
+  "pilot_unchanged": true,
+  "historical_chain_replays_checked": 21,
+  "exact_reproduced_chains": 21,
+  "recovered_historical_divergences": 1,
+  "remaining_scientific_calls": 20,
+  "pilot_reruns": 0,
+  "raw_diagnostics_original_torch_serialization_verified": true,
+  "quality_summary": {
+    "exact_reproduced_historical_chains": 21,
+    "historical_divergences_total": 1,
+    "all_28_chains_divergences_total": 1,
+    "quality_gate_passed_targets": 6,
+    "all_7_complete_quality_gates_pass": false,
+    "max_rank_normalized_split_rhat": 1.008876248424674,
+    "min_bulk_ess": 792.049171162328,
+    "min_tail_ess": 495.88413483799127,
+    "r2_1_main_conclusion_changed": "NOT_ASSESSED_QUALITY_GATE_FAILED",
+    "r2_3_main_conclusion_changed": "NOT_ASSESSED_QUALITY_GATE_FAILED",
+    "mcmc_stopped": true,
+    "flow_training_calls": 0,
+    "awaiting_review": true
+  },
+  "mcmc_stopped": true,
+  "flow_training_calls": 0,
+  "awaiting_review": true,
+  "outputs": {
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\reference_quality_4chain\\historical_divergence_recovery\\HISTORICAL_DIAGNOSTICS_RECOVERY_INTEGRITY.json": "b138aaacce4e55f1104d16f366cdcc6bf71c037c56bf9d55272a31705aecb9ad",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\reference_quality_4chain\\REFERENCE_QUALITY_INTEGRITY_RECOVERED.json": "94e7fa87f6875e49293f0d42b04cd3c38e4c6de72860472ce495b21f277fa7b1"
+  },
+  "verifier_sha256": "47cd5b5655be050ead50bbd35b1493be6bac249006850e485cfcb73529c4d996"
+}

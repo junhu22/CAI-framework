@@ -1,0 +1,74 @@
+{
+  "created": "2026-09-18T09:15:57.959873",
+  "python": "C:\\Users\\junhu\\miniconda3\\python.exe",
+  "torch": "2.6.0+cu124",
+  "numpy": "2.4.4",
+  "source_sha256": {
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models_broad_ext\\member_0.pt": "4821100192a768327212ed724090732e63483650f4e80421f89a8df3f984f447",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\experiments\\results\\conditional_flow_broad_ext.pt": "403e36617eab8f9f57b54f7e728f078c536fa3256390eb4851c271431a3af045",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\experiments\\cai_lib.py": "1b5fe93fb06181420749a4a9f985846fefac93615828d51ed9f2cbab64567b12",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\task_r3_domain\\e3_ext.py": "eb27139758fb89ae542c0f95aa73cf05bf135178f2063335a605433212d53529",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\task_r3_domain\\e3_ext_tpr.py": "a168f15958a2082a1547b3c0708fb4c5990ff8837a39edb9a0c91eaf07b15649",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\task_r3_domain\\e3_ext_results.json": "b4c5864df1a1a5b73e7a43ec211af58bbc7ac23ba3e87fd2c75f107687763774",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\task_r3_domain\\e3_ext_tpr_results.json": "69ef553787b353e798f2eae82b622d476f930ecb0c1117da5510983e96323152",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p01\\run.mac": "ba3a71c579391fd60b63d916dd825ba101cd2d4fa62c9b4eb5e75926267bf779",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p01\\solver.log": "a70b2f3cb16472e5952c2c55ca68e83db6a226d1324b4b1abeb40059d67c1a58",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p01\\cai1_p01_c5282dbe_modal.txt": "7aad7602aa1e7454303e15b75886383effe74b3c6b9b1dae6bb0acae9a56b1ab",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p01\\cai1_p01_c5282dbe_parameters.txt": "f359e13113b699b15cb6fd53ef51f704c1535ebd470cdee997c9e4ea4452c700",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p02\\run.mac": "08f4417f88142133f5b9c7cdb86de24ab7b14b6271f403d5d09abbb7baf5e034",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p02\\solver.log": "aa8dc24fb94951c7a851b90246221a88e9cf0b12dbc1a819b48ae9039f31998a",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p02\\cai1_p02_c5282dbe_modal.txt": "888898be6db1d5551262e772203337df3d90de647ebf9fb2351140ed30f3a7a3",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p02\\cai1_p02_c5282dbe_parameters.txt": "b1ea0fc7912cb48e36ed41dae7972a650c904c646c9463931bb00459f9c492ea",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p03\\run.mac": "4ff51ac3cae4b75116d6f13ae88fa1ea4290604da4736c7c432121a75085a38b",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p03\\solver.log": "7f4544086b2c9fc7e5357ab8acd79cd56b0dea0dfddcfcfe6e54354a7cb86c29",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p03\\cai1_p03_c5282dbe_modal.txt": "e892b7785f5ebf5489bcfd342e2ba3c706b9de8f2f4e264da72b4b1f44f333cd",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p03\\cai1_p03_c5282dbe_parameters.txt": "af7f04528e2c5b40a10e5219de16f74aef1888109aa0d2b353424f1c1d3ccd83",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p04\\run.mac": "8aa1fcc37a8280be601d5ce0a8aace5349e2c2a6f0d4febeda989e8d4e39abcc",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p04\\solver.log": "f549c9e457fc8bb51c1a2533d8f043e8a22696c2a1464f18beb6a3a75854eac9",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p04\\cai1_p04_c5282dbe_modal.txt": "e55fa3a78999e999b4c287d7c59799e0827e4127c7f299f381f16f4b54d62cee",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p04\\cai1_p04_c5282dbe_parameters.txt": "5d352877ea86effd15bf27549c351c5113ceee3b214cc7c54c0ca75408e66019",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p05\\run.mac": "548005d998256719b7ec31b5e18f7bf507dd78b7cf6d8f1a537900b899474199",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p05\\solver.log": "eafdf4f9609103f03141f0eb44d5af68eee86b5c5cfd9ea1eef0712d9f7ea652",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p05\\cai1_p05_c5282dbe_modal.txt": "2b05f7c8f8d51224d52de367865b8fc2e7ca7200ecee7eddf0967e6efce4cd1f",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p05\\cai1_p05_c5282dbe_parameters.txt": "69d07b68f096bc3400396ebc33f1e3eaac4607a7952fc1dbb7c9813f93425473",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p06\\run.mac": "e3b2a86c0fe08f0d3f6beeefb20b199f5967970f27d774b093b5e0fc48ad7d3e",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p06\\solver.log": "d505b104d8648483ac5b027090ba30fbbed42c6b6f8b0f6eb0e1c75e81f1634c",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p06\\cai1_p06_c5282dbe_modal.txt": "b00360d2fa56e41059e1b9e567b5cfb4f8209ad85e2a59dde70dfcea090b56e0",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\local_fe_rerun_20260918_085458\\p06\\cai1_p06_c5282dbe_parameters.txt": "9813bb72abd9628e3904d89b604d539a4ec17e061e8f15c7e3b94b4819ea15c0"
+  },
+  "script_sha256": "0dbbbe4ba3012e36af1e0a15cbeaa2b29093f9ccf3c92c73ff920a0d68dbf164",
+  "git_tracked_before": "",
+  "model_version": "FINAL_EXT_EXPLICIT_PATHS",
+  "grid_replay": {
+    "damage_n": 324,
+    "null_n": 360,
+    "seed": 42,
+    "fast_n": 1000
+  },
+  "diagnostic_target": {
+    "K": 20,
+    "prior": "independent untruncated lognormal(0,0.55)",
+    "kappa_squared": 0.001,
+    "coordinate": "theta",
+    "positive_support": true
+  },
+  "paired_design": {
+    "points": 6,
+    "noise_levels": [
+      0.01,
+      0.03,
+      0.05
+    ],
+    "replicates": 12,
+    "fast_n": 1000,
+    "common_noise_and_latent_draws": true
+  },
+  "boundaries": [
+    "No training",
+    "No MCMC",
+    "No new FE",
+    "No package installation",
+    "No manuscript edit",
+    "No AUC inference from the FE paired subset"
+  ]
+}

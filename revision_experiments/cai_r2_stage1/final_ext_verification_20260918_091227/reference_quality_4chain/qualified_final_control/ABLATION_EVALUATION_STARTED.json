@@ -1,0 +1,23 @@
+{
+  "started_utc": "2026-09-18T14:40:49.655605+00:00",
+  "checkpoint_count": 24,
+  "flow_training_calls": 0,
+  "new_training_seeds": 0,
+  "fast_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "Nfast": 2000,
+  "qualified_reference_targets": [
+    "ablation_obs1",
+    "ablation_obs2",
+    "ablation_obs3",
+    "ablation_obs4",
+    "ablation_obs5"
+  ],
+  "train_function_compiled": false,
+  "evaluator_sha256": "e8f529101e260734166b24c69dd78a167c4a4d21b58637af1e13dc184dd7b640"
+}

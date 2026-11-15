@@ -1,0 +1,1216 @@
+{
+  "status": "EXISTING_EVIDENCE_INTEGRATION_COMPLETED_NO_IDENTIFICATION_EXECUTED",
+  "run_directory": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\field_modal_uncertainty_20260917_190603_3ae485a144584b47be419cc3ecfefe9f",
+  "created_at_local": "2026-09-17T19:14:40.873857",
+  "reader_versions": {
+    "Python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "h5py": "3.16.0"
+  },
+  "archive_metadata": {
+    "whosmat": [
+      [
+        "result",
+        [
+          1,
+          15
+        ],
+        "cell"
+      ],
+      [
+        "phi",
+        [
+          177,
+          9
+        ],
+        "double"
+      ]
+    ],
+    "records": [
+      {
+        "record_id": "archived_record_01",
+        "fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms",
+          "sn",
+          "coefv",
+          "S",
+          "time_req",
+          "cmat"
+        ],
+        "f_shape": [
+          1,
+          9
+        ],
+        "coefv_fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms"
+        ],
+        "coefv_f_shape": [
+          1,
+          9
+        ],
+        "phi_shape": [
+          18,
+          9
+        ],
+        "identity": "UNCONFIRMED_INPUT_SETUP_SEGMENT"
+      },
+      {
+        "record_id": "archived_record_02",
+        "fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms",
+          "sn",
+          "coefv",
+          "S",
+          "time_req",
+          "cmat"
+        ],
+        "f_shape": [
+          1,
+          9
+        ],
+        "coefv_fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms"
+        ],
+        "coefv_f_shape": [
+          1,
+          9
+        ],
+        "phi_shape": [
+          18,
+          9
+        ],
+        "identity": "UNCONFIRMED_INPUT_SETUP_SEGMENT"
+      },
+      {
+        "record_id": "archived_record_03",
+        "fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms",
+          "sn",
+          "coefv",
+          "S",
+          "time_req",
+          "cmat"
+        ],
+        "f_shape": [
+          1,
+          9
+        ],
+        "coefv_fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms"
+        ],
+        "coefv_f_shape": [
+          1,
+          9
+        ],
+        "phi_shape": [
+          18,
+          9
+        ],
+        "identity": "UNCONFIRMED_INPUT_SETUP_SEGMENT"
+      },
+      {
+        "record_id": "archived_record_04",
+        "fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms",
+          "sn",
+          "coefv",
+          "S",
+          "time_req",
+          "cmat"
+        ],
+        "f_shape": [
+          1,
+          9
+        ],
+        "coefv_fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms"
+        ],
+        "coefv_f_shape": [
+          1,
+          9
+        ],
+        "phi_shape": [
+          18,
+          9
+        ],
+        "identity": "UNCONFIRMED_INPUT_SETUP_SEGMENT"
+      },
+      {
+        "record_id": "archived_record_05",
+        "fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms",
+          "sn",
+          "coefv",
+          "S",
+          "time_req",
+          "cmat"
+        ],
+        "f_shape": [
+          1,
+          9
+        ],
+        "coefv_fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms"
+        ],
+        "coefv_f_shape": [
+          1,
+          9
+        ],
+        "phi_shape": [
+          18,
+          9
+        ],
+        "identity": "UNCONFIRMED_INPUT_SETUP_SEGMENT"
+      },
+      {
+        "record_id": "archived_record_06",
+        "fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms",
+          "sn",
+          "coefv",
+          "S",
+          "time_req",
+          "cmat"
+        ],
+        "f_shape": [
+          1,
+          9
+        ],
+        "coefv_fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms"
+        ],
+        "coefv_f_shape": [
+          1,
+          9
+        ],
+        "phi_shape": [
+          18,
+          9
+        ],
+        "identity": "UNCONFIRMED_INPUT_SETUP_SEGMENT"
+      },
+      {
+        "record_id": "archived_record_07",
+        "fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms",
+          "sn",
+          "coefv",
+          "S",
+          "time_req",
+          "cmat"
+        ],
+        "f_shape": [
+          1,
+          9
+        ],
+        "coefv_fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms"
+        ],
+        "coefv_f_shape": [
+          1,
+          9
+        ],
+        "phi_shape": [
+          18,
+          9
+        ],
+        "identity": "UNCONFIRMED_INPUT_SETUP_SEGMENT"
+      },
+      {
+        "record_id": "archived_record_08",
+        "fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms",
+          "sn",
+          "coefv",
+          "S",
+          "time_req",
+          "cmat"
+        ],
+        "f_shape": [
+          1,
+          9
+        ],
+        "coefv_fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms"
+        ],
+        "coefv_f_shape": [
+          1,
+          9
+        ],
+        "phi_shape": [
+          18,
+          9
+        ],
+        "identity": "UNCONFIRMED_INPUT_SETUP_SEGMENT"
+      },
+      {
+        "record_id": "archived_record_09",
+        "fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms",
+          "sn",
+          "coefv",
+          "S",
+          "time_req",
+          "cmat"
+        ],
+        "f_shape": [
+          1,
+          9
+        ],
+        "coefv_fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms"
+        ],
+        "coefv_f_shape": [
+          1,
+          9
+        ],
+        "phi_shape": [
+          18,
+          9
+        ],
+        "identity": "UNCONFIRMED_INPUT_SETUP_SEGMENT"
+      },
+      {
+        "record_id": "archived_record_10",
+        "fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms",
+          "sn",
+          "coefv",
+          "S",
+          "time_req",
+          "cmat"
+        ],
+        "f_shape": [
+          1,
+          9
+        ],
+        "coefv_fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms"
+        ],
+        "coefv_f_shape": [
+          1,
+          9
+        ],
+        "phi_shape": [
+          18,
+          9
+        ],
+        "identity": "UNCONFIRMED_INPUT_SETUP_SEGMENT"
+      },
+      {
+        "record_id": "archived_record_11",
+        "fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms",
+          "sn",
+          "coefv",
+          "S",
+          "time_req",
+          "cmat"
+        ],
+        "f_shape": [
+          1,
+          9
+        ],
+        "coefv_fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms"
+        ],
+        "coefv_f_shape": [
+          1,
+          9
+        ],
+        "phi_shape": [
+          18,
+          9
+        ],
+        "identity": "UNCONFIRMED_INPUT_SETUP_SEGMENT"
+      },
+      {
+        "record_id": "archived_record_12",
+        "fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms",
+          "sn",
+          "coefv",
+          "S",
+          "time_req",
+          "cmat"
+        ],
+        "f_shape": [
+          1,
+          9
+        ],
+        "coefv_fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms"
+        ],
+        "coefv_f_shape": [
+          1,
+          9
+        ],
+        "phi_shape": [
+          18,
+          9
+        ],
+        "identity": "UNCONFIRMED_INPUT_SETUP_SEGMENT"
+      },
+      {
+        "record_id": "archived_record_13",
+        "fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms",
+          "sn",
+          "coefv",
+          "S",
+          "time_req",
+          "cmat"
+        ],
+        "f_shape": [
+          1,
+          9
+        ],
+        "coefv_fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms"
+        ],
+        "coefv_f_shape": [
+          1,
+          9
+        ],
+        "phi_shape": [
+          18,
+          9
+        ],
+        "identity": "UNCONFIRMED_INPUT_SETUP_SEGMENT"
+      },
+      {
+        "record_id": "archived_record_14",
+        "fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms",
+          "sn",
+          "coefv",
+          "S",
+          "time_req",
+          "cmat"
+        ],
+        "f_shape": [
+          1,
+          9
+        ],
+        "coefv_fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms"
+        ],
+        "coefv_f_shape": [
+          1,
+          9
+        ],
+        "phi_shape": [
+          18,
+          9
+        ],
+        "identity": "UNCONFIRMED_INPUT_SETUP_SEGMENT"
+      },
+      {
+        "record_id": "archived_record_15",
+        "fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms",
+          "sn",
+          "coefv",
+          "S",
+          "time_req",
+          "cmat"
+        ],
+        "f_shape": [
+          1,
+          9
+        ],
+        "coefv_fields": [
+          "f",
+          "z",
+          "Sii",
+          "Se",
+          "phi",
+          "rms"
+        ],
+        "coefv_f_shape": [
+          1,
+          9
+        ],
+        "phi_shape": [
+          9,
+          9
+        ],
+        "identity": "UNCONFIRMED_INPUT_SETUP_SEGMENT"
+      }
+    ]
+  },
+  "included_archived_record_ids": [
+    "archived_record_01",
+    "archived_record_02",
+    "archived_record_03",
+    "archived_record_04",
+    "archived_record_05",
+    "archived_record_06",
+    "archived_record_07",
+    "archived_record_08",
+    "archived_record_09",
+    "archived_record_10",
+    "archived_record_11",
+    "archived_record_12",
+    "archived_record_13",
+    "archived_record_14",
+    "archived_record_15"
+  ],
+  "included_archive_columns": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "included_archive_pair_count": 75,
+  "included_AU_setup_count": 1,
+  "author_confirmations": [
+    "Dimensionless frequency CoV; percent=100*coefv.f; same-record sigma_f=f*coefv.f.",
+    "Final assembled global mode5 about3.16Hz and mode6 about3.81Hz.",
+    "Historical14setup mode6 mean3.8107482214049893Hz."
+  ],
+  "archive_column5_status": "AUTHOR_CONFIRMED_FINAL_GLOBAL_MODE5_UPSTREAM_EXPORT_AND_IDENTITIES_UNRESOLVED",
+  "archive_column6_mean_hz_exclusion_context_only": 3.311141536786275,
+  "archive_column6_CoV_used_for_mode6": false,
+  "prior_restored_directory_setup_CoV_count": 0,
+  "current_extraction_scope": "75 native archived pairs; NOT75 newly matched directory setups.",
+  "legacy14_mode6": {
+    "count": 14,
+    "mean_hz": 3.8107482214049893,
+    "between_setup_sample_sd_hz_ddof1": 0.049021665598796,
+    "source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\modal_setup_reextract_20260917_130854_6fbbb36c1ec642778b47717611c2da0a\\MODAL_SETUP_RESULTS.csv",
+    "fields": "paper_mode=6;setup_id=1..14;frequency_hz",
+    "global_posterior_uncertainty": "NOT_AVAILABLE"
+  },
+  "PRIMARY_ONE_MODE": {
+    "schema": {
+      "output_fields": [
+        "S",
+        "Se",
+        "Sii",
+        "cmat",
+        "coefv",
+        "f",
+        "phi",
+        "rms",
+        "sn",
+        "time_req",
+        "z"
+      ],
+      "coefv_fields": [
+        "Se",
+        "Sii",
+        "f",
+        "phi",
+        "rms",
+        "z"
+      ],
+      "cmat_shape_matlab": [
+        7,
+        7
+      ],
+      "cmat_coordinates": "NOT_INTERPRETED"
+    },
+    "input": {
+      "fields": [
+        "display",
+        "f0",
+        "f1f2",
+        "fs",
+        "tdata"
+      ],
+      "tdata_shape_matlab": [
+        307200,
+        18
+      ],
+      "fs_hz": 512.0,
+      "passed_band_hz": [
+        3.72,
+        3.825
+      ],
+      "f0_hz": [
+        3.802798184
+      ],
+      "numeric_tdata_loaded_this_integration": false
+    },
+    "convergence": "AU_REPORTED_CONVERGED",
+    "hessian_nonpositive": 1,
+    "directions_excluded": 1,
+    "diagnostic_log_lines": [
+      {
+        "line_number": 242,
+        "text": "Results have converged to within a relative tolerance of 1.000e-03"
+      },
+      {
+        "line_number": 244,
+        "text": "No. of non-positive eigenvalues of Hessian:  1"
+      },
+      {
+        "line_number": 245,
+        "text": "No. of principal directions excluded from calculating inverse:  1"
+      }
+    ],
+    "call_status": {
+      "status": "RETURNED_NOT_INDEPENDENTLY_VALIDATED",
+      "call_count": 1,
+      "returned": true,
+      "elapsed_seconds": 0.5775695,
+      "error_identifier": "",
+      "full_error_report": "",
+      "last_warning_message": "",
+      "last_warning_identifier": ""
+    }
+  },
+  "PRIMARY_values": {
+    "f_hz": 3.7930783457462747,
+    "coefv_f_ratio": 0.00178353693125842,
+    "CoV_percent": 0.178353693125842,
+    "sigma_f_hz": 0.006765095312795075,
+    "z": 0.008901190156059238,
+    "coefv_z_ratio": 0.26964429709220233,
+    "phi_finite_count": 18,
+    "phi_total": 18,
+    "limitation": "Hessian1/1;NOT_fully_validated_global_uncertainty"
+  },
+  "SENSITIVITY_TWO_MODE": {
+    "schema": {
+      "output_fields": [
+        "S",
+        "Se",
+        "Sii",
+        "cmat",
+        "coefv",
+        "f",
+        "phi",
+        "rms",
+        "sn",
+        "time_req",
+        "z"
+      ],
+      "coefv_fields": [
+        "Se",
+        "Sii",
+        "f",
+        "phi",
+        "rms",
+        "z"
+      ],
+      "cmat_shape_matlab": [
+        7,
+        7
+      ],
+      "cmat_coordinates": "NOT_INTERPRETED"
+    },
+    "input": {
+      "fields": [
+        "display",
+        "f0",
+        "f1f2",
+        "fs",
+        "tdata"
+      ],
+      "tdata_shape_matlab": [
+        307200,
+        18
+      ],
+      "fs_hz": 512.0,
+      "passed_band_hz": [
+        3.72,
+        3.8800000000000003
+      ],
+      "f0_hz": [
+        3.802798184,
+        3.8583961327495566
+      ],
+      "numeric_tdata_loaded_this_integration": false
+    },
+    "convergence": "AU_REPORTED_NOT_CONVERGED",
+    "hessian_nonpositive": 2,
+    "directions_excluded": 2,
+    "diagnostic_log_lines": [
+      {
+        "line_number": 711,
+        "text": "Results have not converged to within a relative tolerance of 1.000e-03"
+      },
+      {
+        "line_number": 713,
+        "text": "No. of non-positive eigenvalues of Hessian:  2"
+      },
+      {
+        "line_number": 714,
+        "text": "No. of principal directions excluded from calculating inverse:  2"
+      }
+    ],
+    "call_status": {
+      "status": "RETURNED_NOT_INDEPENDENTLY_VALIDATED",
+      "call_count": 1,
+      "returned": true,
+      "elapsed_seconds": 31.1635903,
+      "error_identifier": "",
+      "full_error_report": "",
+      "last_warning_message": "",
+      "last_warning_identifier": ""
+    }
+  },
+  "TWO_MODE_values": {
+    "f": [
+      "NaN",
+      "NaN"
+    ],
+    "coefv_f": [
+      "NaN",
+      "NaN"
+    ],
+    "z": [
+      "NaN",
+      "NaN"
+    ],
+    "coefv_z": [
+      "NaN",
+      "NaN"
+    ],
+    "phi_finite_count": 0,
+    "phi_total": 36,
+    "all_coefv_fields": "ALL_NAN",
+    "statistical_inclusion": "EXCLUDED_FROM_ALL_AGGREGATES"
+  },
+  "corrected_summary_status": "NOT_COMPARABLE_TWO_MODE_AU_NONCONVERGED_NAN",
+  "setup0001_fixed_before_run": true,
+  "selection_evidence": {
+    "preparation": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\m6cmp_d1c30a5f5608\\RUN_PREPARATION.json",
+    "fixed_input": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\data_0001.mat",
+    "preparation_precedes_output": true,
+    "wrapper_hash": "0719cd1d7653fd4dba4c2954e8aa96b6648028896f93a4657b460b39abdc6590",
+    "predeclared_A_and_B": true
+  },
+  "prediction_source_rows": [
+    {
+      "source_kind": "EXISTING_STAGE1_SAVED_UNROUNDED_SURROGATE",
+      "paper_mode": "1",
+      "measured_hz": "0.91",
+      "predicted_hz": "0.9135617017745972",
+      "prediction_type": "SURROGATE_NOT_FE_SOLVE",
+      "parameter_estimate_kind": "TUNED_NUTS_POSTERIOR_MEAN",
+      "theta_values": "[2.2210867404937744, 1.1391620635986328, 1.6467636823654175, 1.0633232593536377, 1.0276795625686646, 1.0424283742904663]",
+      "theta_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\task_r3_domain\\field_freeze_results.json:table13.nuts.mean",
+      "observation_vector_hz": "[0.91, 1.08, 1.47, 2.55, 3.16, 3.81]",
+      "observation_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\revlib.py:FIELD_MEASURED (line 49); paper measured vector",
+      "reported_rel_error_percent": "NA_SAVED_FREQUENCY_NOT_A_PRINTED_PERCENT",
+      "residual_hz_from_values": "0.003561701774597137",
+      "residual_percent_from_values": "0.3913957994062788",
+      "prediction_source_file": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\run_20260917_094722_21d144f3db844a6b8a2e8167c5282dbe\\INACTIVE_DIRECTION_AUDIT.csv",
+      "source_field_or_table": "anchor_frequency_hz",
+      "source_line_or_matching_recipe": "model=ext; anchor=frozen_field_NUTS_summary_mean; mode=1",
+      "raw_source_relation": "Pre-existing stage1 forward record, not original field_freeze per-mode storage; RMS exactly matches field_freeze_results.fit_rms_narrow_mean.",
+      "checkpoint_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models_broad_ext\\member_0.pt",
+      "checkpoint_sha256": "4821100192a768327212ed724090732e63483650f4e80421f89a8df3f984f447",
+      "prior_sigma_log": "0.3",
+      "inference_modes": "1..6",
+      "inference_likelihood": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+      "recomputed_this_turn": "NO_FORWARD_OR_SOLVER_EXECUTION_ONLY_SAVED_RESULT_ARITHMETIC",
+      "FE_verified_this_turn": "False",
+      "status": "SAVED_RAW_PREDICTION_EXTRACTED",
+      "reason": "Read existing surrogate member_0 forward output at exact frozen NUTS mean; no computation rerun or independent FE validation."
+    },
+    {
+      "source_kind": "EXISTING_STAGE1_SAVED_UNROUNDED_SURROGATE",
+      "paper_mode": "2",
+      "measured_hz": "1.08",
+      "predicted_hz": "1.0971477031707764",
+      "prediction_type": "SURROGATE_NOT_FE_SOLVE",
+      "parameter_estimate_kind": "TUNED_NUTS_POSTERIOR_MEAN",
+      "theta_values": "[2.2210867404937744, 1.1391620635986328, 1.6467636823654175, 1.0633232593536377, 1.0276795625686646, 1.0424283742904663]",
+      "theta_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\task_r3_domain\\field_freeze_results.json:table13.nuts.mean",
+      "observation_vector_hz": "[0.91, 1.08, 1.47, 2.55, 3.16, 3.81]",
+      "observation_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\revlib.py:FIELD_MEASURED (line 49); paper measured vector",
+      "reported_rel_error_percent": "NA_SAVED_FREQUENCY_NOT_A_PRINTED_PERCENT",
+      "residual_hz_from_values": "0.017147703170776296",
+      "residual_percent_from_values": "1.5877502935903978",
+      "prediction_source_file": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\run_20260917_094722_21d144f3db844a6b8a2e8167c5282dbe\\INACTIVE_DIRECTION_AUDIT.csv",
+      "source_field_or_table": "anchor_frequency_hz",
+      "source_line_or_matching_recipe": "model=ext; anchor=frozen_field_NUTS_summary_mean; mode=2",
+      "raw_source_relation": "Pre-existing stage1 forward record, not original field_freeze per-mode storage; RMS exactly matches field_freeze_results.fit_rms_narrow_mean.",
+      "checkpoint_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models_broad_ext\\member_0.pt",
+      "checkpoint_sha256": "4821100192a768327212ed724090732e63483650f4e80421f89a8df3f984f447",
+      "prior_sigma_log": "0.3",
+      "inference_modes": "1..6",
+      "inference_likelihood": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+      "recomputed_this_turn": "NO_FORWARD_OR_SOLVER_EXECUTION_ONLY_SAVED_RESULT_ARITHMETIC",
+      "FE_verified_this_turn": "False",
+      "status": "SAVED_RAW_PREDICTION_EXTRACTED",
+      "reason": "Read existing surrogate member_0 forward output at exact frozen NUTS mean; no computation rerun or independent FE validation."
+    },
+    {
+      "source_kind": "EXISTING_STAGE1_SAVED_UNROUNDED_SURROGATE",
+      "paper_mode": "3",
+      "measured_hz": "1.47",
+      "predicted_hz": "1.5213475227355957",
+      "prediction_type": "SURROGATE_NOT_FE_SOLVE",
+      "parameter_estimate_kind": "TUNED_NUTS_POSTERIOR_MEAN",
+      "theta_values": "[2.2210867404937744, 1.1391620635986328, 1.6467636823654175, 1.0633232593536377, 1.0276795625686646, 1.0424283742904663]",
+      "theta_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\task_r3_domain\\field_freeze_results.json:table13.nuts.mean",
+      "observation_vector_hz": "[0.91, 1.08, 1.47, 2.55, 3.16, 3.81]",
+      "observation_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\revlib.py:FIELD_MEASURED (line 49); paper measured vector",
+      "reported_rel_error_percent": "NA_SAVED_FREQUENCY_NOT_A_PRINTED_PERCENT",
+      "residual_hz_from_values": "0.05134752273559573",
+      "residual_percent_from_values": "3.493028757523519",
+      "prediction_source_file": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\run_20260917_094722_21d144f3db844a6b8a2e8167c5282dbe\\INACTIVE_DIRECTION_AUDIT.csv",
+      "source_field_or_table": "anchor_frequency_hz",
+      "source_line_or_matching_recipe": "model=ext; anchor=frozen_field_NUTS_summary_mean; mode=3",
+      "raw_source_relation": "Pre-existing stage1 forward record, not original field_freeze per-mode storage; RMS exactly matches field_freeze_results.fit_rms_narrow_mean.",
+      "checkpoint_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models_broad_ext\\member_0.pt",
+      "checkpoint_sha256": "4821100192a768327212ed724090732e63483650f4e80421f89a8df3f984f447",
+      "prior_sigma_log": "0.3",
+      "inference_modes": "1..6",
+      "inference_likelihood": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+      "recomputed_this_turn": "NO_FORWARD_OR_SOLVER_EXECUTION_ONLY_SAVED_RESULT_ARITHMETIC",
+      "FE_verified_this_turn": "False",
+      "status": "SAVED_RAW_PREDICTION_EXTRACTED",
+      "reason": "Read existing surrogate member_0 forward output at exact frozen NUTS mean; no computation rerun or independent FE validation."
+    },
+    {
+      "source_kind": "EXISTING_STAGE1_SAVED_UNROUNDED_SURROGATE",
+      "paper_mode": "4",
+      "measured_hz": "2.55",
+      "predicted_hz": "2.6453099250793457",
+      "prediction_type": "SURROGATE_NOT_FE_SOLVE",
+      "parameter_estimate_kind": "TUNED_NUTS_POSTERIOR_MEAN",
+      "theta_values": "[2.2210867404937744, 1.1391620635986328, 1.6467636823654175, 1.0633232593536377, 1.0276795625686646, 1.0424283742904663]",
+      "theta_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\task_r3_domain\\field_freeze_results.json:table13.nuts.mean",
+      "observation_vector_hz": "[0.91, 1.08, 1.47, 2.55, 3.16, 3.81]",
+      "observation_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\revlib.py:FIELD_MEASURED (line 49); paper measured vector",
+      "reported_rel_error_percent": "NA_SAVED_FREQUENCY_NOT_A_PRINTED_PERCENT",
+      "residual_hz_from_values": "0.09530992507934588",
+      "residual_percent_from_values": "3.7376441207586626",
+      "prediction_source_file": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\run_20260917_094722_21d144f3db844a6b8a2e8167c5282dbe\\INACTIVE_DIRECTION_AUDIT.csv",
+      "source_field_or_table": "anchor_frequency_hz",
+      "source_line_or_matching_recipe": "model=ext; anchor=frozen_field_NUTS_summary_mean; mode=4",
+      "raw_source_relation": "Pre-existing stage1 forward record, not original field_freeze per-mode storage; RMS exactly matches field_freeze_results.fit_rms_narrow_mean.",
+      "checkpoint_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models_broad_ext\\member_0.pt",
+      "checkpoint_sha256": "4821100192a768327212ed724090732e63483650f4e80421f89a8df3f984f447",
+      "prior_sigma_log": "0.3",
+      "inference_modes": "1..6",
+      "inference_likelihood": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+      "recomputed_this_turn": "NO_FORWARD_OR_SOLVER_EXECUTION_ONLY_SAVED_RESULT_ARITHMETIC",
+      "FE_verified_this_turn": "False",
+      "status": "SAVED_RAW_PREDICTION_EXTRACTED",
+      "reason": "Read existing surrogate member_0 forward output at exact frozen NUTS mean; no computation rerun or independent FE validation."
+    },
+    {
+      "source_kind": "EXISTING_STAGE1_SAVED_UNROUNDED_SURROGATE",
+      "paper_mode": "5",
+      "measured_hz": "3.16",
+      "predicted_hz": "3.2233190536499023",
+      "prediction_type": "SURROGATE_NOT_FE_SOLVE",
+      "parameter_estimate_kind": "TUNED_NUTS_POSTERIOR_MEAN",
+      "theta_values": "[2.2210867404937744, 1.1391620635986328, 1.6467636823654175, 1.0633232593536377, 1.0276795625686646, 1.0424283742904663]",
+      "theta_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\task_r3_domain\\field_freeze_results.json:table13.nuts.mean",
+      "observation_vector_hz": "[0.91, 1.08, 1.47, 2.55, 3.16, 3.81]",
+      "observation_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\revlib.py:FIELD_MEASURED (line 49); paper measured vector",
+      "reported_rel_error_percent": "NA_SAVED_FREQUENCY_NOT_A_PRINTED_PERCENT",
+      "residual_hz_from_values": "0.0633190536499022",
+      "residual_percent_from_values": "2.0037675205665253",
+      "prediction_source_file": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\run_20260917_094722_21d144f3db844a6b8a2e8167c5282dbe\\INACTIVE_DIRECTION_AUDIT.csv",
+      "source_field_or_table": "anchor_frequency_hz",
+      "source_line_or_matching_recipe": "model=ext; anchor=frozen_field_NUTS_summary_mean; mode=5",
+      "raw_source_relation": "Pre-existing stage1 forward record, not original field_freeze per-mode storage; RMS exactly matches field_freeze_results.fit_rms_narrow_mean.",
+      "checkpoint_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models_broad_ext\\member_0.pt",
+      "checkpoint_sha256": "4821100192a768327212ed724090732e63483650f4e80421f89a8df3f984f447",
+      "prior_sigma_log": "0.3",
+      "inference_modes": "1..6",
+      "inference_likelihood": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+      "recomputed_this_turn": "NO_FORWARD_OR_SOLVER_EXECUTION_ONLY_SAVED_RESULT_ARITHMETIC",
+      "FE_verified_this_turn": "False",
+      "status": "SAVED_RAW_PREDICTION_EXTRACTED",
+      "reason": "Read existing surrogate member_0 forward output at exact frozen NUTS mean; no computation rerun or independent FE validation."
+    },
+    {
+      "source_kind": "EXISTING_STAGE1_SAVED_UNROUNDED_SURROGATE",
+      "paper_mode": "6",
+      "measured_hz": "3.81",
+      "predicted_hz": "3.5140316486358643",
+      "prediction_type": "SURROGATE_NOT_FE_SOLVE",
+      "parameter_estimate_kind": "TUNED_NUTS_POSTERIOR_MEAN",
+      "theta_values": "[2.2210867404937744, 1.1391620635986328, 1.6467636823654175, 1.0633232593536377, 1.0276795625686646, 1.0424283742904663]",
+      "theta_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\task_r3_domain\\field_freeze_results.json:table13.nuts.mean",
+      "observation_vector_hz": "[0.91, 1.08, 1.47, 2.55, 3.16, 3.81]",
+      "observation_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\revlib.py:FIELD_MEASURED (line 49); paper measured vector",
+      "reported_rel_error_percent": "NA_SAVED_FREQUENCY_NOT_A_PRINTED_PERCENT",
+      "residual_hz_from_values": "-0.2959683513641358",
+      "residual_percent_from_values": "-7.768198198533748",
+      "prediction_source_file": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\run_20260917_094722_21d144f3db844a6b8a2e8167c5282dbe\\INACTIVE_DIRECTION_AUDIT.csv",
+      "source_field_or_table": "anchor_frequency_hz",
+      "source_line_or_matching_recipe": "model=ext; anchor=frozen_field_NUTS_summary_mean; mode=6",
+      "raw_source_relation": "Pre-existing stage1 forward record, not original field_freeze per-mode storage; RMS exactly matches field_freeze_results.fit_rms_narrow_mean.",
+      "checkpoint_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models_broad_ext\\member_0.pt",
+      "checkpoint_sha256": "4821100192a768327212ed724090732e63483650f4e80421f89a8df3f984f447",
+      "prior_sigma_log": "0.3",
+      "inference_modes": "1..6",
+      "inference_likelihood": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+      "recomputed_this_turn": "NO_FORWARD_OR_SOLVER_EXECUTION_ONLY_SAVED_RESULT_ARITHMETIC",
+      "FE_verified_this_turn": "False",
+      "status": "SAVED_RAW_PREDICTION_EXTRACTED",
+      "reason": "Read existing surrogate member_0 forward output at exact frozen NUTS mean; no computation rerun or independent FE validation."
+    }
+  ],
+  "paper_prediction_source_rows": [
+    {
+      "source_kind": "PAPER_REPORTED_ROUNDED_SURROGATE",
+      "paper_mode": "1",
+      "measured_hz": "0.91",
+      "predicted_hz": "0.914",
+      "prediction_type": "SURROGATE_NOT_FE_SOLVE",
+      "parameter_estimate_kind": "TUNED_NUTS_POSTERIOR_MEAN",
+      "theta_values": "[2.22, 1.14, 1.65, 1.06, 1.03, 1.04]",
+      "theta_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\submission\\CAI_paper_marked.tex:2190-2193 rounded displayed mean",
+      "observation_vector_hz": "[0.91, 1.08, 1.47, 2.55, 3.16, 3.81]",
+      "observation_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\revlib.py:FIELD_MEASURED (line 49); paper measured vector",
+      "reported_rel_error_percent": "0.39",
+      "residual_hz_from_values": "0.0040000000000000036",
+      "residual_percent_from_values": "0.4395604395604399",
+      "prediction_source_file": "C:\\neutra-hmc-surrogate\\surrogate_training\\submission\\CAI_paper_marked.tex",
+      "source_field_or_table": "tab:field_fit",
+      "source_line_or_matching_recipe": "2214",
+      "raw_source_relation": "Paper values match rounding of existing stage1 saved predictions; original field_freeze JSON stores aggregate RMS only.",
+      "checkpoint_path": "NA_PAPER_TABLE_DOES_NOT_EMBED_CHECKPOINT_PATH",
+      "checkpoint_sha256": "NA_PAPER_TABLE_DOES_NOT_EMBED_HASH",
+      "prior_sigma_log": "0.3",
+      "inference_modes": "1..6",
+      "inference_likelihood": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+      "recomputed_this_turn": "NO_FORWARD_OR_SOLVER_EXECUTION_ONLY_SAVED_RESULT_ARITHMETIC",
+      "FE_verified_this_turn": "False",
+      "status": "PAPER_TABLE_VALUES_EXTRACTED",
+      "reason": "Residual calculated from rounded paper table frequencies; printed percentage can differ due to rounding."
+    },
+    {
+      "source_kind": "PAPER_REPORTED_ROUNDED_SURROGATE",
+      "paper_mode": "2",
+      "measured_hz": "1.08",
+      "predicted_hz": "1.097",
+      "prediction_type": "SURROGATE_NOT_FE_SOLVE",
+      "parameter_estimate_kind": "TUNED_NUTS_POSTERIOR_MEAN",
+      "theta_values": "[2.22, 1.14, 1.65, 1.06, 1.03, 1.04]",
+      "theta_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\submission\\CAI_paper_marked.tex:2190-2193 rounded displayed mean",
+      "observation_vector_hz": "[0.91, 1.08, 1.47, 2.55, 3.16, 3.81]",
+      "observation_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\revlib.py:FIELD_MEASURED (line 49); paper measured vector",
+      "reported_rel_error_percent": "1.59",
+      "residual_hz_from_values": "0.016999999999999904",
+      "residual_percent_from_values": "1.5740740740740653",
+      "prediction_source_file": "C:\\neutra-hmc-surrogate\\surrogate_training\\submission\\CAI_paper_marked.tex",
+      "source_field_or_table": "tab:field_fit",
+      "source_line_or_matching_recipe": "2215",
+      "raw_source_relation": "Paper values match rounding of existing stage1 saved predictions; original field_freeze JSON stores aggregate RMS only.",
+      "checkpoint_path": "NA_PAPER_TABLE_DOES_NOT_EMBED_CHECKPOINT_PATH",
+      "checkpoint_sha256": "NA_PAPER_TABLE_DOES_NOT_EMBED_HASH",
+      "prior_sigma_log": "0.3",
+      "inference_modes": "1..6",
+      "inference_likelihood": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+      "recomputed_this_turn": "NO_FORWARD_OR_SOLVER_EXECUTION_ONLY_SAVED_RESULT_ARITHMETIC",
+      "FE_verified_this_turn": "False",
+      "status": "PAPER_TABLE_VALUES_EXTRACTED",
+      "reason": "Residual calculated from rounded paper table frequencies; printed percentage can differ due to rounding."
+    },
+    {
+      "source_kind": "PAPER_REPORTED_ROUNDED_SURROGATE",
+      "paper_mode": "3",
+      "measured_hz": "1.47",
+      "predicted_hz": "1.521",
+      "prediction_type": "SURROGATE_NOT_FE_SOLVE",
+      "parameter_estimate_kind": "TUNED_NUTS_POSTERIOR_MEAN",
+      "theta_values": "[2.22, 1.14, 1.65, 1.06, 1.03, 1.04]",
+      "theta_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\submission\\CAI_paper_marked.tex:2190-2193 rounded displayed mean",
+      "observation_vector_hz": "[0.91, 1.08, 1.47, 2.55, 3.16, 3.81]",
+      "observation_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\revlib.py:FIELD_MEASURED (line 49); paper measured vector",
+      "reported_rel_error_percent": "3.49",
+      "residual_hz_from_values": "0.050999999999999934",
+      "residual_percent_from_values": "3.4693877551020367",
+      "prediction_source_file": "C:\\neutra-hmc-surrogate\\surrogate_training\\submission\\CAI_paper_marked.tex",
+      "source_field_or_table": "tab:field_fit",
+      "source_line_or_matching_recipe": "2216",
+      "raw_source_relation": "Paper values match rounding of existing stage1 saved predictions; original field_freeze JSON stores aggregate RMS only.",
+      "checkpoint_path": "NA_PAPER_TABLE_DOES_NOT_EMBED_CHECKPOINT_PATH",
+      "checkpoint_sha256": "NA_PAPER_TABLE_DOES_NOT_EMBED_HASH",
+      "prior_sigma_log": "0.3",
+      "inference_modes": "1..6",
+      "inference_likelihood": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+      "recomputed_this_turn": "NO_FORWARD_OR_SOLVER_EXECUTION_ONLY_SAVED_RESULT_ARITHMETIC",
+      "FE_verified_this_turn": "False",
+      "status": "PAPER_TABLE_VALUES_EXTRACTED",
+      "reason": "Residual calculated from rounded paper table frequencies; printed percentage can differ due to rounding."
+    },
+    {
+      "source_kind": "PAPER_REPORTED_ROUNDED_SURROGATE",
+      "paper_mode": "4",
+      "measured_hz": "2.55",
+      "predicted_hz": "2.645",
+      "prediction_type": "SURROGATE_NOT_FE_SOLVE",
+      "parameter_estimate_kind": "TUNED_NUTS_POSTERIOR_MEAN",
+      "theta_values": "[2.22, 1.14, 1.65, 1.06, 1.03, 1.04]",
+      "theta_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\submission\\CAI_paper_marked.tex:2190-2193 rounded displayed mean",
+      "observation_vector_hz": "[0.91, 1.08, 1.47, 2.55, 3.16, 3.81]",
+      "observation_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\revlib.py:FIELD_MEASURED (line 49); paper measured vector",
+      "reported_rel_error_percent": "3.74",
+      "residual_hz_from_values": "0.0950000000000002",
+      "residual_percent_from_values": "3.725490196078439",
+      "prediction_source_file": "C:\\neutra-hmc-surrogate\\surrogate_training\\submission\\CAI_paper_marked.tex",
+      "source_field_or_table": "tab:field_fit",
+      "source_line_or_matching_recipe": "2217",
+      "raw_source_relation": "Paper values match rounding of existing stage1 saved predictions; original field_freeze JSON stores aggregate RMS only.",
+      "checkpoint_path": "NA_PAPER_TABLE_DOES_NOT_EMBED_CHECKPOINT_PATH",
+      "checkpoint_sha256": "NA_PAPER_TABLE_DOES_NOT_EMBED_HASH",
+      "prior_sigma_log": "0.3",
+      "inference_modes": "1..6",
+      "inference_likelihood": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+      "recomputed_this_turn": "NO_FORWARD_OR_SOLVER_EXECUTION_ONLY_SAVED_RESULT_ARITHMETIC",
+      "FE_verified_this_turn": "False",
+      "status": "PAPER_TABLE_VALUES_EXTRACTED",
+      "reason": "Residual calculated from rounded paper table frequencies; printed percentage can differ due to rounding."
+    },
+    {
+      "source_kind": "PAPER_REPORTED_ROUNDED_SURROGATE",
+      "paper_mode": "5",
+      "measured_hz": "3.16",
+      "predicted_hz": "3.223",
+      "prediction_type": "SURROGATE_NOT_FE_SOLVE",
+      "parameter_estimate_kind": "TUNED_NUTS_POSTERIOR_MEAN",
+      "theta_values": "[2.22, 1.14, 1.65, 1.06, 1.03, 1.04]",
+      "theta_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\submission\\CAI_paper_marked.tex:2190-2193 rounded displayed mean",
+      "observation_vector_hz": "[0.91, 1.08, 1.47, 2.55, 3.16, 3.81]",
+      "observation_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\revlib.py:FIELD_MEASURED (line 49); paper measured vector",
+      "reported_rel_error_percent": "2.0",
+      "residual_hz_from_values": "0.06299999999999972",
+      "residual_percent_from_values": "1.9936708860759405",
+      "prediction_source_file": "C:\\neutra-hmc-surrogate\\surrogate_training\\submission\\CAI_paper_marked.tex",
+      "source_field_or_table": "tab:field_fit",
+      "source_line_or_matching_recipe": "2218",
+      "raw_source_relation": "Paper values match rounding of existing stage1 saved predictions; original field_freeze JSON stores aggregate RMS only.",
+      "checkpoint_path": "NA_PAPER_TABLE_DOES_NOT_EMBED_CHECKPOINT_PATH",
+      "checkpoint_sha256": "NA_PAPER_TABLE_DOES_NOT_EMBED_HASH",
+      "prior_sigma_log": "0.3",
+      "inference_modes": "1..6",
+      "inference_likelihood": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+      "recomputed_this_turn": "NO_FORWARD_OR_SOLVER_EXECUTION_ONLY_SAVED_RESULT_ARITHMETIC",
+      "FE_verified_this_turn": "False",
+      "status": "PAPER_TABLE_VALUES_EXTRACTED",
+      "reason": "Residual calculated from rounded paper table frequencies; printed percentage can differ due to rounding."
+    },
+    {
+      "source_kind": "PAPER_REPORTED_ROUNDED_SURROGATE",
+      "paper_mode": "6",
+      "measured_hz": "3.81",
+      "predicted_hz": "3.514",
+      "prediction_type": "SURROGATE_NOT_FE_SOLVE",
+      "parameter_estimate_kind": "TUNED_NUTS_POSTERIOR_MEAN",
+      "theta_values": "[2.22, 1.14, 1.65, 1.06, 1.03, 1.04]",
+      "theta_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\submission\\CAI_paper_marked.tex:2190-2193 rounded displayed mean",
+      "observation_vector_hz": "[0.91, 1.08, 1.47, 2.55, 3.16, 3.81]",
+      "observation_source": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\revlib.py:FIELD_MEASURED (line 49); paper measured vector",
+      "reported_rel_error_percent": "-7.77",
+      "residual_hz_from_values": "-0.29600000000000026",
+      "residual_percent_from_values": "-7.769028871391083",
+      "prediction_source_file": "C:\\neutra-hmc-surrogate\\surrogate_training\\submission\\CAI_paper_marked.tex",
+      "source_field_or_table": "tab:field_fit",
+      "source_line_or_matching_recipe": "2219",
+      "raw_source_relation": "Paper values match rounding of existing stage1 saved predictions; original field_freeze JSON stores aggregate RMS only.",
+      "checkpoint_path": "NA_PAPER_TABLE_DOES_NOT_EMBED_CHECKPOINT_PATH",
+      "checkpoint_sha256": "NA_PAPER_TABLE_DOES_NOT_EMBED_HASH",
+      "prior_sigma_log": "0.3",
+      "inference_modes": "1..6",
+      "inference_likelihood": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+      "recomputed_this_turn": "NO_FORWARD_OR_SOLVER_EXECUTION_ONLY_SAVED_RESULT_ARITHMETIC",
+      "FE_verified_this_turn": "False",
+      "status": "PAPER_TABLE_VALUES_EXTRACTED",
+      "reason": "Residual calculated from rounded paper table frequencies; printed percentage can differ due to rounding."
+    }
+  ],
+  "theta_frozen_NUTS_mean": [
+    2.2210867404937744,
+    1.1391620635986328,
+    1.6467636823654175,
+    1.0633232593536377,
+    1.0276795625686646,
+    1.0424283742904663
+  ],
+  "mode6_residual_descriptive_comparisons": {
+    "residual_definition": "existing_saved_surrogate_prediction_minus_frozen_observation_3p81",
+    "surrogate_prediction_hz_unrounded_saved": 3.5140316486358643,
+    "surrogate_prediction_hz_user_9dp": 3.514031649,
+    "frozen_paper_observation_hz": 3.81,
+    "residual_hz": -0.2959683513641358,
+    "residual_percent": -7.7681981985337485,
+    "setup0001_new_AU_sigma_f_hz": 0.006765095312795075,
+    "setup0001_sigma_user_12dp": 0.006765095313,
+    "legacy14_between_setup_sample_sd_hz": 0.049021665598796,
+    "legacy14_between_setup_sd_user_9dp": 0.049021666,
+    "abs_residual_over_setup0001_sigma": 43.74932468495454,
+    "abs_residual_over_legacy14_between_setup_sd": 6.03750092431386,
+    "alternative_legacy14_mean_hz": 3.8107482214049893,
+    "alternative_residual_vs_legacy14_mean_hz": -0.296716572769125,
+    "alternative_residual_percent": -7.786307452758666,
+    "alternative_abs_residual_over_setup0001_sigma": 43.85992496039693,
+    "alternative_abs_residual_over_between_setup_sd": 6.052764000258949,
+    "rounded_user_value_residual_hz": -0.29596835099999996,
+    "rounded_user_value_abs_residual_over_sigma": 43.749324629803624,
+    "rounded_user_value_abs_residual_over_between_setup_sd": 6.037500867473577,
+    "interpretation": "DESCRIPTIVE_ABSOLUTE_SCALE_RATIOS_NOT_GLOBAL_Z_SIGNIFICANCE_OR_ERROR_ATTRIBUTION"
+  },
+  "neighbor_peak_sensitivity": "NOT_COMPARABLE_NONCONVERGED_RAW_NAN",
+  "cmat_coordinates": "NOT_INTERPRETED",
+  "not_executed_this_task": [
+    "MATLAB",
+    "identification",
+    "P-code",
+    "FE",
+    "MCMC",
+    "training"
+  ],
+  "remaining13_mode6_AU_identifications": "NOT_RUN_NO_DECISION_MADE",
+  "training_24_runs": "NOT RUN"
+}

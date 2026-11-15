@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "Please cite the Engineering Structures article when using this software or its datasets."
+title: "Corrected Amortized Inference (CAI)"
+type: software
+version: 1.0.0
+date-released: 2026-11-15
+license: MIT
+repository-code: "https://github.com/junhu22/CAI-framework"
+authors:
+  - family-names: Hu
+    given-names: Jun
+    orcid: "https://orcid.org/0000-0003-2104-2886"
+  - family-names: Lam
+    given-names: Heung-fai
+preferred-citation:
+  type: article
+  title: "A dual-mode amortized Bayesian framework for real-time structural model updating with MCMC correction"
+  authors:
+    - family-names: Hu
+      given-names: Jun
+    - family-names: Lam
+      given-names: Heung-fai
+  journal: "Engineering Structures"
+  year: 2026
+  start: "124118"
+  doi: "10.1016/j.engstruct.2026.124118"

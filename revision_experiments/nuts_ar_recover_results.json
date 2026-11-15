@@ -1,0 +1,16 @@
+{
+  "gate": {
+    "ess_min": 295.705078125,
+    "e1": 2.2210867404937744,
+    "passed": true
+  },
+  "warmup": 500,
+  "num_samples": 500,
+  "diagnostics_acceptance_rate": "{'chain 0': 1.0}",
+  "mean_accept_prob": 0.9489597207307817,
+  "accept_cnt_over_post_warmup": 1.0,
+  "divergences": 0,
+  "step_size": 0.19585718888374246,
+  "time_s": 29.91395092010498,
+  "target_accept_prob": 0.8
+}

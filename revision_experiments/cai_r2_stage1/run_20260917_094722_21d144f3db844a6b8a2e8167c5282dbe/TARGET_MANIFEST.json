@@ -1,0 +1,1897 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-17T01:53:12.898208+00:00",
+  "baseline": {
+    "branch": "revision-es",
+    "commit": "17f07923f38f199db2987f009111a27d4fd8dd8f"
+  },
+  "execution": {
+    "run": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\run_20260917_094722_21d144f3db844a6b8a2e8167c5282dbe",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "N": [
+      2000,
+      8000
+    ],
+    "nested_samples": true,
+    "max_draws_per_observation_seed": 8000,
+    "tau": [
+      0.3,
+      0.5,
+      0.7
+    ],
+    "training": "FORBIDDEN",
+    "new_MCMC": "FORBIDDEN"
+  },
+  "physical_mapping": {
+    "e1": "Selected main-building G/F-8/F columns and annex front ground/support/lobby columns",
+    "e2": "Selected main-building 9/F-R/F columns",
+    "e3": "Selected external/internal beams on multiple floors in main building and annex",
+    "e4_e5_e6": "Inactive in the final simplified FE model; author-confirmed, no verification FE runs"
+  },
+  "target_density_support_policy": "Replace original implementation's -1e30 sentinel on nonpositive theta with exact -inf for mathematical zero target density. Original code remains unchanged.",
+  "PSIS": {
+    "status": "NOT_EXECUTED",
+    "package": "arviz",
+    "version": "NOT_INSTALLED",
+    "function": "arviz.psislw",
+    "key_parameters": {
+      "reff": 1.0,
+      "normalize": true
+    },
+    "reason": "No installed mature PSIS implementation found: arviz, arviz_stats, psis, pymc and loo absent. No installation or handwritten replacement.",
+    "input_policy": "Use entire N log-weight array, including negative infinity for true zero target density."
+  },
+  "observations": [
+    {
+      "id": "ablation_obs1",
+      "status": "READY",
+      "category": "fixed_ablation_synthetic",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2165446,
+        "sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+        "snapshot": "inputs\\16_member_0.pt"
+      },
+      "CNF": {
+        "path": "C:\\nf-pmcmc\\experiments\\results\\conditional_flow.pt",
+        "exists": true,
+        "size_bytes": 730113,
+        "sha256": "a1d5c5f0ed0f43abbd1dd3815ef72e8a3e1a4487fadfb20493de391c22d47de5",
+        "snapshot": "inputs\\19_conditional_flow.pt"
+      },
+      "observation_hz": [
+        0.7696980834007263,
+        0.9178454279899597,
+        1.3419350385665894,
+        2.0014193058013916,
+        2.3845598697662354,
+        2.927281141281128,
+        3.922089099884033,
+        4.226160526275635,
+        4.203915119171143,
+        4.3833327293396,
+        4.550574779510498,
+        5.184450626373291,
+        5.203165054321289,
+        5.670333385467529,
+        5.772945404052734,
+        6.393089294433594,
+        6.60704231262207,
+        6.947646617889404,
+        7.298630237579346,
+        7.233098030090332
+      ],
+      "proposal_condition_hz": [
+        0.7696980834007263,
+        0.9178454279899597,
+        1.3419350385665894,
+        2.0014193058013916,
+        2.3845598697662354,
+        2.927281141281128,
+        3.922089099884033,
+        4.226160526275635,
+        4.203915119171143,
+        4.3833327293396,
+        4.550574779510498,
+        5.184450626373291,
+        5.203165054321289,
+        5.670333385467529,
+        5.772945404052734,
+        6.393089294433594,
+        6.60704231262207,
+        6.947646617889404,
+        7.298630237579346,
+        7.233098030090332
+      ],
+      "observation_source": "ablation_checkpoint.pt:hmc_means[0][1]",
+      "preprocessing": {
+        "dtype": "float32",
+        "observation_normalization": "none",
+        "parameter_input": "dimensionless e1..e6",
+        "surrogate_normalization": "(theta-xm)/xs; output*ys+ym; buffers stored in checkpoint",
+        "padding": "none (20 observed synthetic modes)"
+      },
+      "modes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "proposal_modes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "prior": {
+        "family": "independent lognormal",
+        "log_mean": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "log_std": [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ],
+        "support": "theta_i > 0 for all i, no upper bound, no truncation, no correlations or other constraints",
+        "parameter_mean": 1.046027859908717
+      },
+      "likelihood": {
+        "log_density_up_to_common_constant": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+        "kappa_sq": 0.001,
+        "kappa": 0.03162277660168379,
+        "noise_sigma_hz": [
+          0.024339988827705383,
+          0.029024818912148476,
+          0.04243570938706398,
+          0.06329043209552765,
+          0.07540640234947205,
+          0.09256875514984131,
+          0.12402734160423279,
+          0.13364292681217194,
+          0.13293945789337158,
+          0.13861314952373505,
+          0.1439017951488495,
+          0.1639467179775238,
+          0.16453851759433746,
+          0.17931167781352997,
+          0.18255655467510223,
+          0.20216722786426544,
+          0.2089330106973648,
+          0.21970386803150177,
+          0.23080293834209442,
+          0.22873063385486603
+        ],
+        "covariance": "diagonal(0.001*y_j^2); independent heteroscedastic in Hz, fixed by observed y",
+        "not_identification_uncertainty": true
+      },
+      "transforms": {
+        "coordinate": "theta (dimensionless)",
+        "prior_log_coordinate": "z=log(theta)",
+        "prior_Jacobian_in_theta": "-sum(log(theta)) included in log target",
+        "flow": "theta-space affine RealNVP; Gaussian z_base in R^6",
+        "proposal_log_density": "-0.5*sum(z_base^2)-3*log(2*pi)+log_abs_det_dz_dtheta",
+        "surrogate_normalization_Jacobian": "not a parameter density transform; no additional density Jacobian",
+        "E_i_APDL_Pa": "theta_i * 2e10 exactly once"
+      },
+      "surrogate_applicable_domain": [
+        0.5,
+        2.0
+      ],
+      "training_distribution": {
+        "sigma": 0.3,
+        "prior_sampling": "exp(sigma*randn), no clamp",
+        "observation": "20 modes: y=f(theta)+sqrt(0.001)*f(theta)*epsilon",
+        "noise_covariance": "diagonal(0.001*f_j(theta)^2), depends on clean training frequency",
+        "inference_difference": "Inference variance uses observed y_j^2, training uses clean f_j(theta)^2.",
+        "field_extra_difference": "not applicable"
+      },
+      "proposal_support": {
+        "mathematical_support": "R^6; affine bijections with finite nonzero scales and Gaussian base; no output clamp",
+        "target_support_contained": true,
+        "hard_boundary_from_training_clamp": false,
+        "limitation": "Finite diagnostics cannot exclude practically negligible proposal mass in positive-target regions, or extrapolation outside surrogate training domain."
+      },
+      "reference": [
+        {
+          "method": "standard_HMC",
+          "mean": [
+            0.7294784784317017,
+            1.2839728593826294,
+            1.7220921516418457,
+            1.0376732349395752,
+            1.0428876876831055,
+            1.0396569967269897
+          ],
+          "source": "C:/nf-pmcmc/experiments/results/ablation_checkpoint.pt:hmc_means[0][0]",
+          "target_match": "MATCH_BY_SOURCE_RECIPE_CURRENT_CHECKPOINT_HASH_NOT_EMBEDDED_HISTORICALLY",
+          "evidence_status": "INSUFFICIENT_MEAN_ONLY",
+          "chain_status": "NOT_SAVED",
+          "diagnostics": "No chain, per-parameter ESS or Rhat saved for these observations.",
+          "observation_recipe_status": "RECIPE_REPRODUCED"
+        }
+      ],
+      "reference_reliable": false,
+      "target_match_status": "OBSERVATION_RECIPE_REPRODUCED_REFERENCE_CHAIN_MISSING",
+      "truth": [
+        0.7,
+        1.2,
+        1.8,
+        1,
+        0.8,
+        1.1
+      ],
+      "observation_recipe_status": "RECIPE_REPRODUCED"
+    },
+    {
+      "id": "ablation_obs2",
+      "status": "READY",
+      "category": "fixed_ablation_synthetic",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2165446,
+        "sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+        "snapshot": "inputs\\16_member_0.pt"
+      },
+      "CNF": {
+        "path": "C:\\nf-pmcmc\\experiments\\results\\conditional_flow.pt",
+        "exists": true,
+        "size_bytes": 730113,
+        "sha256": "a1d5c5f0ed0f43abbd1dd3815ef72e8a3e1a4487fadfb20493de391c22d47de5",
+        "snapshot": "inputs\\19_conditional_flow.pt"
+      },
+      "observation_hz": [
+        0.7752600908279419,
+        0.9151244163513184,
+        1.399961233139038,
+        2.2799744606018066,
+        2.691910743713379,
+        2.9443519115448,
+        3.9954075813293457,
+        4.083907127380371,
+        4.274128437042236,
+        4.664031505584717,
+        5.32839298248291,
+        5.513508319854736,
+        5.4713640213012695,
+        6.142928123474121,
+        6.461629867553711,
+        7.328542232513428,
+        6.937590599060059,
+        6.723275661468506,
+        7.1692070960998535,
+        7.634599208831787
+      ],
+      "proposal_condition_hz": [
+        0.7752600908279419,
+        0.9151244163513184,
+        1.399961233139038,
+        2.2799744606018066,
+        2.691910743713379,
+        2.9443519115448,
+        3.9954075813293457,
+        4.083907127380371,
+        4.274128437042236,
+        4.664031505584717,
+        5.32839298248291,
+        5.513508319854736,
+        5.4713640213012695,
+        6.142928123474121,
+        6.461629867553711,
+        7.328542232513428,
+        6.937590599060059,
+        6.723275661468506,
+        7.1692070960998535,
+        7.634599208831787
+      ],
+      "observation_source": "ablation_checkpoint.pt:hmc_means[1][1]",
+      "preprocessing": {
+        "dtype": "float32",
+        "observation_normalization": "none",
+        "parameter_input": "dimensionless e1..e6",
+        "surrogate_normalization": "(theta-xm)/xs; output*ys+ym; buffers stored in checkpoint",
+        "padding": "none (20 observed synthetic modes)"
+      },
+      "modes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "proposal_modes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "prior": {
+        "family": "independent lognormal",
+        "log_mean": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "log_std": [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ],
+        "support": "theta_i > 0 for all i, no upper bound, no truncation, no correlations or other constraints",
+        "parameter_mean": 1.046027859908717
+      },
+      "likelihood": {
+        "log_density_up_to_common_constant": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+        "kappa_sq": 0.001,
+        "kappa": 0.03162277660168379,
+        "noise_sigma_hz": [
+          0.024515874683856964,
+          0.02893877401947975,
+          0.04427066072821617,
+          0.07209911942481995,
+          0.08512568473815918,
+          0.09310857951641083,
+          0.12634587287902832,
+          0.12914447486400604,
+          0.13515980541706085,
+          0.14748962223529816,
+          0.16849857568740845,
+          0.17435243725776672,
+          0.17301970720291138,
+          0.19425643980503082,
+          0.20433466136455536,
+          0.23174883425235748,
+          0.21938586235046387,
+          0.21260863542556763,
+          0.2267102152109146,
+          0.2414272129535675
+        ],
+        "covariance": "diagonal(0.001*y_j^2); independent heteroscedastic in Hz, fixed by observed y",
+        "not_identification_uncertainty": true
+      },
+      "transforms": {
+        "coordinate": "theta (dimensionless)",
+        "prior_log_coordinate": "z=log(theta)",
+        "prior_Jacobian_in_theta": "-sum(log(theta)) included in log target",
+        "flow": "theta-space affine RealNVP; Gaussian z_base in R^6",
+        "proposal_log_density": "-0.5*sum(z_base^2)-3*log(2*pi)+log_abs_det_dz_dtheta",
+        "surrogate_normalization_Jacobian": "not a parameter density transform; no additional density Jacobian",
+        "E_i_APDL_Pa": "theta_i * 2e10 exactly once"
+      },
+      "surrogate_applicable_domain": [
+        0.5,
+        2.0
+      ],
+      "training_distribution": {
+        "sigma": 0.3,
+        "prior_sampling": "exp(sigma*randn), no clamp",
+        "observation": "20 modes: y=f(theta)+sqrt(0.001)*f(theta)*epsilon",
+        "noise_covariance": "diagonal(0.001*f_j(theta)^2), depends on clean training frequency",
+        "inference_difference": "Inference variance uses observed y_j^2, training uses clean f_j(theta)^2.",
+        "field_extra_difference": "not applicable"
+      },
+      "proposal_support": {
+        "mathematical_support": "R^6; affine bijections with finite nonzero scales and Gaussian base; no output clamp",
+        "target_support_contained": true,
+        "hard_boundary_from_training_clamp": false,
+        "limitation": "Finite diagnostics cannot exclude practically negligible proposal mass in positive-target regions, or extrapolation outside surrogate training domain."
+      },
+      "reference": [
+        {
+          "method": "standard_HMC",
+          "mean": [
+            1.2512271404266357,
+            0.9080885648727417,
+            1.4872926473617554,
+            1.0488567352294922,
+            1.0417277812957764,
+            1.055368423461914
+          ],
+          "source": "C:/nf-pmcmc/experiments/results/ablation_checkpoint.pt:hmc_means[1][0]",
+          "target_match": "MATCH_BY_SOURCE_RECIPE_CURRENT_CHECKPOINT_HASH_NOT_EMBEDDED_HISTORICALLY",
+          "evidence_status": "INSUFFICIENT_MEAN_ONLY",
+          "chain_status": "NOT_SAVED",
+          "diagnostics": "No chain, per-parameter ESS or Rhat saved for these observations.",
+          "observation_recipe_status": "RECIPE_REPRODUCED"
+        }
+      ],
+      "reference_reliable": false,
+      "target_match_status": "OBSERVATION_RECIPE_REPRODUCED_REFERENCE_CHAIN_MISSING",
+      "truth": [
+        1.3,
+        0.8,
+        1.5,
+        0.6,
+        1.2,
+        0.9
+      ],
+      "observation_recipe_status": "RECIPE_REPRODUCED"
+    },
+    {
+      "id": "ablation_obs3",
+      "status": "READY",
+      "category": "fixed_ablation_synthetic",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2165446,
+        "sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+        "snapshot": "inputs\\16_member_0.pt"
+      },
+      "CNF": {
+        "path": "C:\\nf-pmcmc\\experiments\\results\\conditional_flow.pt",
+        "exists": true,
+        "size_bytes": 730113,
+        "sha256": "a1d5c5f0ed0f43abbd1dd3815ef72e8a3e1a4487fadfb20493de391c22d47de5",
+        "snapshot": "inputs\\19_conditional_flow.pt"
+      },
+      "observation_hz": [
+        0.7254807353019714,
+        0.8626459240913391,
+        1.2575916051864624,
+        2.031320571899414,
+        2.451538324356079,
+        2.5486886501312256,
+        3.713402271270752,
+        3.8467214107513428,
+        3.952439069747925,
+        4.327294826507568,
+        4.686588287353516,
+        5.129388809204102,
+        4.773181915283203,
+        5.476413249969482,
+        5.985134601593018,
+        5.746554374694824,
+        6.058847904205322,
+        6.573406219482422,
+        6.447879314422607,
+        6.951779365539551
+      ],
+      "proposal_condition_hz": [
+        0.7254807353019714,
+        0.8626459240913391,
+        1.2575916051864624,
+        2.031320571899414,
+        2.451538324356079,
+        2.5486886501312256,
+        3.713402271270752,
+        3.8467214107513428,
+        3.952439069747925,
+        4.327294826507568,
+        4.686588287353516,
+        5.129388809204102,
+        4.773181915283203,
+        5.476413249969482,
+        5.985134601593018,
+        5.746554374694824,
+        6.058847904205322,
+        6.573406219482422,
+        6.447879314422607,
+        6.951779365539551
+      ],
+      "observation_source": "ablation_checkpoint.pt:hmc_means[2][1]",
+      "preprocessing": {
+        "dtype": "float32",
+        "observation_normalization": "none",
+        "parameter_input": "dimensionless e1..e6",
+        "surrogate_normalization": "(theta-xm)/xs; output*ys+ym; buffers stored in checkpoint",
+        "padding": "none (20 observed synthetic modes)"
+      },
+      "modes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "proposal_modes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "prior": {
+        "family": "independent lognormal",
+        "log_mean": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "log_std": [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ],
+        "support": "theta_i > 0 for all i, no upper bound, no truncation, no correlations or other constraints",
+        "parameter_mean": 1.046027859908717
+      },
+      "likelihood": {
+        "log_density_up_to_common_constant": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+        "kappa_sq": 0.001,
+        "kappa": 0.03162277660168379,
+        "noise_sigma_hz": [
+          0.02294171415269375,
+          0.027279257774353027,
+          0.039768535643815994,
+          0.06423599272966385,
+          0.07752444595098495,
+          0.08059661090373993,
+          0.11742808669805527,
+          0.12164400517940521,
+          0.12498708814382553,
+          0.1368410736322403,
+          0.14820292592048645,
+          0.1622055023908615,
+          0.15094125270843506,
+          0.17317938804626465,
+          0.18926656246185303,
+          0.1817220002412796,
+          0.191597580909729,
+          0.20786935091018677,
+          0.2038998305797577,
+          0.21983455121517181
+        ],
+        "covariance": "diagonal(0.001*y_j^2); independent heteroscedastic in Hz, fixed by observed y",
+        "not_identification_uncertainty": true
+      },
+      "transforms": {
+        "coordinate": "theta (dimensionless)",
+        "prior_log_coordinate": "z=log(theta)",
+        "prior_Jacobian_in_theta": "-sum(log(theta)) included in log target",
+        "flow": "theta-space affine RealNVP; Gaussian z_base in R^6",
+        "proposal_log_density": "-0.5*sum(z_base^2)-3*log(2*pi)+log_abs_det_dz_dtheta",
+        "surrogate_normalization_Jacobian": "not a parameter density transform; no additional density Jacobian",
+        "E_i_APDL_Pa": "theta_i * 2e10 exactly once"
+      },
+      "surrogate_applicable_domain": [
+        0.5,
+        2.0
+      ],
+      "training_distribution": {
+        "sigma": 0.3,
+        "prior_sampling": "exp(sigma*randn), no clamp",
+        "observation": "20 modes: y=f(theta)+sqrt(0.001)*f(theta)*epsilon",
+        "noise_covariance": "diagonal(0.001*f_j(theta)^2), depends on clean training frequency",
+        "inference_difference": "Inference variance uses observed y_j^2, training uses clean f_j(theta)^2.",
+        "field_extra_difference": "not applicable"
+      },
+      "proposal_support": {
+        "mathematical_support": "R^6; affine bijections with finite nonzero scales and Gaussian base; no output clamp",
+        "target_support_contained": true,
+        "hard_boundary_from_training_clamp": false,
+        "limitation": "Finite diagnostics cannot exclude practically negligible proposal mass in positive-target regions, or extrapolation outside surrogate training domain."
+      },
+      "reference": [
+        {
+          "method": "standard_HMC",
+          "mean": [
+            0.9260030388832092,
+            0.968500018119812,
+            1.1708590984344482,
+            1.069169044494629,
+            1.0441596508026123,
+            1.0369240045547485
+          ],
+          "source": "C:/nf-pmcmc/experiments/results/ablation_checkpoint.pt:hmc_means[2][0]",
+          "target_match": "MATCH_BY_SOURCE_RECIPE_CURRENT_CHECKPOINT_HASH_NOT_EMBEDDED_HISTORICALLY",
+          "evidence_status": "INSUFFICIENT_MEAN_ONLY",
+          "chain_status": "NOT_SAVED",
+          "diagnostics": "No chain, per-parameter ESS or Rhat saved for these observations.",
+          "observation_recipe_status": "RECIPE_REPRODUCED"
+        }
+      ],
+      "reference_reliable": false,
+      "target_match_status": "OBSERVATION_RECIPE_REPRODUCED_REFERENCE_CHAIN_MISSING",
+      "truth": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation_recipe_status": "RECIPE_REPRODUCED"
+    },
+    {
+      "id": "ablation_obs4",
+      "status": "READY",
+      "category": "fixed_ablation_synthetic",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2165446,
+        "sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+        "snapshot": "inputs\\16_member_0.pt"
+      },
+      "CNF": {
+        "path": "C:\\nf-pmcmc\\experiments\\results\\conditional_flow.pt",
+        "exists": true,
+        "size_bytes": 730113,
+        "sha256": "a1d5c5f0ed0f43abbd1dd3815ef72e8a3e1a4487fadfb20493de391c22d47de5",
+        "snapshot": "inputs\\19_conditional_flow.pt"
+      },
+      "observation_hz": [
+        0.6222923398017883,
+        0.7873743772506714,
+        1.15683114528656,
+        1.961527705192566,
+        2.1550257205963135,
+        2.4485976696014404,
+        3.1156678199768066,
+        3.296816349029541,
+        3.7275309562683105,
+        3.9166250228881836,
+        4.075758457183838,
+        4.6837029457092285,
+        4.72285270690918,
+        4.852419376373291,
+        5.17813777923584,
+        4.950986862182617,
+        5.223950386047363,
+        5.231000900268555,
+        6.150445938110352,
+        6.308088779449463
+      ],
+      "proposal_condition_hz": [
+        0.6222923398017883,
+        0.7873743772506714,
+        1.15683114528656,
+        1.961527705192566,
+        2.1550257205963135,
+        2.4485976696014404,
+        3.1156678199768066,
+        3.296816349029541,
+        3.7275309562683105,
+        3.9166250228881836,
+        4.075758457183838,
+        4.6837029457092285,
+        4.72285270690918,
+        4.852419376373291,
+        5.17813777923584,
+        4.950986862182617,
+        5.223950386047363,
+        5.231000900268555,
+        6.150445938110352,
+        6.308088779449463
+      ],
+      "observation_source": "ablation_checkpoint.pt:hmc_means[3][1]",
+      "preprocessing": {
+        "dtype": "float32",
+        "observation_normalization": "none",
+        "parameter_input": "dimensionless e1..e6",
+        "surrogate_normalization": "(theta-xm)/xs; output*ys+ym; buffers stored in checkpoint",
+        "padding": "none (20 observed synthetic modes)"
+      },
+      "modes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "proposal_modes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "prior": {
+        "family": "independent lognormal",
+        "log_mean": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "log_std": [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ],
+        "support": "theta_i > 0 for all i, no upper bound, no truncation, no correlations or other constraints",
+        "parameter_mean": 1.046027859908717
+      },
+      "likelihood": {
+        "log_density_up_to_common_constant": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+        "kappa_sq": 0.001,
+        "kappa": 0.03162277660168379,
+        "noise_sigma_hz": [
+          0.019678611308336258,
+          0.024898963049054146,
+          0.036582209169864655,
+          0.062028948217630386,
+          0.06814789026975632,
+          0.07743145525455475,
+          0.09852606058120728,
+          0.10425448417663574,
+          0.117874875664711,
+          0.12385454773902893,
+          0.12888678908348083,
+          0.14811168611049652,
+          0.14934970438480377,
+          0.1534469723701477,
+          0.16374708712100983,
+          0.15656393766403198,
+          0.16519580781459808,
+          0.16541875898838043,
+          0.19449417293071747,
+          0.19947926700115204
+        ],
+        "covariance": "diagonal(0.001*y_j^2); independent heteroscedastic in Hz, fixed by observed y",
+        "not_identification_uncertainty": true
+      },
+      "transforms": {
+        "coordinate": "theta (dimensionless)",
+        "prior_log_coordinate": "z=log(theta)",
+        "prior_Jacobian_in_theta": "-sum(log(theta)) included in log target",
+        "flow": "theta-space affine RealNVP; Gaussian z_base in R^6",
+        "proposal_log_density": "-0.5*sum(z_base^2)-3*log(2*pi)+log_abs_det_dz_dtheta",
+        "surrogate_normalization_Jacobian": "not a parameter density transform; no additional density Jacobian",
+        "E_i_APDL_Pa": "theta_i * 2e10 exactly once"
+      },
+      "surrogate_applicable_domain": [
+        0.5,
+        2.0
+      ],
+      "training_distribution": {
+        "sigma": 0.3,
+        "prior_sampling": "exp(sigma*randn), no clamp",
+        "observation": "20 modes: y=f(theta)+sqrt(0.001)*f(theta)*epsilon",
+        "noise_covariance": "diagonal(0.001*f_j(theta)^2), depends on clean training frequency",
+        "inference_difference": "Inference variance uses observed y_j^2, training uses clean f_j(theta)^2.",
+        "field_extra_difference": "not applicable"
+      },
+      "proposal_support": {
+        "mathematical_support": "R^6; affine bijections with finite nonzero scales and Gaussian base; no output clamp",
+        "target_support_contained": true,
+        "hard_boundary_from_training_clamp": false,
+        "limitation": "Finite diagnostics cannot exclude practically negligible proposal mass in positive-target regions, or extrapolation outside surrogate training domain."
+      },
+      "reference": [
+        {
+          "method": "standard_HMC",
+          "mean": [
+            0.6560612320899963,
+            1.451919674873352,
+            0.8320847153663635,
+            1.0428112745285034,
+            1.0496866703033447,
+            1.0613764524459839
+          ],
+          "source": "C:/nf-pmcmc/experiments/results/ablation_checkpoint.pt:hmc_means[3][0]",
+          "target_match": "MATCH_BY_SOURCE_RECIPE_CURRENT_CHECKPOINT_HASH_NOT_EMBEDDED_HISTORICALLY",
+          "evidence_status": "INSUFFICIENT_MEAN_ONLY",
+          "chain_status": "NOT_SAVED",
+          "diagnostics": "No chain, per-parameter ESS or Rhat saved for these observations.",
+          "observation_recipe_status": "RECIPE_REPRODUCED"
+        }
+      ],
+      "reference_reliable": false,
+      "target_match_status": "OBSERVATION_RECIPE_REPRODUCED_REFERENCE_CHAIN_MISSING",
+      "truth": [
+        0.6,
+        1.5,
+        0.9,
+        1.3,
+        0.7,
+        1.4
+      ],
+      "observation_recipe_status": "RECIPE_REPRODUCED"
+    },
+    {
+      "id": "ablation_obs5",
+      "status": "READY",
+      "category": "fixed_ablation_synthetic",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2165446,
+        "sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+        "snapshot": "inputs\\16_member_0.pt"
+      },
+      "CNF": {
+        "path": "C:\\nf-pmcmc\\experiments\\results\\conditional_flow.pt",
+        "exists": true,
+        "size_bytes": 730113,
+        "sha256": "a1d5c5f0ed0f43abbd1dd3815ef72e8a3e1a4487fadfb20493de391c22d47de5",
+        "snapshot": "inputs\\19_conditional_flow.pt"
+      },
+      "observation_hz": [
+        0.7667503356933594,
+        0.8926228880882263,
+        1.3657667636871338,
+        2.2252657413482666,
+        2.5433433055877686,
+        3.0177533626556396,
+        4.1373162269592285,
+        4.150386333465576,
+        4.148332595825195,
+        4.579299449920654,
+        4.5807671546936035,
+        5.203239917755127,
+        5.3425774574279785,
+        5.667364120483398,
+        5.96597957611084,
+        6.332067966461182,
+        6.761176586151123,
+        7.140021324157715,
+        7.6710076332092285,
+        6.945683002471924
+      ],
+      "proposal_condition_hz": [
+        0.7667503356933594,
+        0.8926228880882263,
+        1.3657667636871338,
+        2.2252657413482666,
+        2.5433433055877686,
+        3.0177533626556396,
+        4.1373162269592285,
+        4.150386333465576,
+        4.148332595825195,
+        4.579299449920654,
+        4.5807671546936035,
+        5.203239917755127,
+        5.3425774574279785,
+        5.667364120483398,
+        5.96597957611084,
+        6.332067966461182,
+        6.761176586151123,
+        7.140021324157715,
+        7.6710076332092285,
+        6.945683002471924
+      ],
+      "observation_source": "ablation_checkpoint.pt:hmc_means[4][1]",
+      "preprocessing": {
+        "dtype": "float32",
+        "observation_normalization": "none",
+        "parameter_input": "dimensionless e1..e6",
+        "surrogate_normalization": "(theta-xm)/xs; output*ys+ym; buffers stored in checkpoint",
+        "padding": "none (20 observed synthetic modes)"
+      },
+      "modes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "proposal_modes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "prior": {
+        "family": "independent lognormal",
+        "log_mean": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "log_std": [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ],
+        "support": "theta_i > 0 for all i, no upper bound, no truncation, no correlations or other constraints",
+        "parameter_mean": 1.046027859908717
+      },
+      "likelihood": {
+        "log_density_up_to_common_constant": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+        "kappa_sq": 0.001,
+        "kappa": 0.03162277660168379,
+        "noise_sigma_hz": [
+          0.02424677275121212,
+          0.02822721190750599,
+          0.043189335614442825,
+          0.07036907970905304,
+          0.08042757213115692,
+          0.09542973339557648,
+          0.13083341717720032,
+          0.13124673068523407,
+          0.13118179142475128,
+          0.14481015503406525,
+          0.14485657215118408,
+          0.16454088687896729,
+          0.16894713044166565,
+          0.17921778559684753,
+          0.18866083025932312,
+          0.20023755729198456,
+          0.21380716562271118,
+          0.22578728199005127,
+          0.24257855117321014,
+          0.219641774892807
+        ],
+        "covariance": "diagonal(0.001*y_j^2); independent heteroscedastic in Hz, fixed by observed y",
+        "not_identification_uncertainty": true
+      },
+      "transforms": {
+        "coordinate": "theta (dimensionless)",
+        "prior_log_coordinate": "z=log(theta)",
+        "prior_Jacobian_in_theta": "-sum(log(theta)) included in log target",
+        "flow": "theta-space affine RealNVP; Gaussian z_base in R^6",
+        "proposal_log_density": "-0.5*sum(z_base^2)-3*log(2*pi)+log_abs_det_dz_dtheta",
+        "surrogate_normalization_Jacobian": "not a parameter density transform; no additional density Jacobian",
+        "E_i_APDL_Pa": "theta_i * 2e10 exactly once"
+      },
+      "surrogate_applicable_domain": [
+        0.5,
+        2.0
+      ],
+      "training_distribution": {
+        "sigma": 0.3,
+        "prior_sampling": "exp(sigma*randn), no clamp",
+        "observation": "20 modes: y=f(theta)+sqrt(0.001)*f(theta)*epsilon",
+        "noise_covariance": "diagonal(0.001*f_j(theta)^2), depends on clean training frequency",
+        "inference_difference": "Inference variance uses observed y_j^2, training uses clean f_j(theta)^2.",
+        "field_extra_difference": "not applicable"
+      },
+      "proposal_support": {
+        "mathematical_support": "R^6; affine bijections with finite nonzero scales and Gaussian base; no output clamp",
+        "target_support_contained": true,
+        "hard_boundary_from_training_clamp": false,
+        "limitation": "Finite diagnostics cannot exclude practically negligible proposal mass in positive-target regions, or extrapolation outside surrogate training domain."
+      },
+      "reference": [
+        {
+          "method": "standard_HMC",
+          "mean": [
+            0.8094881772994995,
+            1.2684714794158936,
+            1.6895009279251099,
+            1.0465484857559204,
+            1.0401772260665894,
+            1.042294979095459
+          ],
+          "source": "C:/nf-pmcmc/experiments/results/ablation_checkpoint.pt:hmc_means[4][0]",
+          "target_match": "MATCH_BY_SOURCE_RECIPE_CURRENT_CHECKPOINT_HASH_NOT_EMBEDDED_HISTORICALLY",
+          "evidence_status": "INSUFFICIENT_MEAN_ONLY",
+          "chain_status": "NOT_SAVED",
+          "diagnostics": "No chain, per-parameter ESS or Rhat saved for these observations.",
+          "observation_recipe_status": "RECIPE_REPRODUCED"
+        }
+      ],
+      "reference_reliable": false,
+      "target_match_status": "OBSERVATION_RECIPE_REPRODUCED_REFERENCE_CHAIN_MISSING",
+      "truth": [
+        0.85,
+        1.1,
+        1.7,
+        0.75,
+        1.05,
+        0.95
+      ],
+      "observation_recipe_status": "RECIPE_REPRODUCED"
+    },
+    {
+      "id": "sailboat_field_frozen",
+      "status": "READY",
+      "category": "field",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models_broad_ext\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2163910,
+        "sha256": "4821100192a768327212ed724090732e63483650f4e80421f89a8df3f984f447",
+        "snapshot": "inputs\\17_member_0.pt"
+      },
+      "CNF": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\experiments\\results\\conditional_flow_broad_ext.pt",
+        "exists": true,
+        "size_bytes": 728610,
+        "sha256": "403e36617eab8f9f57b54f7e728f078c536fa3256390eb4851c271431a3af045",
+        "snapshot": "inputs\\18_conditional_flow_broad_ext.pt"
+      },
+      "observation_hz": [
+        0.9100000262260437,
+        1.0800000429153442,
+        1.4700000286102295,
+        2.549999952316284,
+        3.1600000858306885,
+        3.809999942779541
+      ],
+      "proposal_condition_hz": [
+        0.9100000262260437,
+        1.0800000429153442,
+        1.4700000286102295,
+        2.549999952316284,
+        3.1600000858306885,
+        3.809999942779541,
+        3.532956600189209,
+        3.776052474975586,
+        4.098957061767578,
+        4.4089674949646,
+        4.687896728515625,
+        4.9089555740356445,
+        5.108885765075684,
+        5.365133285522461,
+        5.736907482147217,
+        5.91510009765625,
+        6.055235862731934,
+        6.4244513511657715,
+        6.50632905960083,
+        6.767306327819824
+      ],
+      "observation_source": "revlib.FIELD_MEASURED; field_freeze.py frozen six-mode target",
+      "preprocessing": {
+        "dtype": "float32",
+        "observation_normalization": "none",
+        "parameter_input": "dimensionless e1..e6",
+        "surrogate_normalization": "(theta-xm)/xs; output*ys+ym; buffers stored in checkpoint",
+        "padding": "measured first six + extended-surrogate nominal modes 7..20"
+      },
+      "modes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "proposal_modes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "prior": {
+        "family": "independent lognormal",
+        "log_mean": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "log_std": [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ],
+        "support": "theta_i > 0 for all i, no upper bound, no truncation, no correlations or other constraints",
+        "parameter_mean": 1.046027859908717
+      },
+      "likelihood": {
+        "log_density_up_to_common_constant": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+        "kappa_sq": 0.001,
+        "kappa": 0.03162277660168379,
+        "noise_sigma_hz": [
+          0.028776725754141808,
+          0.034152597188949585,
+          0.046485479921102524,
+          0.08063807338476181,
+          0.09992796927690506,
+          0.12048277258872986
+        ],
+        "covariance": "diagonal(0.001*y_j^2); independent heteroscedastic in Hz, fixed by observed y",
+        "not_identification_uncertainty": true
+      },
+      "transforms": {
+        "coordinate": "theta (dimensionless)",
+        "prior_log_coordinate": "z=log(theta)",
+        "prior_Jacobian_in_theta": "-sum(log(theta)) included in log target",
+        "flow": "theta-space affine RealNVP; Gaussian z_base in R^6",
+        "proposal_log_density": "-0.5*sum(z_base^2)-3*log(2*pi)+log_abs_det_dz_dtheta",
+        "surrogate_normalization_Jacobian": "not a parameter density transform; no additional density Jacobian",
+        "E_i_APDL_Pa": "theta_i * 2e10 exactly once"
+      },
+      "surrogate_applicable_domain": [
+        0.5,
+        3.5
+      ],
+      "training_distribution": {
+        "sigma": 0.55,
+        "prior_sampling": "exp(0.55*randn).clamp(0.5,3.5); has endpoint atoms",
+        "observation": "20 modes: y=f(theta)+sqrt(0.001)*f(theta)*epsilon",
+        "noise_covariance": "diagonal(0.001*f_j(theta)^2), depends on clean training frequency",
+        "inference_difference": "Inference variance uses observed y_j^2, training uses clean f_j(theta)^2.",
+        "field_extra_difference": "old proposal trained with sigma=0.55 and clamp using 20 genuine modes; field target sigma=0.30 untruncated, six measured modes and hybrid padding"
+      },
+      "proposal_support": {
+        "mathematical_support": "R^6; affine bijections with finite nonzero scales and Gaussian base; no output clamp",
+        "target_support_contained": true,
+        "hard_boundary_from_training_clamp": false,
+        "limitation": "Finite diagnostics cannot exclude practically negligible proposal mass in positive-target regions, or extrapolation outside surrogate training domain."
+      },
+      "reference": [
+        {
+          "method": "NUTS",
+          "mean": [
+            2.2210867404937744,
+            1.1391620635986328,
+            1.6467636823654175,
+            1.0633232593536377,
+            1.0276795625686646,
+            1.0424283742904663
+          ],
+          "source": "revision_experiments/task_r3_domain/field_freeze_results.json:table13.nuts",
+          "target_match": "MATCH_BY_FROZEN_SOURCE_RECIPE_CURRENT_CHECKPOINT_HASH_NOT_EMBEDDED_HISTORICALLY",
+          "evidence_status": "INSUFFICIENT_CHAIN_NOT_SAVED",
+          "chain_status": "NOT_SAVED",
+          "reported_ESS_min": 295.705078125,
+          "reported_split_Rhat": [
+            1.001691460609436,
+            1.0029401779174805,
+            1.0001388788223267,
+            0.9997850060462952,
+            1.0024604797363281,
+            1.0019484758377075
+          ],
+          "diagnostics": "Summary only. Three NUTS chains are local variables in field_freeze.py and are not persisted."
+        },
+        {
+          "method": "mass_NeuTra_HMC",
+          "mean": [
+            2.1638853549957275,
+            1.0274945497512817,
+            1.72513747215271,
+            1.0874439477920532,
+            1.0561528205871582,
+            1.5326175689697266
+          ],
+          "source": "revision_experiments/task_r3_domain/field_freeze_results.json:table13.mass_neutra",
+          "target_match": "MATCH_BY_FROZEN_SOURCE_RECIPE_CURRENT_CHECKPOINT_HASH_NOT_EMBEDDED_HISTORICALLY",
+          "evidence_status": "INSUFFICIENT_CHAIN_NOT_SAVED",
+          "chain_status": "NOT_SAVED",
+          "reported_ESS_min": 22.86789894104004,
+          "reported_split_Rhat": [
+            1.001691460609436,
+            1.0029401779174805,
+            1.0001388788223267,
+            0.9997850060462952,
+            1.0024604797363281,
+            1.0019484758377075
+          ],
+          "diagnostics": "Summary only. Three NUTS chains are local variables in field_freeze.py and are not persisted."
+        }
+      ],
+      "reference_reliable": false,
+      "target_match_status": "SOURCE_RECIPE_MATCH_BUT_REFERENCE_EVIDENCE_INSUFFICIENT",
+      "truth": null
+    },
+    {
+      "id": "sailboat_boundary_e1_075",
+      "status": "READY",
+      "category": "boundary_synthetic",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models_broad_ext\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2163910,
+        "sha256": "4821100192a768327212ed724090732e63483650f4e80421f89a8df3f984f447",
+        "snapshot": "inputs\\17_member_0.pt"
+      },
+      "CNF": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\experiments\\results\\conditional_flow_broad_ext.pt",
+        "exists": true,
+        "size_bytes": 728610,
+        "sha256": "403e36617eab8f9f57b54f7e728f078c536fa3256390eb4851c271431a3af045",
+        "snapshot": "inputs\\18_conditional_flow_broad_ext.pt"
+      },
+      "observation_hz": [
+        0.6489209532737732,
+        0.7836908102035522,
+        1.1370563507080078,
+        1.91010320186615,
+        2.2462711334228516,
+        2.5129308700561523,
+        3.4019975662231445,
+        3.568819999694824,
+        3.762984275817871,
+        4.163909912109375,
+        4.237831115722656,
+        4.6024580001831055,
+        4.766416549682617,
+        5.0692644119262695,
+        5.50869607925415,
+        5.5515594482421875,
+        5.697169303894043,
+        5.875096321105957,
+        6.176621437072754,
+        6.4200239181518555
+      ],
+      "proposal_condition_hz": [
+        0.6489209532737732,
+        0.7836908102035522,
+        1.1370563507080078,
+        1.91010320186615,
+        2.2462711334228516,
+        2.5129308700561523,
+        3.4019975662231445,
+        3.568819999694824,
+        3.762984275817871,
+        4.163909912109375,
+        4.237831115722656,
+        4.6024580001831055,
+        4.766416549682617,
+        5.0692644119262695,
+        5.50869607925415,
+        5.5515594482421875,
+        5.697169303894043,
+        5.875096321105957,
+        6.176621437072754,
+        6.4200239181518555
+      ],
+      "observation_source": "eth_final.py:surE([0.75,1,1,1,1,1]); all 20 modes, no added noise",
+      "preprocessing": {
+        "dtype": "float32",
+        "observation_normalization": "none",
+        "parameter_input": "dimensionless e1..e6",
+        "surrogate_normalization": "(theta-xm)/xs; output*ys+ym; buffers stored in checkpoint",
+        "padding": "none (20 observed synthetic modes)"
+      },
+      "modes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "proposal_modes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "prior": {
+        "family": "independent lognormal",
+        "log_mean": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "log_std": [
+          0.55,
+          0.55,
+          0.55,
+          0.55,
+          0.55,
+          0.55
+        ],
+        "support": "theta_i > 0 for all i, no upper bound, no truncation, no correlations or other constraints",
+        "parameter_mean": 1.1632874435930152
+      },
+      "likelihood": {
+        "log_density_up_to_common_constant": "-0.5/0.001 * sum_{j=1..K} ((f_j(theta)-y_j)/y_j)^2",
+        "kappa_sq": 0.001,
+        "kappa": 0.03162277660168379,
+        "noise_sigma_hz": [
+          0.020520681515336037,
+          0.02478247880935669,
+          0.03595687821507454,
+          0.060402762144804,
+          0.07103332877159119,
+          0.0794658437371254,
+          0.10758060216903687,
+          0.11285599321126938,
+          0.11899600178003311,
+          0.1316743791103363,
+          0.13401198387145996,
+          0.14554248750209808,
+          0.150727316737175,
+          0.1603042036294937,
+          0.17420025169849396,
+          0.17555572092533112,
+          0.1801602989435196,
+          0.18578684329986572,
+          0.19532190263271332,
+          0.20301897823810577
+        ],
+        "covariance": "diagonal(0.001*y_j^2); independent heteroscedastic in Hz, fixed by observed y",
+        "not_identification_uncertainty": true
+      },
+      "transforms": {
+        "coordinate": "theta (dimensionless)",
+        "prior_log_coordinate": "z=log(theta)",
+        "prior_Jacobian_in_theta": "-sum(log(theta)) included in log target",
+        "flow": "theta-space affine RealNVP; Gaussian z_base in R^6",
+        "proposal_log_density": "-0.5*sum(z_base^2)-3*log(2*pi)+log_abs_det_dz_dtheta",
+        "surrogate_normalization_Jacobian": "not a parameter density transform; no additional density Jacobian",
+        "E_i_APDL_Pa": "theta_i * 2e10 exactly once"
+      },
+      "surrogate_applicable_domain": [
+        0.5,
+        3.5
+      ],
+      "training_distribution": {
+        "sigma": 0.55,
+        "prior_sampling": "exp(0.55*randn).clamp(0.5,3.5); has endpoint atoms",
+        "observation": "20 modes: y=f(theta)+sqrt(0.001)*f(theta)*epsilon",
+        "noise_covariance": "diagonal(0.001*f_j(theta)^2), depends on clean training frequency",
+        "inference_difference": "Inference variance uses observed y_j^2, training uses clean f_j(theta)^2.",
+        "field_extra_difference": "not applicable"
+      },
+      "proposal_support": {
+        "mathematical_support": "R^6; affine bijections with finite nonzero scales and Gaussian base; no output clamp",
+        "target_support_contained": true,
+        "hard_boundary_from_training_clamp": false,
+        "limitation": "Finite diagnostics cannot exclude practically negligible proposal mass in positive-target regions, or extrapolation outside surrogate training domain."
+      },
+      "reference": [
+        {
+          "method": "NONE",
+          "source": "No matching reference saved by eth_final.py",
+          "target_match": "MISSING",
+          "evidence_status": "INSUFFICIENT_NO_REFERENCE",
+          "chain_status": "MISSING"
+        }
+      ],
+      "reference_reliable": false,
+      "target_match_status": "REFERENCE_MISSING",
+      "truth": [
+        0.75,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "existing_posterior_targets": [
+    {
+      "id": "existing_corrected_obs1",
+      "sigma": 0.3,
+      "K": 20,
+      "observation": [
+        0.7438080495,
+        0.8976195675,
+        1.3338902841,
+        2.1913368881,
+        2.4954238646,
+        2.8913126959,
+        3.8901485103,
+        4.0906845006,
+        4.302510749,
+        4.6181651271,
+        4.7135771132,
+        5.2319012882,
+        5.3395178873,
+        5.7798832818,
+        5.9969048489,
+        6.3629425374,
+        6.8900320633,
+        7.2156511654,
+        7.2669418301,
+        7.6461185184
+      ],
+      "observation_status": "SAVED",
+      "source": "corrected_amortized.pt:f_obs",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2165446,
+        "sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+        "snapshot": "inputs\\16_member_0.pt"
+      },
+      "checkpoint_history": "Current checkpoint fingerprint; original result did not embed a checkpoint hash."
+    },
+    {
+      "id": "existing_corrected_obs2",
+      "sigma": 0.3,
+      "K": 20,
+      "observation": [
+        0.7400509119033813,
+        0.8791639804840088,
+        1.3473660945892334,
+        2.174238681793213,
+        2.446340560913086,
+        2.7986526489257812,
+        3.937838315963745,
+        4.048161029815674,
+        4.434528350830078,
+        4.788559436798096,
+        4.742562294006348,
+        5.282161235809326,
+        5.5887017250061035,
+        6.011288166046143,
+        6.3367438316345215,
+        6.514047622680664,
+        6.627317428588867,
+        6.825656890869141,
+        7.120582580566406,
+        7.502593517303467
+      ],
+      "observation_status": "SAVED",
+      "source": "corrected_amortized.pt:generalization.y_new",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2165446,
+        "sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+        "snapshot": "inputs\\16_member_0.pt"
+      },
+      "checkpoint_history": "Current checkpoint fingerprint; original result did not embed a checkpoint hash."
+    },
+    {
+      "id": "existing_robustness_obs1",
+      "sigma": 0.3,
+      "K": 20,
+      "observation": "NOT_RECOVERABLE_WITHOUT_REPLAYING_FORBIDDEN_MCMC_RNG_HISTORY",
+      "observation_status": "MISSING",
+      "source": "robustness_test.pt[0]; robustness_test.py",
+      "reason": "Source uses one evolving global RNG, including prior observations' HMC draws. Observations were not saved; no MCMC replay is permitted.",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2165446,
+        "sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+        "snapshot": "inputs\\16_member_0.pt"
+      },
+      "checkpoint_history": "Target prior/likelihood recipe known; actual observation not saved."
+    },
+    {
+      "id": "existing_robustness_obs2",
+      "sigma": 0.3,
+      "K": 20,
+      "observation": "NOT_RECOVERABLE_WITHOUT_REPLAYING_FORBIDDEN_MCMC_RNG_HISTORY",
+      "observation_status": "MISSING",
+      "source": "robustness_test.pt[1]; robustness_test.py",
+      "reason": "Source uses one evolving global RNG, including prior observations' HMC draws. Observations were not saved; no MCMC replay is permitted.",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2165446,
+        "sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+        "snapshot": "inputs\\16_member_0.pt"
+      },
+      "checkpoint_history": "Target prior/likelihood recipe known; actual observation not saved."
+    },
+    {
+      "id": "existing_robustness_obs3",
+      "sigma": 0.3,
+      "K": 20,
+      "observation": "NOT_RECOVERABLE_WITHOUT_REPLAYING_FORBIDDEN_MCMC_RNG_HISTORY",
+      "observation_status": "MISSING",
+      "source": "robustness_test.pt[2]; robustness_test.py",
+      "reason": "Source uses one evolving global RNG, including prior observations' HMC draws. Observations were not saved; no MCMC replay is permitted.",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2165446,
+        "sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+        "snapshot": "inputs\\16_member_0.pt"
+      },
+      "checkpoint_history": "Target prior/likelihood recipe known; actual observation not saved."
+    },
+    {
+      "id": "existing_robustness_obs4",
+      "sigma": 0.3,
+      "K": 20,
+      "observation": "NOT_RECOVERABLE_WITHOUT_REPLAYING_FORBIDDEN_MCMC_RNG_HISTORY",
+      "observation_status": "MISSING",
+      "source": "robustness_test.pt[3]; robustness_test.py",
+      "reason": "Source uses one evolving global RNG, including prior observations' HMC draws. Observations were not saved; no MCMC replay is permitted.",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2165446,
+        "sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+        "snapshot": "inputs\\16_member_0.pt"
+      },
+      "checkpoint_history": "Target prior/likelihood recipe known; actual observation not saved."
+    },
+    {
+      "id": "existing_robustness_obs5",
+      "sigma": 0.3,
+      "K": 20,
+      "observation": "NOT_RECOVERABLE_WITHOUT_REPLAYING_FORBIDDEN_MCMC_RNG_HISTORY",
+      "observation_status": "MISSING",
+      "source": "robustness_test.pt[4]; robustness_test.py",
+      "reason": "Source uses one evolving global RNG, including prior observations' HMC draws. Observations were not saved; no MCMC replay is permitted.",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2165446,
+        "sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+        "snapshot": "inputs\\16_member_0.pt"
+      },
+      "checkpoint_history": "Target prior/likelihood recipe known; actual observation not saved."
+    },
+    {
+      "id": "existing_robustness_obs6",
+      "sigma": 0.3,
+      "K": 20,
+      "observation": "NOT_RECOVERABLE_WITHOUT_REPLAYING_FORBIDDEN_MCMC_RNG_HISTORY",
+      "observation_status": "MISSING",
+      "source": "robustness_test.pt[5]; robustness_test.py",
+      "reason": "Source uses one evolving global RNG, including prior observations' HMC draws. Observations were not saved; no MCMC replay is permitted.",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2165446,
+        "sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+        "snapshot": "inputs\\16_member_0.pt"
+      },
+      "checkpoint_history": "Target prior/likelihood recipe known; actual observation not saved."
+    },
+    {
+      "id": "existing_robustness_obs7",
+      "sigma": 0.3,
+      "K": 20,
+      "observation": "NOT_RECOVERABLE_WITHOUT_REPLAYING_FORBIDDEN_MCMC_RNG_HISTORY",
+      "observation_status": "MISSING",
+      "source": "robustness_test.pt[6]; robustness_test.py",
+      "reason": "Source uses one evolving global RNG, including prior observations' HMC draws. Observations were not saved; no MCMC replay is permitted.",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2165446,
+        "sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+        "snapshot": "inputs\\16_member_0.pt"
+      },
+      "checkpoint_history": "Target prior/likelihood recipe known; actual observation not saved."
+    },
+    {
+      "id": "existing_robustness_obs8",
+      "sigma": 0.3,
+      "K": 20,
+      "observation": "NOT_RECOVERABLE_WITHOUT_REPLAYING_FORBIDDEN_MCMC_RNG_HISTORY",
+      "observation_status": "MISSING",
+      "source": "robustness_test.pt[7]; robustness_test.py",
+      "reason": "Source uses one evolving global RNG, including prior observations' HMC draws. Observations were not saved; no MCMC replay is permitted.",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2165446,
+        "sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+        "snapshot": "inputs\\16_member_0.pt"
+      },
+      "checkpoint_history": "Target prior/likelihood recipe known; actual observation not saved."
+    },
+    {
+      "id": "existing_robustness_obs9",
+      "sigma": 0.3,
+      "K": 20,
+      "observation": "NOT_RECOVERABLE_WITHOUT_REPLAYING_FORBIDDEN_MCMC_RNG_HISTORY",
+      "observation_status": "MISSING",
+      "source": "robustness_test.pt[8]; robustness_test.py",
+      "reason": "Source uses one evolving global RNG, including prior observations' HMC draws. Observations were not saved; no MCMC replay is permitted.",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2165446,
+        "sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+        "snapshot": "inputs\\16_member_0.pt"
+      },
+      "checkpoint_history": "Target prior/likelihood recipe known; actual observation not saved."
+    },
+    {
+      "id": "existing_robustness_obs10",
+      "sigma": 0.3,
+      "K": 20,
+      "observation": "NOT_RECOVERABLE_WITHOUT_REPLAYING_FORBIDDEN_MCMC_RNG_HISTORY",
+      "observation_status": "MISSING",
+      "source": "robustness_test.pt[9]; robustness_test.py",
+      "reason": "Source uses one evolving global RNG, including prior observations' HMC draws. Observations were not saved; no MCMC replay is permitted.",
+      "surrogate": {
+        "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models\\member_0.pt",
+        "exists": true,
+        "size_bytes": 2165446,
+        "sha256": "4c621e1d41efc309f5a41b01399dcdddfc94fa0da6020f38379e29a4266025a2",
+        "snapshot": "inputs\\16_member_0.pt"
+      },
+      "checkpoint_history": "Target prior/likelihood recipe known; actual observation not saved."
+    }
+  ],
+  "observed_reference_mismatch_evidence": {
+    "source": "E5_multichain_rhat/e5_rhat.py and E5_rhat.json",
+    "actual_target": "All three E5 chains use the same original broad surrogate/CNF and sigma=0.55 six-mode target. Names narrow/broad/broad+mass identify initial centers, not three targets.",
+    "frozen_target_match": false,
+    "reason": "Different surrogate checkpoint and sigma=0.55 rather than extended surrogate and frozen sigma=0.30.",
+    "reported_max_Rhat": 1.181136965751648,
+    "chain_status": "NOT_SAVED",
+    "limitation": "Older mismatched-target summary and basin-conditioned summaries cannot establish frozen-target convergence."
+  },
+  "identification_uncertainty": {
+    "status": "NOT_OBTAINED",
+    "reason": "No per-mode fast Bayesian FFT standard deviations or covariance in the required local observation assets."
+  },
+  "evidence_addendum": {
+    "initial_manifest_preserved": "TARGET_MANIFEST_INITIAL.json",
+    "initial_manifest_completed_before_diagnostics": true,
+    "correction": "Initial E5 summary description incorrectly inferred pooled targets from center labels; corrected after reading the target construction. Observation likelihood/prior/weight formulas did not change.",
+    "fixed_observation_recipe_checks": [
+      {
+        "id": "ablation_obs1",
+        "observation_seed": 42,
+        "source_recipe": "ablation_study.py:main, fixed test_thetas",
+        "max_abs_observation_difference_hz": 4.76837158203125e-07,
+        "atol_hz": 1e-06,
+        "status": "RECIPE_REPRODUCED",
+        "limitation": "Reproducing observations supports the source recipe but does not recover the reference chain or prove convergence."
+      },
+      {
+        "id": "ablation_obs2",
+        "observation_seed": 43,
+        "source_recipe": "ablation_study.py:main, fixed test_thetas",
+        "max_abs_observation_difference_hz": 0.0,
+        "atol_hz": 1e-06,
+        "status": "RECIPE_REPRODUCED",
+        "limitation": "Reproducing observations supports the source recipe but does not recover the reference chain or prove convergence."
+      },
+      {
+        "id": "ablation_obs3",
+        "observation_seed": 44,
+        "source_recipe": "ablation_study.py:main, fixed test_thetas",
+        "max_abs_observation_difference_hz": 4.76837158203125e-07,
+        "atol_hz": 1e-06,
+        "status": "RECIPE_REPRODUCED",
+        "limitation": "Reproducing observations supports the source recipe but does not recover the reference chain or prove convergence."
+      },
+      {
+        "id": "ablation_obs4",
+        "observation_seed": 45,
+        "source_recipe": "ablation_study.py:main, fixed test_thetas",
+        "max_abs_observation_difference_hz": 0.0,
+        "atol_hz": 1e-06,
+        "status": "RECIPE_REPRODUCED",
+        "limitation": "Reproducing observations supports the source recipe but does not recover the reference chain or prove convergence."
+      },
+      {
+        "id": "ablation_obs5",
+        "observation_seed": 46,
+        "source_recipe": "ablation_study.py:main, fixed test_thetas",
+        "max_abs_observation_difference_hz": 4.76837158203125e-07,
+        "atol_hz": 1e-06,
+        "status": "RECIPE_REPRODUCED",
+        "limitation": "Reproducing observations supports the source recipe but does not recover the reference chain or prove convergence."
+      }
+    ],
+    "future_training_data_recipe_check": {
+      "N": 2000,
+      "generation_seed": 42,
+      "theta_max_abs_difference": 0.0,
+      "observation_max_abs_difference_hz": 9.5367431640625e-07,
+      "status": "RECIPE_REPRODUCED",
+      "atol_y_hz": 2e-06
+    }
+  }
+}

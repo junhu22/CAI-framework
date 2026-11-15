@@ -1,0 +1,17 @@
+{
+  "target": "ablation_obs4",
+  "seed": 704,
+  "pid": 13844,
+  "started_utc": "2026-09-18T13:37:26.787843+00:00",
+  "manual_authorization": true,
+  "training_calls": 0,
+  "automatic_retries": 0,
+  "initialization": [
+    1.2214027581601699,
+    1.1274968515793757,
+    1.0408107741923882,
+    0.9607894391523232,
+    0.8869204367171575,
+    0.8187307530779818
+  ]
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\AC3 modal identification\\result_AC3.mat",
+    "bytes": 433212,
+    "mtime_ns": 1789619864652015100,
+    "sha256": "3eeb991b4865130b210046c0bbafeb6905e2367922730e17842414c6564c6197"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\modal_setup_reextract_20260917_130854_6fbbb36c1ec642778b47717611c2da0a\\MODAL_SETUP_RESULTS.csv",
+    "bytes": 63952,
+    "mtime_ns": 1789621999578457500,
+    "sha256": "bae2a1cf99fd8240ec63a84fcf78e6d7cfe77204a13004f8a6b50df60aaa99a9"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\modal_setup_reextract_20260917_130854_6fbbb36c1ec642778b47717611c2da0a\\MODAL_SETUP_SUMMARY.csv",
+    "bytes": 6304,
+    "mtime_ns": 1789621999578457500,
+    "sha256": "722b48c8322fa6d787bce4e2739791069d6171f08e91be7b46920703241e4cc4"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\modal_setup_reextract_20260917_130854_6fbbb36c1ec642778b47717611c2da0a\\MODAL_SETUP_REPORT.md",
+    "bytes": 12872,
+    "mtime_ns": 1789621999578457500,
+    "sha256": "dfea431633da2680bd38938a44f8c11d1782ccd6f4651a38f846a347f92a8d21"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\field_modal_source_reconciliation_20260917_132624_5a0a800b89d44aa2b936571e11ba6cb5\\FIELD_MODAL_SOURCE_RECONCILIATION.md",
+    "bytes": 16099,
+    "mtime_ns": 1789623279165009700,
+    "sha256": "b18762be9f248dc2469037288d35260ca2c572c391b0049309aecec135b29ef8"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\field_modal_source_reconciliation_20260917_132624_5a0a800b89d44aa2b936571e11ba6cb5\\MODAL_SOURCE_MAPPING.csv",
+    "bytes": 1041361,
+    "mtime_ns": 1789623215871716400,
+    "sha256": "d744dd9103caee9a5a53429025e2485002198c0448450fae41edb90c17ef682a"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\field_modal_source_reconciliation_20260917_132624_5a0a800b89d44aa2b936571e11ba6cb5\\FIELD_PREDICTION_EXTRACT.csv",
+    "bytes": 14996,
+    "mtime_ns": 1789623215872712400,
+    "sha256": "9b8ca604d5f813cea92a046e6f275713a428948b421dd9ddf8cbadbe5a1cf27d"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\field_modal_source_reconciliation_20260917_132624_5a0a800b89d44aa2b936571e11ba6cb5\\SOURCE_RECONCILIATION_ARRAYS.npz",
+    "bytes": 15363,
+    "mtime_ns": 1789623215877061300,
+    "sha256": "733c33b709628ba8e609878064ed56680d21f851afced180ebb4a447ec26c4d5"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\field_modal_source_reconciliation_20260917_132624_5a0a800b89d44aa2b936571e11ba6cb5\\SOURCE_EVIDENCE.json",
+    "bytes": 97633,
+    "mtime_ns": 1789623215875783800,
+    "sha256": "be6fc7cd32ab8fe3df4b19db60c7f5cfb567e980292f4dad5b5d2323df3c4e31"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\field_modal_source_reconciliation_20260917_132624_5a0a800b89d44aa2b936571e11ba6cb5\\OUTPUT_VERIFICATION.json",
+    "bytes": 28251,
+    "mtime_ns": 1789623281034358500,
+    "sha256": "a0d044e5fffbc0c137215a71a8e6c0bda99140e029161113dd00586430e92f08"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\m6cmp_d1c30a5f5608\\RUN_8cb7dbbc\\MODE6_SETUP0001_POSTMORTEM.md",
+    "bytes": 11453,
+    "mtime_ns": 1789642704917919400,
+    "sha256": "b2976951728930489f9ff7f925b46972d10a40795bba7e0dbef53bad3713f7e4"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\m6cmp_d1c30a5f5608\\RUN_8cb7dbbc\\RUN_STATUS.json",
+    "bytes": 619,
+    "mtime_ns": 1789641972494610200,
+    "sha256": "6b089c3ef01031f5a45ed4a8212ecf54b63218c13ee9995620c4f7738fe15c4e"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\m6cmp_d1c30a5f5608\\RUN_8cb7dbbc\\AUDIT_0382beec\\NEIGHBOR_SUMMARY_CORRECTED.json",
+    "bytes": 877,
+    "mtime_ns": 1789642559487068300,
+    "sha256": "faaaaafc001985124fb716f0602b240a4e55ba0d90b9ae63cb87c41769bf393a"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\m6cmp_d1c30a5f5608\\RUN_8cb7dbbc\\AUDIT_0382beec\\NEIGHBOR_SUMMARY_CORRECTED.csv",
+    "bytes": 759,
+    "mtime_ns": 1789642559487068300,
+    "sha256": "daea37cf89af7be0a99fd5d27aeabe56265a82170bd3487cbd6fa3b427b5ca19"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\m6cmp_d1c30a5f5608\\RUN_8cb7dbbc\\AUDIT_0382beec\\RAW_MODAL_RESULTS_AUDITED.csv",
+    "bytes": 1795,
+    "mtime_ns": 1789642559485537000,
+    "sha256": "033baecdeb0f9ebfaeaa43ce97f552227640939a30e873a43829795f907a2568"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\m6cmp_d1c30a5f5608\\RUN_8cb7dbbc\\AUDIT_0382beec\\CASE_STATUS_AUDITED.csv",
+    "bytes": 647,
+    "mtime_ns": 1789642559487068300,
+    "sha256": "b708904d012fcf35d51f9111190ce74f1c5f3aec5f33db03542449125f08edcc"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\m6cmp_d1c30a5f5608\\RUN_8cb7dbbc\\AUDIT_0382beec\\POSTMORTEM_EVIDENCE.json",
+    "bytes": 172213,
+    "mtime_ns": 1789642559507216200,
+    "sha256": "e1d628bba1f93bffc139ecbf20983618f87f764b4bb3a20d3f278c77252b4d36"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\m6cmp_d1c30a5f5608\\RUN_PREPARATION.json",
+    "bytes": 11004,
+    "mtime_ns": 1789640569646331400,
+    "sha256": "35e68b50c628a954a96a90f3952ff1bb2252a48f49c73c02ed8340aba6dff4cf"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\AUTHOR_RUN_MODE6_SETUP0001_COMPARISON.m",
+    "bytes": 38322,
+    "mtime_ns": 1789640567860253600,
+    "sha256": "0719cd1d7653fd4dba4c2954e8aa96b6648028896f93a4657b460b39abdc6590"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\m6cmp_d1c30a5f5608\\STATIC_VERIFICATION.json",
+    "bytes": 30157,
+    "mtime_ns": 1789640861903806700,
+    "sha256": "14d0f8fec699b32df105357e5be03a958a3187528065ffd0376d56854ad1cf9b"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\m6cmp_d1c30a5f5608\\RUN_8cb7dbbc\\PRIMARY_ONE_MODE\\OUTPUT.mat",
+    "bytes": 199173,
+    "mtime_ns": 1789641939979083300,
+    "sha256": "6fe39881e8afde58478bd315708409abd34cab4135884799860c50d4e7104b08"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\m6cmp_d1c30a5f5608\\RUN_8cb7dbbc\\PRIMARY_ONE_MODE\\INPUT.mat",
+    "bytes": 43052480,
+    "mtime_ns": 1789641939360311100,
+    "sha256": "f4056196df4ec654480f4ea18f32b55a0b1165b34292b38c2446cd43640ca792"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\m6cmp_d1c30a5f5608\\RUN_8cb7dbbc\\PRIMARY_ONE_MODE\\CASE_COMMAND_WINDOW.txt",
+    "bytes": 35785,
+    "mtime_ns": 1789641939943078200,
+    "sha256": "430cc55f19bf75a61dcc56aa00870c7c1bdeec1a7adbcd6fe42a5bab8416d8e9"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\m6cmp_d1c30a5f5608\\RUN_8cb7dbbc\\PRIMARY_ONE_MODE\\AU_CALL_STATUS.json",
+    "bytes": 242,
+    "mtime_ns": 1789641940271564300,
+    "sha256": "e8a7fd1f9105eb3dc20996a565dbf65acae75e6354175a8a4dcdc79e74d8da4e"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\m6cmp_d1c30a5f5608\\RUN_8cb7dbbc\\SENSITIVITY_TWO_MODE\\OUTPUT.mat",
+    "bytes": 210052,
+    "mtime_ns": 1789641972277748300,
+    "sha256": "75d4c91dbda8742917ca6217dfd81259bea352484ec788361ce3bb5fb27b1e9c"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\m6cmp_d1c30a5f5608\\RUN_8cb7dbbc\\SENSITIVITY_TWO_MODE\\INPUT.mat",
+    "bytes": 43052504,
+    "mtime_ns": 1789641941067813400,
+    "sha256": "86123666e22f58f01208cafc1ca105a544859b4e840398575c9358488f6d1b9b"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\m6cmp_d1c30a5f5608\\RUN_8cb7dbbc\\SENSITIVITY_TWO_MODE\\CASE_COMMAND_WINDOW.txt",
+    "bytes": 190243,
+    "mtime_ns": 1789641972235714200,
+    "sha256": "f48b917c298dc82aff5cdc062e4c81c93d847fd77c9cdc350c57c3e43da30a6b"
+  },
+  {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\matlab_bayoma_preflight_20260917_154820_4df18c81885a4631bc62103552e5f6d3\\m6cmp_d1c30a5f5608\\RUN_8cb7dbbc\\SENSITIVITY_TWO_MODE\\AU_CALL_STATUS.json",
+    "bytes": 243,
+    "mtime_ns": 1789641972380634100,
+    "sha256": "80f1baf5fd0ce8c6d2d280005aa7c3fdf29a3ae49093f815549d3e7a37ac58be"
+  }
+]

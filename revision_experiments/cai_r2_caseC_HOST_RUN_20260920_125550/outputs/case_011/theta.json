@@ -1,0 +1,13 @@
+{
+    "selection_order":  11,
+    "chain_position":  0,
+    "chain_seed":  811,
+    "retained_index_zero_based":  1611,
+    "theta":  [
+                  2.736431360244751,
+                  3.0141661167144775,
+                  3.9088091850280762
+              ],
+    "source_theta_sha256":  "054bbbcbe4c75a604670faa5d6a63f9e8ec309c0a1dfdd853a968cfc2b427bf5",
+    "run_mac_sha256":  "950ee251b4a1c9b438c60c3da996dcae87f8b0b43fc8a68edf9f8a2e92ee8e1d"
+}

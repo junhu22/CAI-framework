@@ -1,0 +1,60 @@
+{
+  "schema": "cai-r2-case-c-host-metrics-v1",
+  "generated_at": "2026-09-20T13:19:23.665557+08:00",
+  "CASE_C_HOST_RUN": "PASS",
+  "metrics_status": "COMPUTED_FROM_COMPLETE_50_POINT_HOST_RUN",
+  "scientific_protocol": "UNCHANGED",
+  "target": {
+    "prior": "independent Uniform(0.5,4)^3",
+    "likelihood_modes": 6,
+    "observation_hz": [
+      2.06,
+      2.3,
+      2.62,
+      6.14,
+      6.53,
+      6.76
+    ],
+    "kappa": 0.03,
+    "kappa_squared": 0.0009
+  },
+  "old_case_c": {
+    "classification": "OLD_SUPERSEDED_LOGNORMAL_REGION",
+    "delta_post": 0.0017278678,
+    "rho": 0.5915577748,
+    "standard_loglik_bound_nat": 11.529070318712241,
+    "residual_aware_loglik_bound_nat": 6.824175901102032,
+    "max_abs_delta_ell_nat": 1.02402296,
+    "mean_abs_delta_ell_nat": 0.03803122
+  },
+  "new_case_c": {
+    "classification": "NEW_CURRENT_BOUNDED_UNIFORM_REGION",
+    "n_points": 50,
+    "delta_post": 0.0003430632202042094,
+    "rho": 0.12004512595419847,
+    "standard_loglik_bound_nat": 2.287480442604919,
+    "residual_aware_loglik_bound_nat": 0.27494609110797125,
+    "max_abs_delta_ell_nat": 0.02567717841688122,
+    "mean_abs_delta_ell_nat": 0.007751269317860494,
+    "first_six_max_relative_surrogate_error": 0.0003430632202042094,
+    "all_20_max_relative_surrogate_error": 0.0010838951616620957
+  },
+  "old_to_new_direction": {
+    "delta_post": "DECREASED",
+    "rho": "DECREASED",
+    "standard_loglik_bound_nat": "DECREASED",
+    "residual_aware_loglik_bound_nat": "DECREASED",
+    "max_abs_delta_ell_nat": "DECREASED",
+    "mean_abs_delta_ell_nat": "DECREASED"
+  },
+  "hashes": {
+    "selected_theta_sha256": "054bbbcbe4c75a604670faa5d6a63f9e8ec309c0a1dfdd853a968cfc2b427bf5",
+    "host_fe_csv_sha256": "00e3b9efaaccfe43040007e9b44dc74b327ee310570ebc797c102ed10f59b0b2",
+    "host_run_status_sha256": "ff6dea852c78c0b1a9cc558b527308550623ca206a0eb3f6bafff1a472cbef47",
+    "surrogate_sha256": "6a1e4f530d4e3628e0b7fdbf08661b4dc32a71a0c2b538b26f5af9d7c07b9986",
+    "surrogate_source_sha256": "844446aff945285062f9b0b9a1e536252233718e6d5aebb3642ae53a2513369f",
+    "per_point_metrics_sha256": "4d41029d342b607d8a9651a1faa4175e7c9becfc77e9875914342ee0d926f93d"
+  },
+  "no_accept_reject_threshold": true,
+  "no_retry_or_point_substitution": true
+}

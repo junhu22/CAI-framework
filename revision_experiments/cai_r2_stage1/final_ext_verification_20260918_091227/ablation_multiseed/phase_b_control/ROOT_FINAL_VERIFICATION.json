@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "training_stopped": true,
+  "phase_b_unique_attempts": 15,
+  "phase_b_completed": 14,
+  "phase_b_failed": 1,
+  "full_completed": 23,
+  "protected_files_unchanged": 367,
+  "summary_cells": 9,
+  "aggregate_field_checks": 144,
+  "common_L8_references_identical": true,
+  "fast_variation_separate": true,
+  "artifacts": {
+    "PHASE_B_RESULTS.csv": "d42b2f9c80253c0ce63602484b548b059e2d5ff1d11048f34652a670d212c724",
+    "FULL_ABLATION_SUMMARY.csv": "d1999603691fbf5b2cf9b880e4aae361d245c5d5aa321da1e99cf43ab1cb1a85",
+    "FULL_ABLATION_AUDIT.md": "5b836e2188b1c43ddacf8723610558ed12fbfb7912b69dbe31f7c276c665da77",
+    "FULL_ABLATION_INTEGRITY.json": "313c7d00f276db5a03f90df4cd1a2284211936d6a3880e835b4050656823f647"
+  }
+}

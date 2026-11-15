@@ -1,0 +1,19 @@
+{
+  "updated_utc": "2026-09-18T09:54:40.702326+00:00",
+  "pid": 23156,
+  "status": "TRAINING",
+  "config": "N50000_L8",
+  "training_seed": 303,
+  "epoch": 300,
+  "max_epochs": 300,
+  "validation_loss": -8.428241729736328,
+  "best_validation_loss": -8.428481101989746,
+  "best_epoch": 288,
+  "no_improvement_epochs": 12,
+  "estimated_optimizer_steps": 29100,
+  "run_elapsed_s": 1185.4481880664825,
+  "phase_b_completed": 1,
+  "phase_b_failed": 1,
+  "nonfinite_validation_epochs": 0,
+  "phase_a_unchanged": true
+}

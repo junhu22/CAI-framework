@@ -1,0 +1,4 @@
+seed,role,checkpoint,status,best_validation_nll,stop_epoch,checkpoint_sha256,selection_rule
+42,primary,conditional_flow_coupled_uniform_primary.pt,COMPLETED,-3.5181093215942383,283,690d5dbd8ae507e10b7393590721faa7b78cb1d24919330062429e12d4381cc3,predeclared original seed; always primary
+202,secondary,conditional_flow_coupled_uniform_secondary_seed202.pt,COMPLETED,-3.515652656555176,239,d124ccbe08f0a11312dc74dc88a4b83900455491a57427a291c5b20851ef176b,stability only; never replaces primary
+303,secondary,conditional_flow_coupled_uniform_secondary_seed303.pt,COMPLETED,-3.546391248703003,274,f3908057f7dcfa95c5d369fa17b2ecb6eeddef7613dbaf7914e4554886552d47,stability only; never replaces primary

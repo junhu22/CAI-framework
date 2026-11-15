@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-09-18T14:01:30.703764+00:00",
+  "pid": 19064,
+  "target": "ablation_obs1",
+  "historical_chain_index": 0,
+  "seed": 701,
+  "authorized_calls": 1,
+  "automatic_retries": 0,
+  "controller_sha256": "b51beb09759960eb701be92c2aa67ea1bacfc2b3d25803d296edb2d0f05165e5"
+}

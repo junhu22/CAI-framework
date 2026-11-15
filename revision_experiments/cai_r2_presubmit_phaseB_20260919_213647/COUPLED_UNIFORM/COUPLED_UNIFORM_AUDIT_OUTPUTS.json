@@ -1,0 +1,40 @@
+{
+  "status": "AUDIT_ONLY_NOT_SUBMISSION_QUALIFIED",
+  "reason": "four-chain bounded-Uniform NUTS gate failed rank-Rhat criterion",
+  "table13": {
+    "standard_hmc_omitted": true,
+    "neutra_crosscheck_performed": false,
+    "nuts_total_serial_runtime_s": 192.7386829853058
+  },
+  "table14": {
+    "posterior_mean_source": "unqualified bounded-Uniform NUTS candidate",
+    "posterior_mean": [
+      3.314753061036269,
+      2.2445122518887124,
+      3.1230815397699674
+    ],
+    "rms_relative_error_pct": 4.846070678719946
+  },
+  "figure15": {
+    "fast_source": "primary training seed 42, latent seed 42, in-support proposals only",
+    "fast_raw_count": 2000,
+    "fast_in_support_count": 1970,
+    "fast_raw_above_4_count": 21,
+    "fast_raw_below_0_5_count": 9,
+    "plotted_theta_above_4_count": 0,
+    "plotted_theta_below_0_5_count": 0,
+    "exact_candidate_theta_above_4_count": 0,
+    "exact_candidate_theta_below_0_5_count": 0
+  },
+  "figure16": {
+    "damage_fast_raw_count": 2000,
+    "damage_fast_in_support_count": 1088,
+    "damage_fast_raw_above_4_count": 15,
+    "damage_fast_raw_below_0_5_count": 901,
+    "plotted_theta_above_4_count": 0,
+    "plotted_theta_below_0_5_count": 0
+  },
+  "all_plotted_samples_theta_above_4_count": 0,
+  "all_plotted_samples_theta_below_0_5_count": 0,
+  "support_note": "The unchanged RealNVP has R^3 proposal support. Out-of-box draws are proposals, not bounded-target posterior mass; the target assigns them zero density. Audit figures explicitly display only in-support fast proposals. This truncation must be disclosed if a later qualified reference is landed."
+}

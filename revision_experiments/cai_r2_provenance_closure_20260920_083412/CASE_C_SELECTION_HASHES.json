@@ -1,0 +1,17 @@
+{
+  "schema": "bounded-uniform-case-c-selection-hashes-v1",
+  "hash_algorithm": "SHA-256",
+  "immutable_after_creation": true,
+  "files": [
+    {
+      "path": "CASE_C_SELECTED_INDICES.json",
+      "bytes": 2069,
+      "sha256": "4188aca464376a1a4679206653f0281c686cbdff7c5e02d84637aca81a10817f"
+    },
+    {
+      "path": "CASE_C_SELECTED_THETA.csv",
+      "bytes": 3567,
+      "sha256": "054bbbcbe4c75a604670faa5d6a63f9e8ec309c0a1dfdd853a968cfc2b427bf5"
+    }
+  ]
+}

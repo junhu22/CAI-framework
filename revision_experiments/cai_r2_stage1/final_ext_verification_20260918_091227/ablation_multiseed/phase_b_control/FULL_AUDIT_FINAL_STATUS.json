@@ -1,0 +1,19 @@
+{
+  "updated_utc": "2026-09-18T12:38:07.090114+00:00",
+  "pid": 25492,
+  "status": "TRAINING_STOPPED",
+  "phase_b_completed": 14,
+  "phase_b_failed": 1,
+  "attempted": 15,
+  "phase_b_training_done": true,
+  "new_training_attempts": 15,
+  "phase_a_unchanged": true,
+  "awaiting_full_readonly_audit": false,
+  "full_audit_complete": true,
+  "full_audit_outputs": [
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\ablation_multiseed\\PHASE_B_RESULTS.csv",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\ablation_multiseed\\FULL_ABLATION_SUMMARY.csv",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\ablation_multiseed\\FULL_ABLATION_AUDIT.md",
+    "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_stage1\\final_ext_verification_20260918_091227\\ablation_multiseed\\FULL_ABLATION_INTEGRITY.json"
+  ]
+}

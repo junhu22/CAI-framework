@@ -1,0 +1,485 @@
+{
+  "phase": "CAI R2 Phase C1 coupled bounded-Uniform NUTS chain-length extension",
+  "overall_gate": "PASS",
+  "run_classification": "CHAIN_LENGTH_EXTENSION",
+  "execution": {
+    "single_predeclared_run_count": 1,
+    "automatic_retries": 0,
+    "chains_dropped_or_replaced": 0,
+    "started_utc": "2026-09-19T14:43:54.578213+00:00",
+    "finished_utc": "2026-09-19T14:49:46.476400+00:00",
+    "total_serial_wall_runtime_s": 351.89818692207336
+  },
+  "protocol": {
+    "target": "independent Uniform(0.5,4.0)^3",
+    "observation": [
+      2.06,
+      2.3,
+      2.62,
+      6.14,
+      6.53,
+      6.76
+    ],
+    "likelihood": "relative-error Gaussian potential, kappa_sq=0.0009",
+    "transform": "theta=0.5+3.5*sigmoid(z)",
+    "jacobian": "sum(log(3.5)+logsigmoid(z)+logsigmoid(-z)) included exactly",
+    "seeds": [
+      811,
+      812,
+      813,
+      814
+    ],
+    "warmup_steps": 500,
+    "retained_per_chain": 2000,
+    "target_accept_prob": 0.9,
+    "initialization": "frozen accepted Phase-B Uniform-target theta_MAP for every chain",
+    "theta_map": [
+      3.421960598637274,
+      0.9747591653785916,
+      2.947480055360036
+    ],
+    "z_init": [
+      1.6203680730415981,
+      -1.8519383268459226,
+      0.8438717102331191
+    ]
+  },
+  "gates": {
+    "rank_normalized_split_rhat": {
+      "threshold": "<= 1.01 for every parameter",
+      "values": [
+        1.0033037295094254,
+        1.0015432006328795,
+        1.0029883890164002
+      ],
+      "observed_max": 1.0033037295094254,
+      "pass": true
+    },
+    "bulk_ess": {
+      "threshold": ">= 400 for every parameter",
+      "values": [
+        2215.7762770083805,
+        3549.1514316518455,
+        2231.5208785593404
+      ],
+      "observed_min": 2215.7762770083805,
+      "pass": true
+    },
+    "tail_ess": {
+      "threshold": ">= 400 for every parameter",
+      "values": [
+        2258.097851544234,
+        2895.015734108866,
+        1377.118608105852
+      ],
+      "observed_min": 1377.118608105852,
+      "pass": true
+    },
+    "divergences": {
+      "threshold": "= 0",
+      "value": 0,
+      "pass": true
+    },
+    "theta_outside_0_5_4": {
+      "threshold": "= 0",
+      "outside_coordinate_count": 0,
+      "outside_draw_count": 0,
+      "below_0_5_coordinate_count": 0,
+      "above_4_coordinate_count": 0,
+      "pass": true
+    }
+  },
+  "rank_rhat": [
+    1.0033037295094254,
+    1.0015432006328795,
+    1.0029883890164002
+  ],
+  "bulk_ess": [
+    2215.7762770083805,
+    3549.1514316518455,
+    2231.5208785593404
+  ],
+  "tail_ess": [
+    2258.097851544234,
+    2895.015734108866,
+    1377.118608105852
+  ],
+  "max_rhat": 1.0033037295094254,
+  "min_bulk_ess": 2215.7762770083805,
+  "min_tail_ess": 1377.118608105852,
+  "divergences": 0,
+  "acceptance_rates": [
+    1.0,
+    0.997,
+    0.9985,
+    0.9925
+  ],
+  "mean_acceptance_rate": 0.997,
+  "posterior_mean": [
+    3.314439956218004,
+    2.240789032801986,
+    3.127189471304417
+  ],
+  "posterior_std": [
+    0.3494397321957622,
+    1.0252593735281272,
+    0.42620179133027825
+  ],
+  "posterior_quantiles": {
+    "q025": [
+      2.7250162839889525,
+      0.5690481498837471,
+      2.435306704044342
+    ],
+    "q50": [
+      3.3004987239837646,
+      2.223360300064087,
+      3.08444881439209
+    ],
+    "q975": [
+      3.951196902990341,
+      3.9174373626708983,
+      3.9308033049106594
+    ]
+  },
+  "theta_support_min": [
+    2.488501787185669,
+    0.5000259280204773,
+    2.103191375732422
+  ],
+  "theta_support_max": [
+    3.999997854232788,
+    3.9999711513519287,
+    3.998891830444336
+  ],
+  "theta_outside_0_5_4_coordinate_count": 0,
+  "theta_outside_0_5_4_draw_count": 0,
+  "chain_records": [
+    {
+      "chain_index": 0,
+      "seed": 811,
+      "started_utc": "2026-09-19T14:43:54.582213+00:00",
+      "finished_utc": "2026-09-19T14:45:43.193677+00:00",
+      "runtime_s": 108.59446144104004,
+      "acceptance_rate": 1.0,
+      "divergence_count": 0,
+      "divergence_indices": [],
+      "adapted_step_size": 0.1403345502300994,
+      "inverse_mass_matrix": {
+        "('z',)": [
+          0.7158023118972778,
+          1.9742661714553833,
+          0.6952120065689087
+        ]
+      },
+      "raw_diagnostics": {
+        "z": {
+          "n_eff": [
+            515.2747192382812,
+            850.1884155273438,
+            748.445556640625
+          ],
+          "r_hat": [
+            0.9995754361152649,
+            1.0002477169036865,
+            1.0000779628753662
+          ]
+        },
+        "divergences": {
+          "chain 0": []
+        },
+        "acceptance rate": {
+          "chain 0": 1.0
+        }
+      },
+      "prefix": {
+        "chain_index": 0,
+        "seed": 811,
+        "comparison_retained_draws": 600,
+        "old_chain_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_presubmit_phaseB_20260919_213647\\COUPLED_UNIFORM\\COUPLED_UNIFORM_NUTS_CHAIN_seed811.npz",
+        "old_chain_sha256": "881fb6e18aa1ce82f5e1ce6eb72b169b43f289651b28c18d586cd2e2810875e8",
+        "theta_exact_max_abs_difference": 0.0,
+        "theta_exact_array_equality": true,
+        "theta_bitwise_equality": true,
+        "z_exact_max_abs_difference": 0.0,
+        "z_exact_array_equality": true,
+        "z_bitwise_equality": true,
+        "old_adapted_step_size": 0.1403345502300994,
+        "new_adapted_step_size": 0.1403345502300994,
+        "adapted_step_size_exact_difference": 0.0,
+        "full_prefix_bitwise_equality": true
+      }
+    },
+    {
+      "chain_index": 1,
+      "seed": 812,
+      "started_utc": "2026-09-19T14:45:43.193677+00:00",
+      "finished_utc": "2026-09-19T14:46:57.886165+00:00",
+      "runtime_s": 74.68648767471313,
+      "acceptance_rate": 0.997,
+      "divergence_count": 0,
+      "divergence_indices": [],
+      "adapted_step_size": 0.17231980450639345,
+      "inverse_mass_matrix": {
+        "('z',)": [
+          0.7561355233192444,
+          2.6814064979553223,
+          0.4004231095314026
+        ]
+      },
+      "raw_diagnostics": {
+        "z": {
+          "n_eff": [
+            704.3931884765625,
+            704.4537963867188,
+            308.5765686035156
+          ],
+          "r_hat": [
+            1.0001275539398193,
+            1.006247878074646,
+            0.9998809695243835
+          ]
+        },
+        "divergences": {
+          "chain 0": []
+        },
+        "acceptance rate": {
+          "chain 0": 0.997
+        }
+      },
+      "prefix": {
+        "chain_index": 1,
+        "seed": 812,
+        "comparison_retained_draws": 600,
+        "old_chain_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_presubmit_phaseB_20260919_213647\\COUPLED_UNIFORM\\COUPLED_UNIFORM_NUTS_CHAIN_seed812.npz",
+        "old_chain_sha256": "8446f3e19db08a18f14fa504e1b49e15448af4be3c3014c9db8b865dd68bf07d",
+        "theta_exact_max_abs_difference": 0.0,
+        "theta_exact_array_equality": true,
+        "theta_bitwise_equality": true,
+        "z_exact_max_abs_difference": 0.0,
+        "z_exact_array_equality": true,
+        "z_bitwise_equality": true,
+        "old_adapted_step_size": 0.17231980450639345,
+        "new_adapted_step_size": 0.17231980450639345,
+        "adapted_step_size_exact_difference": 0.0,
+        "full_prefix_bitwise_equality": true
+      }
+    },
+    {
+      "chain_index": 2,
+      "seed": 813,
+      "started_utc": "2026-09-19T14:46:57.886165+00:00",
+      "finished_utc": "2026-09-19T14:48:49.223802+00:00",
+      "runtime_s": 111.33163619041443,
+      "acceptance_rate": 0.9985,
+      "divergence_count": 0,
+      "divergence_indices": [],
+      "adapted_step_size": 0.08410438910998148,
+      "inverse_mass_matrix": {
+        "('z',)": [
+          3.233405113220215,
+          3.817523241043091,
+          0.7327700853347778
+        ]
+      },
+      "raw_diagnostics": {
+        "z": {
+          "n_eff": [
+            362.4682312011719,
+            719.0266723632812,
+            282.97412109375
+          ],
+          "r_hat": [
+            1.0008494853973389,
+            1.0004909038543701,
+            1.0050925016403198
+          ]
+        },
+        "divergences": {
+          "chain 0": []
+        },
+        "acceptance rate": {
+          "chain 0": 0.9985
+        }
+      },
+      "prefix": {
+        "chain_index": 2,
+        "seed": 813,
+        "comparison_retained_draws": 600,
+        "old_chain_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_presubmit_phaseB_20260919_213647\\COUPLED_UNIFORM\\COUPLED_UNIFORM_NUTS_CHAIN_seed813.npz",
+        "old_chain_sha256": "18b226b670abebd42019e60d1c7943ec73b3e5e866b8570a03bf5e6c1228de2b",
+        "theta_exact_max_abs_difference": 0.0,
+        "theta_exact_array_equality": true,
+        "theta_bitwise_equality": true,
+        "z_exact_max_abs_difference": 0.0,
+        "z_exact_array_equality": true,
+        "z_bitwise_equality": true,
+        "old_adapted_step_size": 0.08410438910998148,
+        "new_adapted_step_size": 0.08410438910998148,
+        "adapted_step_size_exact_difference": 0.0,
+        "full_prefix_bitwise_equality": true
+      }
+    },
+    {
+      "chain_index": 3,
+      "seed": 814,
+      "started_utc": "2026-09-19T14:48:49.223802+00:00",
+      "finished_utc": "2026-09-19T14:49:46.476400+00:00",
+      "runtime_s": 57.24916076660156,
+      "acceptance_rate": 0.9925,
+      "divergence_count": 0,
+      "divergence_indices": [],
+      "adapted_step_size": 0.2417678042405184,
+      "inverse_mass_matrix": {
+        "('z',)": [
+          0.4511793255805969,
+          4.655566692352295,
+          0.5484244227409363
+        ]
+      },
+      "raw_diagnostics": {
+        "z": {
+          "n_eff": [
+            485.6315612792969,
+            1266.675048828125,
+            390.889404296875
+          ],
+          "r_hat": [
+            1.0049983263015747,
+            0.9996787309646606,
+            0.9999467730522156
+          ]
+        },
+        "divergences": {
+          "chain 0": []
+        },
+        "acceptance rate": {
+          "chain 0": 0.9925
+        }
+      },
+      "prefix": {
+        "chain_index": 3,
+        "seed": 814,
+        "comparison_retained_draws": 600,
+        "old_chain_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_presubmit_phaseB_20260919_213647\\COUPLED_UNIFORM\\COUPLED_UNIFORM_NUTS_CHAIN_seed814.npz",
+        "old_chain_sha256": "755c4a764d54413a63f05dd8295966278d0273c13480efa4de79664b3da6dd18",
+        "theta_exact_max_abs_difference": 0.0,
+        "theta_exact_array_equality": true,
+        "theta_bitwise_equality": true,
+        "z_exact_max_abs_difference": 0.0,
+        "z_exact_array_equality": true,
+        "z_bitwise_equality": true,
+        "old_adapted_step_size": 0.2417678042405184,
+        "new_adapted_step_size": 0.2417678042405184,
+        "adapted_step_size_exact_difference": 0.0,
+        "full_prefix_bitwise_equality": true
+      }
+    }
+  ],
+  "prefix_reproducibility": {
+    "classification": "CHAIN_LENGTH_EXTENSION",
+    "all_prefix_bitwise_equal": true
+  },
+  "software": {
+    "python": "3.12.13 | packaged by Anaconda, Inc. | (main, Mar 19 2026, 20:16:45) [MSC v.1942 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\junhu\\miniconda3\\envs\\lcnf\\python.exe",
+    "torch": "2.6.0+cu124",
+    "pyro": "1.9.1",
+    "numpy": "1.26.4",
+    "arviz": "0.23.4",
+    "torch_num_threads": 6
+  },
+  "frozen_input_sha256": {
+    "phase_b_manifest": "b5074383a9bbc278da837336034df18570a0463f6cc4b745220a5b21131c085a",
+    "phase_b_map": "e4fc2a34e186f69f7351454359a1b32bd051d5b684893cdc19891e1f23d4905c",
+    "phase_b_reference": "8b2720358be4974a96a3e1467b1749193eac4271929873c67e82e9cc25ab9eee",
+    "surrogate": "6a1e4f530d4e3628e0b7fdbf08661b4dc32a71a0c2b538b26f5af9d7c07b9986",
+    "source_module": "844446aff945285062f9b0b9a1e536252233718e6d5aebb3642ae53a2513369f",
+    "primary_uniform_cnf": "690d5dbd8ae507e10b7393590721faa7b78cb1d24919330062429e12d4381cc3",
+    "fast_routing_raw": "0d306da8c48422425659481066cc6ce430931d2acb8faaaeb8f95e67d16f176e",
+    "fast_routing_csv": "f325ab4f97a11d4708f99d638925a36b01182b621e92ac9de6f4ac1802d7234a",
+    "fast_routing_summary": "a37af003edcb764b4480162ff848576fc68bd366547abfe35cd219b514564e00"
+  },
+  "qualified_reference": {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_presubmit_phaseB_20260919_213647\\COUPLED_UNIFORM\\COUPLED_UNIFORM_NUTS_REFERENCE_2000.npz",
+    "sha256": "c3174b9f49aed3cf0cd2ef68afddd7290ad10f47f5c20744ea60491cc1819d60",
+    "shape": [
+      4,
+      2000,
+      3
+    ],
+    "status": "QUALIFIED"
+  },
+  "post_gate_actions_performed": true,
+  "qualified_gap": {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_presubmit_phaseB_20260919_213647\\COUPLED_UNIFORM\\COUPLED_QUALIFIED_GAP.csv",
+    "fast_draw_source_sha256": "0d306da8c48422425659481066cc6ce430931d2acb8faaaeb8f95e67d16f176e",
+    "routing_source_sha256": "f325ab4f97a11d4708f99d638925a36b01182b621e92ac9de6f4ac1802d7234a",
+    "fast_draws_regenerated": false,
+    "routing_values_recomputed": false,
+    "pooled_all_q_phi_proposals": {
+      "active_mean_mae": 0.07007218036452938,
+      "all_mean_mae": 0.07007218036452938,
+      "w1_1d_mean": 0.13589033436179163,
+      "w1_1d_max": 0.19115716347098352,
+      "q95_width_ratio_mean": 0.6814898666549208,
+      "q95_width_ratio_min": 0.46137959245382376,
+      "q95_width_ratio_max": 0.9710249836577671,
+      "field_proposal_support_leakage_count": 133,
+      "field_proposal_support_leakage_percentage": 1.3299999999999998
+    },
+    "pooled_in_support_q_phi_subset": {
+      "active_mean_mae": 0.07372587575002025,
+      "all_mean_mae": 0.07372587575002025,
+      "w1_1d_mean": 0.14012701517757267,
+      "w1_1d_max": 0.19128108705715396,
+      "q95_width_ratio_mean": 0.6744592941888395,
+      "q95_width_ratio_min": 0.46067116483875453,
+      "q95_width_ratio_max": 0.9525451808020645
+    }
+  },
+  "table14_modal_fit": {
+    "posterior_mean_source": "qualified bounded-Uniform NUTS 4x2000 posterior mean",
+    "surrogate_sha256": "6a1e4f530d4e3628e0b7fdbf08661b4dc32a71a0c2b538b26f5af9d7c07b9986",
+    "new_fe_calls": 0,
+    "rows": [
+      {
+        "mode": 1,
+        "measured_hz": 2.06,
+        "surrogate_at_qualified_nuts_posterior_mean_hz": 2.1288654054520695,
+        "relative_error_pct": 3.342980847187836
+      },
+      {
+        "mode": 2,
+        "measured_hz": 2.3,
+        "surrogate_at_qualified_nuts_posterior_mean_hz": 2.24858914475441,
+        "relative_error_pct": -2.2352545758952016
+      },
+      {
+        "mode": 3,
+        "measured_hz": 2.62,
+        "surrogate_at_qualified_nuts_posterior_mean_hz": 2.3868578273773764,
+        "relative_error_pct": -8.89855620697037
+      },
+      {
+        "mode": 4,
+        "measured_hz": 6.14,
+        "surrogate_at_qualified_nuts_posterior_mean_hz": 6.133663822493998,
+        "relative_error_pct": -0.10319507338765499
+      },
+      {
+        "mode": 5,
+        "measured_hz": 6.53,
+        "surrogate_at_qualified_nuts_posterior_mean_hz": 6.730599895407766,
+        "relative_error_pct": 3.071973895984167
+      },
+      {
+        "mode": 6,
+        "measured_hz": 6.76,
+        "surrogate_at_qualified_nuts_posterior_mean_hz": 7.1670356853648425,
+        "relative_error_pct": 6.021237949184064
+      }
+    ],
+    "rms_relative_error_pct": 4.848696832033153
+  }
+}

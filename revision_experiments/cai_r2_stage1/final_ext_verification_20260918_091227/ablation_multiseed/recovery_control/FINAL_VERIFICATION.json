@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-09-18T13:09:54.563297+00:00",
+  "scientific_cells": 24,
+  "summary_axis_cells": 9,
+  "independently_checked_aggregate_fields": 144,
+  "independently_checked_fast_seed_fields": 270,
+  "distinct_checkpoints": 24,
+  "shared_N50000_L8_rows_equal_except_axis": true,
+  "original_failed_row_preserved": true,
+  "frozen_367": {
+    "checked_utc": "2026-09-18T13:09:54.264403+00:00",
+    "checked_files": 367,
+    "changed_files": [],
+    "all_unchanged": true
+  },
+  "all_previous_assets": {
+    "checked_utc": "2026-09-18T13:09:54.549744+00:00",
+    "checked_files": 435,
+    "changed_files": [],
+    "all_unchanged": true,
+    "git_tracked_status_unchanged": true
+  },
+  "tracked_git_files_unchanged": true,
+  "training_stopped": true,
+  "new_training_calls": 1,
+  "new_mcmc_runs": 0,
+  "outputs": {
+    "RECOVERY_N50000_L8_seed202.json": "a964b71b9d67ae5d42ccf14a8ed185aab778131c42799d3609c6f917a86cdfe7",
+    "RECOVERY_N50000_L8_seed202.log": "7f02fac5b062e9bfe55d7e0c0cd3eb035f017901271c34403dc77f647a487d17",
+    "N50000_L8_seed202_recovery.pt": "1862e59792e16148aa96f0f7f3cded15f4e46b71c2ab3470d0119a2087180286",
+    "FULL_ABLATION_SUMMARY_RECOVERED.csv": "ad1dcef7ecaa084ffccd1ac741dceeb7251dbf43d0a11c71d098d2718156f93c",
+    "FULL_ABLATION_AUDIT_RECOVERED.md": "fe478bd56447a07b0c1fa188a3bfebe38e2f44ebe940302e6b317cce5cfaf0fe",
+    "FULL_ABLATION_INTEGRITY_RECOVERED.json": "7eedf927722d1fb22981a4805e036095717cd21ddd97461caae2b042b0f3c95b"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "targets": [
+    "ablation_obs1",
+    "ablation_obs2",
+    "ablation_obs3",
+    "ablation_obs4",
+    "ablation_obs5",
+    "sailboat_boundary_e1_075"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "num_samples": 500,
+  "warmup": 500,
+  "target_accept_prob": 0.8,
+  "parameterisation": "z=log(theta)",
+  "target": "surrogate likelihood + N(0,sigma^2) prior in z",
+  "git_tracked_before": "",
+  "field_reference": "reuse existing fig17_replay_samples.npz; no field rerun",
+  "boundaries": [
+    "no training",
+    "no manuscript edit",
+    "no new FE",
+    "only six new NUTS targets"
+  ]
+}

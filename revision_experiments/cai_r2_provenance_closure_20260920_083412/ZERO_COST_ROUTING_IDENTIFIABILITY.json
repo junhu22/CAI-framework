@@ -1,0 +1,237 @@
+{
+  "schema": "cai-r2-zero-cost-routing-identifiability-v1",
+  "new_samples_generated": false,
+  "retained_arrays_only": true,
+  "width_csv": {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_provenance_closure_20260920_083412\\ROUTING_GAP_WIDTH_RATIO.csv",
+    "sha256": "82646143409b27fe2b43d18b9dc774e052d9ec3f46efc4e9c66172e718fc30ba"
+  },
+  "support_csv": {
+    "path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_provenance_closure_20260920_083412\\PROPOSAL_SUPPORT_AUDIT.csv",
+    "sha256": "f318f8226be0f707557e3d9da41fba481e3b9f17d4e2b163908f3a37e8cb9107"
+  },
+  "rank_audit": {
+    "classification": "DESCRIPTIVE_SELECTED_CASE_ASSOCIATION",
+    "n_case_classes": 8,
+    "rows": [
+      {
+        "case": "Obs. 1",
+        "raw_ess_displayed": 0.7001,
+        "raw_rank_ascending": 6,
+        "mean_w1_displayed": 0.0217,
+        "w1_rank_ascending": 4,
+        "d_w1": 2,
+        "d_w1_squared": 4,
+        "active_mae_displayed": 0.0177,
+        "mae_rank_ascending": 5,
+        "d_mae": 1,
+        "d_mae_squared": 1
+      },
+      {
+        "case": "Obs. 2",
+        "raw_ess_displayed": 0.6718,
+        "raw_rank_ascending": 5,
+        "mean_w1_displayed": 0.0304,
+        "w1_rank_ascending": 5,
+        "d_w1": 0,
+        "d_w1_squared": 0,
+        "active_mae_displayed": 0.0302,
+        "mae_rank_ascending": 6,
+        "d_mae": -1,
+        "d_mae_squared": 1
+      },
+      {
+        "case": "Obs. 3",
+        "raw_ess_displayed": 0.862,
+        "raw_rank_ascending": 8,
+        "mean_w1_displayed": 0.0068,
+        "w1_rank_ascending": 1,
+        "d_w1": 7,
+        "d_w1_squared": 49,
+        "active_mae_displayed": 0.004,
+        "mae_rank_ascending": 1,
+        "d_mae": 7,
+        "d_mae_squared": 49
+      },
+      {
+        "case": "Obs. 4",
+        "raw_ess_displayed": 0.7674,
+        "raw_rank_ascending": 7,
+        "mean_w1_displayed": 0.0131,
+        "w1_rank_ascending": 2,
+        "d_w1": 5,
+        "d_w1_squared": 25,
+        "active_mae_displayed": 0.0112,
+        "mae_rank_ascending": 2,
+        "d_mae": 5,
+        "d_mae_squared": 25
+      },
+      {
+        "case": "Obs. 5",
+        "raw_ess_displayed": 0.6549,
+        "raw_rank_ascending": 4,
+        "mean_w1_displayed": 0.0134,
+        "w1_rank_ascending": 3,
+        "d_w1": 1,
+        "d_w1_squared": 1,
+        "active_mae_displayed": 0.0129,
+        "mae_rank_ascending": 3,
+        "d_mae": 1,
+        "d_mae_squared": 1
+      },
+      {
+        "case": "Near-threshold",
+        "raw_ess_displayed": 0.4362,
+        "raw_rank_ascending": 3,
+        "mean_w1_displayed": 0.036,
+        "w1_rank_ascending": 6,
+        "d_w1": -3,
+        "d_w1_squared": 9,
+        "active_mae_displayed": 0.0163,
+        "mae_rank_ascending": 4,
+        "d_mae": -1,
+        "d_mae_squared": 1
+      },
+      {
+        "case": "Sailboat field",
+        "raw_ess_displayed": 0.0515,
+        "raw_rank_ascending": 1,
+        "mean_w1_displayed": 0.149,
+        "w1_rank_ascending": 8,
+        "d_w1": -7,
+        "d_w1_squared": 49,
+        "active_mae_displayed": 0.0952,
+        "mae_rank_ascending": 8,
+        "d_mae": -7,
+        "d_mae_squared": 49
+      },
+      {
+        "case": "Coupled field",
+        "raw_ess_displayed": 0.0604,
+        "raw_rank_ascending": 2,
+        "mean_w1_displayed": 0.136,
+        "w1_rank_ascending": 7,
+        "d_w1": -5,
+        "d_w1_squared": 25,
+        "active_mae_displayed": 0.0701,
+        "mae_rank_ascending": 7,
+        "d_mae": -5,
+        "d_mae_squared": 25
+      }
+    ],
+    "w1": {
+      "sum_d_squared": 162,
+      "rho_s": -0.9285714285714286
+    },
+    "mae": {
+      "sum_d_squared": 152,
+      "rho_s": -0.8095238095238095
+    },
+    "separation": {
+      "max_mean_w1_unanimous_fast": 0.0304,
+      "min_mean_w1_other_three": 0.036,
+      "strict_nonoverlap": true
+    },
+    "near_threshold_shape": {
+      "active_mae": 0.0163,
+      "mean_w1": 0.036,
+      "interpretation_rule": "combine with retained central-95% interval width ratio; do not form W1/MAE ratio"
+    }
+  },
+  "coupled_identifiability": {
+    "reference_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_presubmit_phaseB_20260919_213647\\COUPLED_UNIFORM\\COUPLED_UNIFORM_NUTS_REFERENCE_2000.npz",
+    "reference_sha256": "c3174b9f49aed3cf0cd2ef68afddd7290ad10f47f5c20744ea60491cc1819d60",
+    "N": 8000,
+    "e2_posterior": {
+      "mean": 2.240789032801986,
+      "sample_sd": 1.0252593735281288,
+      "quantiles_0.025_0.5_0.975": [
+        0.5690481498837471,
+        2.223360300064087,
+        3.9174373626708983
+      ]
+    },
+    "uniform_prior": {
+      "lower": 0.5,
+      "upper": 4.0,
+      "mean": 2.25,
+      "sd": 1.0103629710818451,
+      "quantiles_0.025_0.5_0.975": [
+        0.5875,
+        2.25,
+        3.9125
+      ]
+    },
+    "e2_vs_prior": {
+      "w1_deterministic_quantile_grid": 0.01910232407963276,
+      "grid_size": 8000,
+      "grid": "midpoint exact-Uniform quantiles versus sorted empirical posterior values",
+      "mean_difference": -0.009210967198014064,
+      "posterior_to_prior_sd_ratio": 1.0147436147925466
+    },
+    "boundary_mass": {
+      "P_e1_gt_3.8": 0.104625,
+      "P_e3_gt_3.8": 0.079875,
+      "P_e1_gt_3.9": 0.049,
+      "P_e3_gt_3.9": 0.036625,
+      "counts": {
+        "e1_gt_3.8": 837,
+        "e3_gt_3.8": 639,
+        "e1_gt_3.9": 392,
+        "e3_gt_3.9": 293
+      }
+    },
+    "first_six_surrogate_sensitivity_at_posterior_mean": {
+      "definition_reused": "Euclidean L2 norm of each surrogate Jacobian column; divide by maximum column norm, matching Figure 12(b)",
+      "theta": [
+        3.314439956218004,
+        2.240789032801986,
+        3.127189471304417
+      ],
+      "jacobian_6_by_3": [
+        [
+          0.20704183889310712,
+          -0.00016638372864042863,
+          0.11998281203435053
+        ],
+        [
+          0.14581660697706975,
+          -0.0001373215622965366,
+          0.20456564935450333
+        ],
+        [
+          0.21990404614033568,
+          -0.0002935272658169785,
+          0.14765357900754564
+        ],
+        [
+          0.5711875811910936,
+          -0.0006409950653168587,
+          0.3736545674490278
+        ],
+        [
+          0.5212487400255567,
+          -8.160207070310632e-05,
+          0.5217825833980839
+        ],
+        [
+          0.5773456837342886,
+          -0.0009435023748635376,
+          0.5305027794313054
+        ]
+      ],
+      "column_l2_norms": [
+        1.0216506916961448,
+        0.0012001788681203227,
+        0.8782667923647552
+      ],
+      "normalized_by_max": [
+        1.0,
+        0.0011747448299846842,
+        0.8596546740517118
+      ],
+      "surrogate_path": "C:\\neutra-hmc-surrogate\\surrogate_training\\surrogate_models_coupled\\member_0.pt",
+      "surrogate_sha256": "6a1e4f530d4e3628e0b7fdbf08661b4dc32a71a0c2b538b26f5af9d7c07b9986"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "schema":  "cai-r2-case-c-host-attempt-start-v1",
+    "started_at":  "2026-09-20T13:17:54.4541811+08:00",
+    "selection_order":  32,
+    "case_name":  "case_032",
+    "job_name":  "caiC_h032",
+    "working_directory":  "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_caseC_HOST_RUN_20260920_125550\\outputs\\case_032",
+    "input_path":  "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_caseC_HOST_RUN_20260920_125550\\outputs\\case_032\\run.mac",
+    "output_log_path":  "C:\\neutra-hmc-surrogate\\surrogate_training\\revision_experiments\\cai_r2_caseC_HOST_RUN_20260920_125550\\outputs\\case_032\\ans.log",
+    "run_mac_sha256":  "e292a932188bf33d5094f7ed3d26f76c82d312b434454616963b0a2493117fc4",
+    "no_automatic_retry":  true
+}
